@@ -7,7 +7,6 @@ use UNISIM.VCOMPONENTS.ALL;
 entity StreamCopIPCore_v1_0_S00_AXIS is
 	generic (
 		-- Users to add parameters here
-
 		-- User parameters ends
 		-- Do not modify the parameters beyond this line
 
@@ -40,13 +39,159 @@ entity StreamCopIPCore_v1_0_S00_AXIS is
 end StreamCopIPCore_v1_0_S00_AXIS;
 
 architecture Behavioral of StreamCopIPCore_v1_0_S00_AXIS is
+    subtype uint512_t is unsigned(0 to 511);
+    subtype uint32_t is unsigned(31 downto 0);
+    subtype uint8_t is unsigned(7 downto 0);
+    
+    type const_r is array (0 to 63) of uint8_t;
+    type const_k is array (0 to 63) of uint32_t;   
+    
+    constant r: const_r := (X"07", X"0C", X"11", X"16", -- 7, 12, 17, 22,
+                        X"07", X"0C", X"11", X"16", -- 7, 12, 17, 22,
+                        X"07", X"0C", X"11", X"16", -- 7, 12, 17, 22,
+                        X"07", X"0C", X"11", X"16", -- 7, 12, 17, 22,
+
+						X"05", X"09", X"0E", X"14", -- 5,  9, 14, 20,
+						X"05", X"09", X"0E", X"14", -- 5,  9, 14, 20,
+						X"05", X"09", X"0E", X"14", -- 5,  9, 14, 20,
+						X"05", X"09", X"0E", X"14", -- 5,  9, 14, 20,
+
+						X"04", X"0B", X"10", X"17", -- 4, 11, 16, 23,
+						X"04", X"0B", X"10", X"17", -- 4, 11, 16, 23,
+						X"04", X"0B", X"10", X"17", -- 4, 11, 16, 23,
+						X"04", X"0B", X"10", X"17", -- 4, 11, 16, 23,
+
+						X"06", X"0A", X"0F", X"15", -- 6, 10, 15, 21);
+						X"06", X"0A", X"0F", X"15", -- 6, 10, 15, 21);
+						X"06", X"0A", X"0F", X"15", -- 6, 10, 15, 21);
+						X"06", X"0A", X"0F", X"15"); -- 6, 10, 15, 21);
+										
+constant K: const_k := (X"d76aa478", X"e8c7b756", X"242070db", X"c1bdceee",
+						X"f57c0faf", X"4787c62a", X"a8304613", X"fd469501",
+						X"698098d8", X"8b44f7af", X"ffff5bb1", X"895cd7be",
+						X"6b901122", X"fd987193", X"a679438e", X"49b40821",
+						X"f61e2562", X"c040b340", X"265e5a51", X"e9b6c7aa",
+						X"d62f105d", X"02441453", X"d8a1e681", X"e7d3fbc8",
+						X"21e1cde6", X"c33707d6", X"f4d50d87", X"455a14ed",
+						X"a9e3e905", X"fcefa3f8", X"676f02d9", X"8d2a4c8a",
+						X"fffa3942", X"8771f681", X"6d9d6122", X"fde5380c",
+						X"a4beea44", X"4bdecfa9", X"f6bb4b60", X"bebfbc70",
+						X"289b7ec6", X"eaa127fa", X"d4ef3085", X"04881d05",
+						X"d9d4d039", X"e6db99e5", X"1fa27cf8", X"c4ac5665",
+						X"f4292244", X"432aff97", X"ab9423a7", X"fc93a039",
+						X"655b59c3", X"8f0ccc92", X"ffeff47d", X"85845dd1",
+						X"6fa87e4f", X"fe2ce6e0", X"a3014314", X"4e0811a1",
+						X"f7537e82", X"bd3af235", X"2ad7d2bb", X"eb86d391");
+    --Iniciar as variáveis:
+    --TO BE REDONE in the beggining of the first FOOOOOOOOOOOORRRRRRRRRR
+    constant h0 : uint32_t := X"67452301";
+    constant h1 : uint32_t := X"efcdab89";
+    constant h2 : uint32_t := X"98badcfe";
+    constant h3 : uint32_t := X"10325476";
+    
+    signal A, A_n : uint32_t := h0;
+    signal B, B_n : uint32_t := h1;
+    signal C, C_n : uint32_t := h2;
+    signal D, D_n : uint32_t := h3;
+    signal F      : uint32_t := to_unsigned(0, A'length);
+    signal g      : integer := 0;
+    signal temp   : uint32_t;
+        
+    signal i: integer range 0 to 64 := 0;
+    type iStates is (ito15, ito31, ito47, ito63, lastStep);
+    signal iState : iStates := ito15;
+        
     signal s_ready    : std_logic;
     signal s_validOut : std_logic;
     signal s_dataOut  : std_logic_vector(31 downto 0); 
     signal s_cnt      : integer;
-    signal M : integer(511 downto 0) := (others => '0');
+    signal M          : unsigned(0 to 511) := (others => '0');
+
+function swap_endianness(x: unsigned) return unsigned is
+    variable input: unsigned(31 downto 0):=x;
+begin
+    return x(7 downto 0) & 
+           x(15 downto 8) &
+           x(23 downto 16) &
+           x(31 downto 24);
+end function swap_endianness;
+
 begin
     s_ready <= (not s_validOut) or readEnable;
+    
+    processingMessage: process(S_AXIS_ACLK)
+        begin
+            if (S_AXIS_ACLK'event and S_AXIS_ACLK = '1') THEN
+                case iState is
+                    when ito15 =>
+                        f <= (b and c) or ((not b) and d);
+                        g <= i;
+        
+                    if (i = 15) then
+                      iState <= ito31;
+                    end if;
+        
+                    temp <= d;
+                    d <= c;
+                    c <= b;
+                    --b <= ((a + f + k[i] + w(g)) leftrotate r[i]) + b;
+                    a <= temp;
+                    
+                    i <= i + 1;
+                when ito31 =>
+                    f <= (d and b) or ((not d) and c);
+                    --g <= (5×i + 1) mod 16;
+        
+                    if (i = 32) then
+                      iState <= ito47;
+                    end if;
+        
+                    temp <= d;
+                    d <= c;
+                    c <= b;
+                    --b <= ((a + f + k[i] + w(g)) leftrotate r[i]) + b;
+                    a <= temp;
+                    
+                    i <= i + 1;
+                when ito47 =>
+                    f <= b xor c xor d;
+                    --g <= (3×i + 5) mod 16;
+        
+                    if (i = 47) then
+                      iState <= ito63;
+                    end if;
+        
+                    temp <= d;
+                    d <= c;
+                    c <= b;
+                   -- b <= ((a + f + k[i] + w(g)) leftrotate r[i]) + b;
+                    a <= temp;
+                    
+                    i <= i + 1;
+                when ito63 =>
+                    f <= c xor (b or (not d));
+                   -- g <= (7×i) mod 16;
+        
+                    if (i = 63) then
+                      iState <= lastStep;
+                    end if;
+                    temp <= d;
+                    d <= c;
+                    c <= b;
+                    --b <= ((a + f + k[i] + w(g)) leftrotate r[i]) + b;
+                    a <= temp;   
+                    i <= i + 1;
+                when lastStep =>
+                    --processing after "for"
+                    A_n <= A_n + h0;
+                    B_n <= B_n + h1;
+                    C_n <= C_n + h2;
+                    D_n <= D_n + h3;
+                when others =>
+                    Null;
+                end case;
+            end if;
+        end process;
     
     process(S_AXIS_ACLK)
 	begin
@@ -68,20 +213,13 @@ begin
         end if;
     end process;
     
-    process(S_AXIS-ACLK)
+    process(S_AXIS_ACLK)
     begin
         M(C_S_AXIS_TDATA_WIDTH) <= '1';
-        
-        
-        
+        M((C_S_AXIS_TDATA_WIDTH + 1 ) to 441) <= (others => '0');
+        M(448 to 511) <= swap_endianness(M(31 downto 0)) & "00000000000000000000000000000000";
     end process;
     
-    function preProcess (input: in std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0)) 
-    return std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0) is
-        begin
-            
-    end function;
-
 	validData     <= s_validOut;
 	swappedData   <= s_dataOut;
 	S_AXIS_TREADY <= s_ready;
