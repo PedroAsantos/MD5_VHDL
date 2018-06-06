@@ -22,36 +22,60 @@
 #define N 16
 
 int main(){
-	//unsigned int i, v, r;
-	int r;
+  //unsigned int i, v, r;
+  int r;
 
     init_platform();
 
     xil_printf("\n\r%sHello Stream Coprocessor\n\r");
 
     char array[5];
-	unsigned int ch;
+  unsigned int ch;
 
-        //while(1){
-           		int i = 0;
-           		xil_printf("before\n");
-           		do {
-           			ch = XUartLite_RecvByte(XPAR_AXI_UARTLITE_0_BASEADDR);
+  char message[] = "Olá eu sou o Pedro";
+  double initial_len_double = (double) sizeof(message);
+  int initial_len = sizeof(message);
 
-           			xil_printf("\n\r.%8x", ch);
-					putfsl(ch, 0);
-					getfsl(r, 0);
-					xil_printf("\n\r_%08x", r);
+  int numberOfBlocks = (int)ceil(initial_len/448.0);
 
-           			array[i] = ch;
-        			xil_printf("\n\rAds %i \n",i);
 
-        			i++;
-           		} while(i < 5);
+  char *block;
+  /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+  size_t length = 64;
 
-           		//xil_printf("%s\n", array);
-           		//xil_printf("after\n");
-        //}
+
+  block = (char *)calloc(length, sizeof(char));
+
+  /* Check to see if we were successful */
+  if (block == NULL)
+  {
+      /* We were not so display a message */
+      printf("Could not allocate required memory\n");
+
+      /* And exit */
+      exit(1);
+  }
+
+  int i;
+  for( i = 0; i < numberOfBlocks; i = i + 1 ){
+      memset(block, 0, 512);
+      if(i==numberOfBlocks-1){
+          strcpy(block, message);
+          block[initial_len] = 128; // write the "1" bit
+
+          uint32_t bits_len = 8*initial_len; // note, we append the len
+          memcpy(&bits_len,block + (448-initial_len), 8);           // in bits at the end of the buffer
+          putfsl(block, 0);
+      }else{
+        memcpy(block,message+(i*512),i*512);
+        putfsl(block, 0);
+      }
+
+   }
+
+  //putfsl(, 0);
+  getfsl(r, 0);
+  xil_printf("\n\r_%08x", r);
 
     xil_printf("\n\rDone!");
 

@@ -11,12 +11,13 @@ entity StreamCopIPCore_v1_0_S00_AXIS is
 		-- Do not modify the parameters beyond this line
 
 		-- AXI4Stream sink: Data Width
-		C_S_AXIS_TDATA_WIDTH	: integer	:= 32
+		C_S_AXIS_TDATA_WIDTH	: integer	:= 512;
+		C_S_AXIS_OUT_WIDTH      : integer   := 128
 	);
 	port (
 		-- Users to add ports here
         validData   : out std_logic;
-        swappedData : out std_logic_vector(C_S_AXIS_TDATA_WIDTH-1 downto 0);
+        swappedData : out std_logic_vector(C_S_AXIS_OUT_WIDTH-1 downto 0);
         readEnable  : in  std_logic;
 		-- User ports ends
 		-- Do not modify the ports beyond this line
@@ -89,25 +90,27 @@ constant K: const_k := (X"d76aa478", X"e8c7b756", X"242070db", X"c1bdceee",
     constant h2 : uint32_t := X"98badcfe";
     constant h3 : uint32_t := X"10325476";
     
-    signal A, A_n : uint32_t := h0;
-    signal B, B_n : uint32_t := h1;
-    signal C, C_n : uint32_t := h2;
-    signal D, D_n : uint32_t := h3;
-    signal F      : uint32_t := to_unsigned(0, A'length);
+    signal a, H0_s : uint32_t := h0;
+    signal b, H1_s : uint32_t := h1;
+    signal c, H2_s : uint32_t := h2;
+    signal d, H3_s : uint32_t := h3;
+    signal f      : uint32_t := to_unsigned(0, A'length);
     signal g      : integer := 0;
     signal temp   : uint32_t;
         
     signal i: integer range 0 to 64 := 0;
-    type iStates is (ito15, ito31, ito47, ito63, lastStep);
-    signal iState : iStates := ito15;
-        
+    type iStates is ( startState, ito15, ito31, ito47, ito63, lastStep);
+    signal currentState : iStates := startState;
+    signal nextState : iStates;
+    
+    signal startFor2  : std_logic := '0';
     signal s_ready    : std_logic;
     signal s_validOut : std_logic;
-    signal s_dataOut  : std_logic_vector(31 downto 0); 
+    signal s_dataOut  : std_logic_vector(C_S_AXIS_OUT_WIDTH-1 downto 0); 
     signal s_cnt      : integer;
-    signal M          : unsigned(0 to 511) := (others => '0');
+    signal M          : unsigned(511 downto 0) := (others => '0');
 
-function swap_endianness(x: unsigned) return unsigned is
+function swap_endianness(x: unsigned(31 downto 0)) return unsigned is
     variable input: unsigned(31 downto 0):=x;
 begin
     return x(7 downto 0) & 
@@ -116,109 +119,164 @@ begin
            x(31 downto 24);
 end function swap_endianness;
 
+function leftrotate(x: in uint32_t; c: in uint8_t) return uint32_t is
+begin
+	return SHIFT_LEFT(x, to_integer(c)) or SHIFT_RIGHT(x, to_integer(32-c));  --ver isto melhor
+end function leftrotate;
+
 begin
     s_ready <= (not s_validOut) or readEnable;
+    --M <= unsigned(S_AXIS_TDATA);
     
-    processingMessage: process(S_AXIS_ACLK)
+main:   process(S_AXIS_ACLK)
         begin
-            if (S_AXIS_ACLK'event and S_AXIS_ACLK = '1') THEN
-                case iState is
+            if (rising_edge (S_AXIS_ACLK)) then
+                currentState <= nextState;
+                if (S_AXIS_ARESETN = '0') then
+                   s_validOut <= '0';
+                   s_dataOut  <= (others => '0');
+                   i <= 0;
+                   currentState <= startState;
+                elsif (S_AXIS_TVALID = '1') then
+                   if (s_ready = '1') then
+                        s_validOut <= '1';
+                        --s_dataOut  <= std_logic_vector(to_unsigned(s_cnt, 32));
+                        --s_dataOut  <= S_AXIS_TDATA;
+                   end if;
+                elsif (readEnable = '1') then
+                   s_validOut <= '0';               
+                end if;
+            end if;
+        end process;
+            
+    FSM: process(S_AXIS_TDATA)
+    begin
+        nextState <= currentState;
+        case currentState is
+            when startState =>
+                if (readEnable = '1') then
+                    M <= unsigned(S_AXIS_TDATA);
+                end if;
+                startFor2 <='1';
+                nextState <= ito15;
+            when ito15 =>
+                nextState <= ito15;                
+                if (i = 15) then
+                    nextState <= ito31;
+                end if;
+            when ito31 =>           
+                if (i = 32) then
+                  nextState <= ito47;
+                end if;
+            when ito47 =>    
+                if (i = 47) then
+                  nextState <= ito63;
+                end if;
+            when ito63 =>
+                if (i = 63) then
+                  nextState <= lastStep;
+                end if;
+            when lastStep =>
+                --processing after "for"
+                s_dataOut <= std_logic_vector(H0_s) & 
+                                    std_logic_vector(H1_s) & std_logic_vector(H2_s)
+                                     & std_logic_vector(H3_s);
+            when others =>
+                Null;
+            end case;         
+    end process;           
+    
+    
+    calc: process(S_AXIS_ACLK,startFor2)
+        begin
+            if (rising_edge(S_AXIS_ACLK) and startFor2='1') THEN
+                case currentState is
+                    --when preProc =>
+                        --M(C_S_AXIS_TDATA_WIDTH) <= '1';
+                        --M((C_S_AXIS_TDATA_WIDTH + 1 ) to 441) <= (others => '0');
+                        --M(448 to 511) <= M(0 to 31) & "00000000000000000000000000000000";
+                        --iState <= ito15;
                     when ito15 =>
                         f <= (b and c) or ((not b) and d);
                         g <= i;
         
                     if (i = 15) then
-                      iState <= ito31;
+                        currentState <= ito31;
                     end if;
-        
-                    temp <= d;
-                    d <= c;
-                    c <= b;
-                    --b <= ((a + f + k[i] + w(g)) leftrotate r[i]) + b;
-                    a <= temp;
+                    
+                    
+                     temp <= d;
+                     d <= c;
+                     c <= b;
+                     b <= leftrotate(a + f + K(i) + M(g to g+31), r(i)) + b; 
+                     a <= temp;
+                     
+                    --temp <= d;
+                    --d <= c;
+                    --c <= b;
+                   -- b <= ((a + f + k(i) + w(g)) leftrotate r(i)) + b;
+                   
+                  --  b <= shift_left(((a + f + k(i) + w(g)) ,  r(i)) + b);
+                   -- a <= temp;
                     
                     i <= i + 1;
                 when ito31 =>
                     f <= (d and b) or ((not d) and c);
-                    --g <= (5×i + 1) mod 16;
-        
+                    g <= (5*i + 1) mod 16;
+                   
                     if (i = 32) then
-                      iState <= ito47;
+                        currentState <= ito47;
                     end if;
         
                     temp <= d;
                     d <= c;
                     c <= b;
-                    --b <= ((a + f + k[i] + w(g)) leftrotate r[i]) + b;
-                    a <= temp;
+                    b <= leftrotate(a + f + K(i) + M(g to g+31), r(i)) + b; 
+                    a <= temp;                
                     
                     i <= i + 1;
                 when ito47 =>
                     f <= b xor c xor d;
-                    --g <= (3×i + 5) mod 16;
+                    g <= (3*i + 5) mod 16;
         
                     if (i = 47) then
-                      iState <= ito63;
+                        currentState <= ito63;
                     end if;
-        
-                    temp <= d;
-                    d <= c;
-                    c <= b;
-                   -- b <= ((a + f + k[i] + w(g)) leftrotate r[i]) + b;
-                    a <= temp;
-                    
-                    i <= i + 1;
+                
+                   temp <= d;
+                   d <= c;
+                   c <= b;
+                   b <= leftrotate(a + f + K(i) + M(g to g+31), r(i)) + b; 
+                   a <= temp;
+                   
+                   i <= i + 1;
                 when ito63 =>
                     f <= c xor (b or (not d));
-                   -- g <= (7×i) mod 16;
+                    g <= (7*i) mod 16;
         
                     if (i = 63) then
-                      iState <= lastStep;
+                      currentState <= lastStep;
                     end if;
+                    
                     temp <= d;
                     d <= c;
                     c <= b;
-                    --b <= ((a + f + k[i] + w(g)) leftrotate r[i]) + b;
-                    a <= temp;   
+                    b <= leftrotate(a + f + K(i) + M(g to g+31), r(i)) + b; 
+                    a <= temp;     
+                                         
                     i <= i + 1;
                 when lastStep =>
                     --processing after "for"
-                    A_n <= A_n + h0;
-                    B_n <= B_n + h1;
-                    C_n <= C_n + h2;
-                    D_n <= D_n + h3;
+                    H0_s <= H0_s + a;
+                    H1_s <= H1_s + b;
+                    H2_s <= H2_s + c;
+                    H3_s <= H3_s + d;
+                    
                 when others =>
                     Null;
                 end case;
             end if;
         end process;
-    
-    process(S_AXIS_ACLK)
-	begin
-        if (rising_edge (S_AXIS_ACLK)) then
-	        if (S_AXIS_ARESETN = '0') then
-	           s_validOut <= '0';
-	           s_dataOut  <= (others => '0');
-       
-            elsif (S_AXIS_TVALID = '1') then
-	           if (s_ready = '1') then
-                    s_validOut <= '1';
-	                --s_dataOut  <= std_logic_vector(to_unsigned(s_cnt, 32));
-	                s_dataOut  <= S_AXIS_TDATA;
-	           end if;
-	      
-	        elsif (readEnable = '1') then
-	           s_validOut <= '0';               
-            end if;
-        end if;
-    end process;
-    
-    process(S_AXIS_ACLK)
-    begin
-        M(C_S_AXIS_TDATA_WIDTH) <= '1';
-        M((C_S_AXIS_TDATA_WIDTH + 1 ) to 441) <= (others => '0');
-        M(448 to 511) <= swap_endianness(M(31 downto 0)) & "00000000000000000000000000000000";
-    end process;
     
 	validData     <= s_validOut;
 	swappedData   <= s_dataOut;

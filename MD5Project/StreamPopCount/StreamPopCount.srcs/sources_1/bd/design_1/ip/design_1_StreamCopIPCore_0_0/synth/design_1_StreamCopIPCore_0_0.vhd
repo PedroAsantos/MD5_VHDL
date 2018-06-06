@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:StreamCopIPCore:1.0
--- IP Revision: 5
+-- IP Revision: 10
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -55,15 +55,15 @@ USE ieee.numeric_std.ALL;
 
 ENTITY design_1_StreamCopIPCore_0_0 IS
   PORT (
-    s00_axis_tdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-    s00_axis_tstrb : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+    s00_axis_tdata : IN STD_LOGIC_VECTOR(511 DOWNTO 0);
+    s00_axis_tstrb : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
     s00_axis_tlast : IN STD_LOGIC;
     s00_axis_tvalid : IN STD_LOGIC;
     s00_axis_tready : OUT STD_LOGIC;
     s00_axis_aclk : IN STD_LOGIC;
     s00_axis_aresetn : IN STD_LOGIC;
-    m00_axis_tdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-    m00_axis_tstrb : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    m00_axis_tdata : OUT STD_LOGIC_VECTOR(127 DOWNTO 0);
+    m00_axis_tstrb : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     m00_axis_tlast : OUT STD_LOGIC;
     m00_axis_tvalid : OUT STD_LOGIC;
     m00_axis_tready : IN STD_LOGIC;
@@ -82,15 +82,15 @@ ARCHITECTURE design_1_StreamCopIPCore_0_0_arch OF design_1_StreamCopIPCore_0_0 I
       C_M00_AXIS_START_COUNT : INTEGER -- Start count is the number of clock cycles the master will wait before initiating/issuing any transaction.
     );
     PORT (
-      s00_axis_tdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-      s00_axis_tstrb : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+      s00_axis_tdata : IN STD_LOGIC_VECTOR(511 DOWNTO 0);
+      s00_axis_tstrb : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
       s00_axis_tlast : IN STD_LOGIC;
       s00_axis_tvalid : IN STD_LOGIC;
       s00_axis_tready : OUT STD_LOGIC;
       s00_axis_aclk : IN STD_LOGIC;
       s00_axis_aresetn : IN STD_LOGIC;
-      m00_axis_tdata : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
-      m00_axis_tstrb : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      m00_axis_tdata : OUT STD_LOGIC_VECTOR(127 DOWNTO 0);
+      m00_axis_tstrb : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       m00_axis_tlast : OUT STD_LOGIC;
       m00_axis_tvalid : OUT STD_LOGIC;
       m00_axis_tready : IN STD_LOGIC;
@@ -103,7 +103,7 @@ ARCHITECTURE design_1_StreamCopIPCore_0_0_arch OF design_1_StreamCopIPCore_0_0 I
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_StreamCopIPCore_0_0_arch : ARCHITECTURE IS "design_1_StreamCopIPCore_0_0,StreamCopIPCore_v1_0,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_StreamCopIPCore_0_0_arch: ARCHITECTURE IS "design_1_StreamCopIPCore_0_0,StreamCopIPCore_v1_0,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=StreamCopIPCore,x_ipVersion=1.0,x_ipCoreRevision=5,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,C_S00_AXIS_TDATA_WIDTH=32,C_M00_AXIS_TDATA_WIDTH=32,C_M00_AXIS_START_COUNT=32}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_StreamCopIPCore_0_0_arch: ARCHITECTURE IS "design_1_StreamCopIPCore_0_0,StreamCopIPCore_v1_0,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=StreamCopIPCore,x_ipVersion=1.0,x_ipCoreRevision=10,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,C_S00_AXIS_TDATA_WIDTH=512,C_M00_AXIS_TDATA_WIDTH=128,C_M00_AXIS_START_COUNT=32}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF m00_axis_aresetn: SIGNAL IS "XIL_INTERFACENAME M00_AXIS_RST, POLARITY ACTIVE_LOW";
@@ -114,7 +114,7 @@ ARCHITECTURE design_1_StreamCopIPCore_0_0_arch OF design_1_StreamCopIPCore_0_0 I
   ATTRIBUTE X_INTERFACE_INFO OF m00_axis_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 M00_AXIS TVALID";
   ATTRIBUTE X_INTERFACE_INFO OF m00_axis_tlast: SIGNAL IS "xilinx.com:interface:axis:1.0 M00_AXIS TLAST";
   ATTRIBUTE X_INTERFACE_INFO OF m00_axis_tstrb: SIGNAL IS "xilinx.com:interface:axis:1.0 M00_AXIS TSTRB";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF m00_axis_tdata: SIGNAL IS "XIL_INTERFACENAME M00_AXIS, WIZ_DATA_WIDTH 32, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, LAYERED_METADATA undef";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF m00_axis_tdata: SIGNAL IS "XIL_INTERFACENAME M00_AXIS, WIZ_DATA_WIDTH 32, TDATA_NUM_BYTES 16, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, LAYERED_METADATA undef";
   ATTRIBUTE X_INTERFACE_INFO OF m00_axis_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 M00_AXIS TDATA";
   ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axis_aresetn: SIGNAL IS "XIL_INTERFACENAME S00_AXIS_RST, POLARITY ACTIVE_LOW";
   ATTRIBUTE X_INTERFACE_INFO OF s00_axis_aresetn: SIGNAL IS "xilinx.com:signal:reset:1.0 S00_AXIS_RST RST";
@@ -124,13 +124,13 @@ ARCHITECTURE design_1_StreamCopIPCore_0_0_arch OF design_1_StreamCopIPCore_0_0 I
   ATTRIBUTE X_INTERFACE_INFO OF s00_axis_tvalid: SIGNAL IS "xilinx.com:interface:axis:1.0 S00_AXIS TVALID";
   ATTRIBUTE X_INTERFACE_INFO OF s00_axis_tlast: SIGNAL IS "xilinx.com:interface:axis:1.0 S00_AXIS TLAST";
   ATTRIBUTE X_INTERFACE_INFO OF s00_axis_tstrb: SIGNAL IS "xilinx.com:interface:axis:1.0 S00_AXIS TSTRB";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axis_tdata: SIGNAL IS "XIL_INTERFACENAME S00_AXIS, WIZ_DATA_WIDTH 32, TDATA_NUM_BYTES 4, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, LAYERED_METADATA undef";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF s00_axis_tdata: SIGNAL IS "XIL_INTERFACENAME S00_AXIS, WIZ_DATA_WIDTH 32, TDATA_NUM_BYTES 64, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, LAYERED_METADATA undef";
   ATTRIBUTE X_INTERFACE_INFO OF s00_axis_tdata: SIGNAL IS "xilinx.com:interface:axis:1.0 S00_AXIS TDATA";
 BEGIN
   U0 : StreamCopIPCore_v1_0
     GENERIC MAP (
-      C_S00_AXIS_TDATA_WIDTH => 32,
-      C_M00_AXIS_TDATA_WIDTH => 32,
+      C_S00_AXIS_TDATA_WIDTH => 512,
+      C_M00_AXIS_TDATA_WIDTH => 128,
       C_M00_AXIS_START_COUNT => 32
     )
     PORT MAP (

@@ -1,0 +1,42 @@
+22:59:31 **** Auto Build of configuration Debug for project md5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../md5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:24:28: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
+  int numberOfBlocks = (int)ceil(initial_len/448.0);
+                            ^~~~
+../src/helloworld.c:24:28: warning: incompatible implicit declaration of built-in function 'ceil'
+../src/helloworld.c:24:28: note: include '<math.h>' or provide a declaration of 'ceil'
+../src/helloworld.c:32:18: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+  block = (char *)calloc(length, sizeof(char));
+                  ^~~~~~
+../src/helloworld.c:32:18: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:32:18: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+../src/helloworld.c:41:6: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+      exit(1);
+      ^~~~
+../src/helloworld.c:41:6: warning: incompatible implicit declaration of built-in function 'exit'
+../src/helloworld.c:41:6: note: include '<stdlib.h>' or provide a declaration of 'exit'
+../src/helloworld.c:21:9: warning: unused variable 'initial_len_double' [-Wunused-variable]
+  double initial_len_double = (double) sizeof(message);
+         ^~~~~~~~~~~~~~~~~~
+../src/helloworld.c:18:15: warning: unused variable 'ch' [-Wunused-variable]
+  unsigned int ch;
+               ^~
+../src/helloworld.c:17:10: warning: unused variable 'array' [-Wunused-variable]
+     char array[5];
+          ^~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: md5.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../md5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "md5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2017.4/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/6.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: md5.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2017.4/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/6.2.0/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 12008 bytes
+collect2.exe: error: ld returned 1 exit status
+make: ** [md5.elf] Erro 1
+
+22:59:32 Build Finished (took 751ms)
+

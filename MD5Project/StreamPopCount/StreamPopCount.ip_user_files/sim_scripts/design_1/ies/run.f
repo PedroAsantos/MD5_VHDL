@@ -1,14 +1,15 @@
 -makelib ies_lib/xil_defaultlib -sv \
   "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
   "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 -endlib
 -makelib ies_lib/xpm \
   "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/design_1/ipshared/bf67/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd" \
-  "../../../bd/design_1/ipshared/bf67/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd" \
-  "../../../bd/design_1/ipshared/bf67/hdl/StreamCopIPCore_v1_0.vhd" \
+  "../../../bd/design_1/ipshared/0904/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd" \
+  "../../../bd/design_1/ipshared/0904/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd" \
+  "../../../bd/design_1/ipshared/0904/hdl/StreamCopIPCore_v1_0.vhd" \
   "../../../bd/design_1/ip/design_1_StreamCopIPCore_0_0/sim/design_1_StreamCopIPCore_0_0.vhd" \
 -endlib
 -makelib ies_lib/microblaze_v10_0_5 \
@@ -72,6 +73,8 @@
   "../../../bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_sim_netlist.vhdl" \
   "../../../bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1_sim_netlist.vhdl" \
   "../../../bd/design_1/sim/design_1.vhd" \
+  "../../../bd/design_1/ip/design_1_axis_dwidth_converter_1_0/design_1_axis_dwidth_converter_1_0_sim_netlist.vhdl" \
+  "../../../bd/design_1/ip/design_1_axis_dwidth_converter_0_0/design_1_axis_dwidth_converter_0_0_sim_netlist.vhdl" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v

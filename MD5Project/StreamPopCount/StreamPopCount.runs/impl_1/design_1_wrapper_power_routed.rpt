@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Tue Jun  5 19:14:39 2018
+| Date             : Wed Jun  6 22:44:54 2018
 | Host             : Miguel running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.224        |
+| Total On-Chip Power (W)  | 0.223        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.126        |
+| Dynamic (W)              | 0.125        |
 | Device Static (W)        | 0.098        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.0         |
@@ -53,20 +53,20 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.009 |        7 |       --- |             --- |
-| Slice Logic              |     0.004 |     4276 |       --- |             --- |
-|   LUT as Logic           |     0.003 |     1447 |     63400 |            2.28 |
+| Slice Logic              |     0.003 |     4264 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     1481 |     63400 |            2.34 |
 |   LUT as Distributed RAM |    <0.001 |       96 |     19000 |            0.51 |
-|   Register               |    <0.001 |     1641 |    126800 |            1.29 |
+|   Register               |    <0.001 |     1582 |    126800 |            1.25 |
 |   CARRY4                 |    <0.001 |       38 |     15850 |            0.24 |
 |   F7/F8 Muxes            |    <0.001 |      109 |     63400 |            0.17 |
 |   LUT as Shift Register  |    <0.001 |       75 |     19000 |            0.39 |
-|   Others                 |    <0.001 |      463 |       --- |             --- |
-| Signals                  |     0.005 |     2993 |       --- |             --- |
+|   Others                 |    <0.001 |      472 |       --- |             --- |
+| Signals                  |     0.005 |     2970 |       --- |             --- |
 | Block RAM                |     0.002 |        8 |       135 |            5.93 |
 | MMCM                     |     0.106 |        1 |         6 |           16.67 |
 | I/O                      |    <0.001 |        4 |       210 |            1.90 |
 | Static Power             |     0.098 |          |           |                 |
-| Total                    |     0.224 |          |           |                 |
+| Total                    |     0.223 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.036 |       0.020 |      0.015 |
+| Vccint    |       1.000 |     0.035 |       0.020 |      0.015 |
 | Vccaux    |       1.800 |     0.077 |       0.059 |      0.018 |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -149,8 +149,8 @@ Table of Contents
 +------------------------------------------------------------------------------------+-----------+
 | Name                                                                               | Power (W) |
 +------------------------------------------------------------------------------------+-----------+
-| design_1_wrapper                                                                   |     0.126 |
-|   design_1_i                                                                       |     0.126 |
+| design_1_wrapper                                                                   |     0.125 |
+|   design_1_i                                                                       |     0.125 |
 |     StreamCopIPCore_0                                                              |    <0.001 |
 |       U0                                                                           |    <0.001 |
 |         StreamCopIPCore_v1_0_S00_AXIS_inst                                         |    <0.001 |
@@ -176,6 +176,12 @@ Table of Contents
 |               I_SRL_FIFO_RBU_F                                                     |    <0.001 |
 |                 CNTR_INCR_DECR_ADDN_F_I                                            |    <0.001 |
 |                 DYNSHREG_F_I                                                       |    <0.001 |
+|     axis_dwidth_converter_0                                                        |    <0.001 |
+|       inst                                                                         |    <0.001 |
+|         gen_downsizer_conversion.axisc_downsizer_0                                 |    <0.001 |
+|     axis_dwidth_converter_1                                                        |    <0.001 |
+|       inst                                                                         |    <0.001 |
+|         gen_upsizer_conversion.axisc_upsizer_0                                     |    <0.001 |
 |     clk_wiz_1                                                                      |     0.106 |
 |       inst                                                                         |     0.106 |
 |     mdm_1                                                                          |    <0.001 |
@@ -392,7 +398,7 @@ Table of Contents
 |                 Gen_Bit[7].MUXF7_I1                                                |    <0.001 |
 |                 Gen_Bit[8].MUXF7_I1                                                |    <0.001 |
 |                 Gen_Bit[9].MUXF7_I1                                                |    <0.001 |
-|               Register_File_I                                                      |     0.002 |
+|               Register_File_I                                                      |     0.001 |
 |                 Using_LUT6.All_RAM32M[0].ram32m_i                                  |    <0.001 |
 |                   Using_FPGA.Native                                                |    <0.001 |
 |                 Using_LUT6.All_RAM32M[10].ram32m_i                                 |    <0.001 |
@@ -921,7 +927,6 @@ Table of Contents
 |           Using_Async_Wakeup_0.Wakeup_DFF                                          |    <0.001 |
 |           Using_Async_Wakeup_1.Wakeup_DFF                                          |    <0.001 |
 |           Using_Streaming.Streaming_AXI_I                                          |    <0.001 |
-|             Read_AXI_Performance.Gen_Bits[0].MEM_EX_Result_Inst                    |    <0.001 |
 |             Read_AXI_Performance.Gen_Bits[10].MEM_EX_Result_Inst                   |    <0.001 |
 |             Read_AXI_Performance.Gen_Bits[11].MEM_EX_Result_Inst                   |    <0.001 |
 |             Read_AXI_Performance.Gen_Bits[12].MEM_EX_Result_Inst                   |    <0.001 |
@@ -940,11 +945,7 @@ Table of Contents
 |             Read_AXI_Performance.Gen_Bits[24].MEM_EX_Result_Inst                   |    <0.001 |
 |             Read_AXI_Performance.Gen_Bits[25].MEM_EX_Result_Inst                   |    <0.001 |
 |             Read_AXI_Performance.Gen_Bits[26].MEM_EX_Result_Inst                   |    <0.001 |
-|             Read_AXI_Performance.Gen_Bits[27].MEM_EX_Result_Inst                   |    <0.001 |
-|             Read_AXI_Performance.Gen_Bits[28].MEM_EX_Result_Inst                   |    <0.001 |
-|             Read_AXI_Performance.Gen_Bits[29].MEM_EX_Result_Inst                   |    <0.001 |
 |             Read_AXI_Performance.Gen_Bits[2].MEM_EX_Result_Inst                    |    <0.001 |
-|             Read_AXI_Performance.Gen_Bits[30].MEM_EX_Result_Inst                   |    <0.001 |
 |             Read_AXI_Performance.Gen_Bits[31].MEM_EX_Result_Inst                   |    <0.001 |
 |             Read_AXI_Performance.Gen_Bits[3].MEM_EX_Result_Inst                    |    <0.001 |
 |             Read_AXI_Performance.Gen_Bits[4].MEM_EX_Result_Inst                    |    <0.001 |
@@ -953,12 +954,12 @@ Table of Contents
 |             Read_AXI_Performance.Gen_Bits[7].MEM_EX_Result_Inst                    |    <0.001 |
 |             Read_AXI_Performance.Gen_Bits[8].MEM_EX_Result_Inst                    |    <0.001 |
 |             Read_AXI_Performance.Gen_Bits[9].MEM_EX_Result_Inst                    |    <0.001 |
-|     microblaze_0_axi_intc                                                          |     0.001 |
-|       U0                                                                           |     0.001 |
+|     microblaze_0_axi_intc                                                          |     0.002 |
+|       U0                                                                           |     0.002 |
 |         AXI_LITE_IPIF_I                                                            |    <0.001 |
 |           I_SLAVE_ATTACHMENT                                                       |    <0.001 |
 |             I_DECODER                                                              |    <0.001 |
-|         INTC_CORE_I                                                                |    <0.001 |
+|         INTC_CORE_I                                                                |     0.001 |
 |           IVAR_FAST_MODE_GEN.IVAR_REG_MEM_AXI_CLK_GEN.IVAR_REG_MEM_I               |    <0.001 |
 |             ram_reg_0_15_0_0                                                       |    <0.001 |
 |             ram_reg_0_15_10_10                                                     |    <0.001 |

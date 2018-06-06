@@ -29,17 +29,18 @@ vmap axi_uartlite_v2_0_19 riviera/axi_uartlite_v2_0_19
 vmap lmb_v10_v3_0_9 riviera/lmb_v10_v3_0_9
 vmap lmb_bram_if_cntlr_v4_0_14 riviera/lmb_bram_if_cntlr_v4_0_14
 
-vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../StreamPopCount.srcs/sources_1/bd/design_1/ipshared/4868" "+incdir+../../../../StreamPopCount.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../StreamPopCount.srcs/sources_1/bd/design_1/ipshared/4868" "+incdir+../../../../StreamPopCount.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" \
+vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../StreamPopCount.srcs/sources_1/bd/design_1/ipshared/4868" "+incdir+../../../../StreamPopCount.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../StreamPopCount.srcs/sources_1/bd/design_1/ipshared/0ab1/hdl" "+incdir+../../../../StreamPopCount.srcs/sources_1/bd/design_1/ipshared/4868" "+incdir+../../../../StreamPopCount.srcs/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../StreamPopCount.srcs/sources_1/bd/design_1/ipshared/0ab1/hdl" \
 "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+"C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
 "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 
 vcom -work xpm -93 \
 "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vcom -work xil_defaultlib -93 \
-"../../../bd/design_1/ipshared/bf67/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd" \
-"../../../bd/design_1/ipshared/bf67/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd" \
-"../../../bd/design_1/ipshared/bf67/hdl/StreamCopIPCore_v1_0.vhd" \
+"../../../bd/design_1/ipshared/0904/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd" \
+"../../../bd/design_1/ipshared/0904/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd" \
+"../../../bd/design_1/ipshared/0904/hdl/StreamCopIPCore_v1_0.vhd" \
 "../../../bd/design_1/ip/design_1_StreamCopIPCore_0_0/sim/design_1_StreamCopIPCore_0_0.vhd" \
 
 vcom -work microblaze_v10_0_5 -93 \
@@ -103,6 +104,8 @@ vcom -work xil_defaultlib -93 \
 "../../../bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0_sim_netlist.vhdl" \
 "../../../bd/design_1/ip/design_1_xlconstant_0_1/design_1_xlconstant_0_1_sim_netlist.vhdl" \
 "../../../bd/design_1/sim/design_1.vhd" \
+"../../../bd/design_1/ip/design_1_axis_dwidth_converter_1_0/design_1_axis_dwidth_converter_1_0_sim_netlist.vhdl" \
+"../../../bd/design_1/ip/design_1_axis_dwidth_converter_0_0/design_1_axis_dwidth_converter_0_0_sim_netlist.vhdl" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

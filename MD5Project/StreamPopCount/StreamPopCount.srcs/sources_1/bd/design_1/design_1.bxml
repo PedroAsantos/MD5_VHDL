@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="design_1" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1528222229"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1528222229"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1528222229"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1528222229"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1528321204"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1528321204"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1528321204"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1528321204"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\design_1_StreamCopIPCore_0_0\design_1_StreamCopIPCore_0_0.xci" Type="IP">
         <Instance HierarchyPath="StreamCopIPCore_0"/>
@@ -143,6 +143,22 @@
       <File Name="sim\design_1.vhd" Type="VHDL">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\design_1_axis_dwidth_converter_1_0\design_1_axis_dwidth_converter_1_0.xci" Type="IP">
+        <Instance HierarchyPath="axis_dwidth_converter_1"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\design_1_axis_dwidth_converter_0_0\design_1_axis_dwidth_converter_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axis_dwidth_converter_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="design_1.bmm" Type="BMM">

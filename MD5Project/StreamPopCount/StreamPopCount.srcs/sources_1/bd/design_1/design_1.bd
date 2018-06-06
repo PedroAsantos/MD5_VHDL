@@ -215,6 +215,23 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
+        <spirit:instanceName>axis_dwidth_converter_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="axis_dwidth_converter" spirit:vendor="xilinx.com" spirit:version="1.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_axis_dwidth_converter_1_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="M_TDATA_NUM_BYTES">64</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="HAS_MI_TKEEP">1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>axis_dwidth_converter_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="axis_dwidth_converter" spirit:vendor="xilinx.com" spirit:version="1.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">design_1_axis_dwidth_converter_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="M_TDATA_NUM_BYTES">4</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
         <spirit:instanceName>StreamCopIPCore_0</spirit:instanceName>
         <spirit:componentRef spirit:library="user" spirit:name="StreamCopIPCore" spirit:vendor="xilinx.com" spirit:version="1.0"/>
         <spirit:configurableElementValues>
@@ -259,14 +276,24 @@
         <spirit:activeInterface spirit:busRef="S_AXI" spirit:componentRef="axi_uartlite_0"/>
       </spirit:interconnection>
       <spirit:interconnection>
-        <spirit:name>StreamCopIPCore_0_M00_AXIS</spirit:name>
-        <spirit:activeInterface spirit:busRef="M00_AXIS" spirit:componentRef="StreamCopIPCore_0"/>
-        <spirit:activeInterface spirit:busRef="S0_AXIS" spirit:componentRef="microblaze_0"/>
+        <spirit:name>axis_dwidth_converter_1_M_AXIS</spirit:name>
+        <spirit:activeInterface spirit:busRef="M_AXIS" spirit:componentRef="axis_dwidth_converter_1"/>
+        <spirit:activeInterface spirit:busRef="S00_AXIS" spirit:componentRef="StreamCopIPCore_0"/>
       </spirit:interconnection>
       <spirit:interconnection>
         <spirit:name>microblaze_0_M0_AXIS</spirit:name>
         <spirit:activeInterface spirit:busRef="M0_AXIS" spirit:componentRef="microblaze_0"/>
-        <spirit:activeInterface spirit:busRef="S00_AXIS" spirit:componentRef="StreamCopIPCore_0"/>
+        <spirit:activeInterface spirit:busRef="S_AXIS" spirit:componentRef="axis_dwidth_converter_1"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>StreamCopIPCore_0_M00_AXIS</spirit:name>
+        <spirit:activeInterface spirit:busRef="S_AXIS" spirit:componentRef="axis_dwidth_converter_0"/>
+        <spirit:activeInterface spirit:busRef="M00_AXIS" spirit:componentRef="StreamCopIPCore_0"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>axis_dwidth_converter_0_M_AXIS</spirit:name>
+        <spirit:activeInterface spirit:busRef="M_AXIS" spirit:componentRef="axis_dwidth_converter_0"/>
+        <spirit:activeInterface spirit:busRef="S0_AXIS" spirit:componentRef="microblaze_0"/>
       </spirit:interconnection>
     </spirit:interconnections>
     <spirit:adHocConnections>
@@ -295,6 +322,8 @@
         <spirit:name>rst_clk_wiz_1_100M_interconnect_aresetn</spirit:name>
         <spirit:internalPortReference spirit:componentRef="rst_clk_wiz_1_100M" spirit:portRef="interconnect_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="axis_dwidth_converter_1" spirit:portRef="aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="axis_dwidth_converter_0" spirit:portRef="aresetn"/>
         <spirit:internalPortReference spirit:componentRef="StreamCopIPCore_0" spirit:portRef="s00_axis_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="StreamCopIPCore_0" spirit:portRef="m00_axis_aresetn"/>
       </spirit:adHocConnection>
@@ -342,6 +371,8 @@
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="microblaze_0_axi_periph" spirit:portRef="M01_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="axis_dwidth_converter_1" spirit:portRef="aclk"/>
+        <spirit:internalPortReference spirit:componentRef="axis_dwidth_converter_0" spirit:portRef="aclk"/>
         <spirit:internalPortReference spirit:componentRef="StreamCopIPCore_0" spirit:portRef="s00_axis_aclk"/>
         <spirit:internalPortReference spirit:componentRef="StreamCopIPCore_0" spirit:portRef="m00_axis_aclk"/>
       </spirit:adHocConnection>

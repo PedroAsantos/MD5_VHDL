@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1528222250">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1528321221">
   <File Type="PWROPT-DCP" Name="design_1_wrapper_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="design_1_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
@@ -116,5 +116,7 @@
   <BlockFileSet Type="BlockSrcs" Name="design_1_ilmb_bram_if_cntlr_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_uartlite_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axis_dwidth_converter_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_axis_dwidth_converter_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_StreamCopIPCore_0_0"/>
 </GenRun>

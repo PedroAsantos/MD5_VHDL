@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Jun  5 19:10:29 2018" VIVADOVERSION="2017.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jun  6 22:40:03 2018" VIVADOVERSION="2017.4">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:nexys4:part0:1.1" DEVICE="7a100t" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-1"/>
 
@@ -32,32 +32,32 @@
     <MODULE FULLNAME="/StreamCopIPCore_0" HWVERSION="1.0" INSTANCE="StreamCopIPCore_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="StreamCopIPCore" VLNV="xilinx.com:user:StreamCopIPCore:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
-        <PARAMETER NAME="C_S00_AXIS_TDATA_WIDTH" VALUE="32"/>
-        <PARAMETER NAME="C_M00_AXIS_TDATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_S00_AXIS_TDATA_WIDTH" VALUE="512"/>
+        <PARAMETER NAME="C_M00_AXIS_TDATA_WIDTH" VALUE="128"/>
         <PARAMETER NAME="C_M00_AXIS_START_COUNT" VALUE="32"/>
         <PARAMETER NAME="Component_Name" VALUE="design_1_StreamCopIPCore_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="s00_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="StreamCopIPCore_0_s00_axis_tdata">
+        <PORT DIR="I" LEFT="511" NAME="s00_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="StreamCopIPCore_0_s00_axis_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M0_AXIS_TDATA"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_1" PORT="m_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="3" NAME="s00_axis_tstrb" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="63" NAME="s00_axis_tstrb" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" NAME="s00_axis_tlast" SIGIS="undef" SIGNAME="StreamCopIPCore_0_s00_axis_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M0_AXIS_TLAST"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_1" PORT="m_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="s00_axis_tvalid" SIGIS="undef" SIGNAME="StreamCopIPCore_0_s00_axis_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M0_AXIS_TVALID"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_1" PORT="m_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="s00_axis_tready" SIGIS="undef" SIGNAME="StreamCopIPCore_0_s00_axis_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="M0_AXIS_TREADY"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_1" PORT="m_axis_tready"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s00_axis_aclk" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out1">
@@ -70,25 +70,29 @@
             <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="interconnect_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="m00_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="StreamCopIPCore_0_m00_axis_tdata">
+        <PORT DIR="O" LEFT="127" NAME="m00_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="StreamCopIPCore_0_m00_axis_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="S0_AXIS_TDATA"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="s_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="3" NAME="m00_axis_tstrb" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="15" NAME="m00_axis_tstrb" RIGHT="0" SIGIS="undef" SIGNAME="StreamCopIPCore_0_m00_axis_tstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="s_axis_tstrb"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" NAME="m00_axis_tlast" SIGIS="undef" SIGNAME="StreamCopIPCore_0_m00_axis_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="S0_AXIS_TLAST"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="s_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m00_axis_tvalid" SIGIS="undef" SIGNAME="StreamCopIPCore_0_m00_axis_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="S0_AXIS_TVALID"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="s_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="m00_axis_tready" SIGIS="undef" SIGNAME="StreamCopIPCore_0_m00_axis_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="microblaze_0" PORT="S0_AXIS_TREADY"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="s_axis_tready"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="m00_axis_aclk" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out1">
@@ -105,7 +109,7 @@
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="StreamCopIPCore_0_M00_AXIS" NAME="M00_AXIS" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="WIZ_DATA_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="16"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
@@ -125,9 +129,9 @@
             <PORTMAP LOGICAL="TREADY" PHYSICAL="m00_axis_tready"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="microblaze_0_M0_AXIS" NAME="S00_AXIS" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="axis_dwidth_converter_1_M_AXIS" NAME="S00_AXIS" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="WIZ_DATA_WIDTH" VALUE="32"/>
-          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="64"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
@@ -503,6 +507,260 @@
           <PORTMAPS>
             <PORTMAP LOGICAL="RxD" PHYSICAL="rx"/>
             <PORTMAP LOGICAL="TxD" PHYSICAL="tx"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE FULLNAME="/axis_dwidth_converter_0" HWVERSION="1.1" INSTANCE="axis_dwidth_converter_0" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_dwidth_converter" VLNV="xilinx.com:ip:axis_dwidth_converter:1.1">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axis_infrastructure_ip_suite;v=v1_1;d=pg085-axi4stream-infrastructure.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="artix7"/>
+        <PARAMETER NAME="C_S_AXIS_TDATA_WIDTH" VALUE="128"/>
+        <PARAMETER NAME="C_M_AXIS_TDATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_AXIS_TID_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_AXIS_TDEST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_S_AXIS_TUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXIS_TUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_AXIS_SIGNAL_SET" VALUE="0b00000000000000000000000000010111"/>
+        <PARAMETER NAME="S_TDATA_NUM_BYTES" VALUE="16"/>
+        <PARAMETER NAME="M_TDATA_NUM_BYTES" VALUE="4"/>
+        <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="TUSER_BITS_PER_BYTE" VALUE="0"/>
+        <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+        <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+        <PARAMETER NAME="HAS_TSTRB" VALUE="1"/>
+        <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+        <PARAMETER NAME="HAS_ACLKEN" VALUE="0"/>
+        <PARAMETER NAME="HAS_MI_TKEEP" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_axis_dwidth_converter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="aresetn" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_interconnect_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="interconnect_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="StreamCopIPCore_0_m00_axis_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="m00_axis_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="StreamCopIPCore_0_m00_axis_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="m00_axis_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="127" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="StreamCopIPCore_0_m00_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="m00_axis_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="s_axis_tstrb" RIGHT="0" SIGIS="undef" SIGNAME="StreamCopIPCore_0_m00_axis_tstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="m00_axis_tstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="StreamCopIPCore_0_m00_axis_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="m00_axis_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="axis_dwidth_converter_0_m_axis_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="S0_AXIS_TVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="axis_dwidth_converter_0_m_axis_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="S0_AXIS_TREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_dwidth_converter_0_m_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="S0_AXIS_TDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axis_tstrb" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="m_axis_tlast" SIGIS="undef" SIGNAME="axis_dwidth_converter_0_m_axis_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="S0_AXIS_TLAST"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="StreamCopIPCore_0_M00_AXIS" NAME="S_AXIS" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="16"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="/clk_wiz_1_clk_out1"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_tready"/>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_tdata"/>
+            <PORTMAP LOGICAL="TSTRB" PHYSICAL="s_axis_tstrb"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="s_axis_tlast"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="axis_dwidth_converter_0_M_AXIS" NAME="M_AXIS" TYPE="MASTER" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="/clk_wiz_1_clk_out1"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_tready"/>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_tdata"/>
+            <PORTMAP LOGICAL="TSTRB" PHYSICAL="m_axis_tstrb"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="m_axis_tlast"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE FULLNAME="/axis_dwidth_converter_1" HWVERSION="1.1" INSTANCE="axis_dwidth_converter_1" IPTYPE="BUS" IS_ENABLE="1" MODCLASS="BUS" MODTYPE="axis_dwidth_converter" VLNV="xilinx.com:ip:axis_dwidth_converter:1.1">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axis_infrastructure_ip_suite;v=v1_1;d=pg085-axi4stream-infrastructure.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="artix7"/>
+        <PARAMETER NAME="C_S_AXIS_TDATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_M_AXIS_TDATA_WIDTH" VALUE="512"/>
+        <PARAMETER NAME="C_AXIS_TID_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_AXIS_TDEST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_S_AXIS_TUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_M_AXIS_TUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_AXIS_SIGNAL_SET" VALUE="0b00000000000000000000000000010011"/>
+        <PARAMETER NAME="S_TDATA_NUM_BYTES" VALUE="4"/>
+        <PARAMETER NAME="M_TDATA_NUM_BYTES" VALUE="64"/>
+        <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="TUSER_BITS_PER_BYTE" VALUE="0"/>
+        <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+        <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+        <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+        <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+        <PARAMETER NAME="HAS_ACLKEN" VALUE="0"/>
+        <PARAMETER NAME="HAS_MI_TKEEP" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_axis_dwidth_converter_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="BUS"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="clk_wiz_1_clk_out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_wiz_1" PORT="clk_out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="aresetn" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_interconnect_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="interconnect_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="axis_dwidth_converter_1_s_axis_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M0_AXIS_TVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="axis_dwidth_converter_1_s_axis_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M0_AXIS_TREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_dwidth_converter_1_s_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M0_AXIS_TDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="axis_dwidth_converter_1_s_axis_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="microblaze_0" PORT="M0_AXIS_TLAST"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="StreamCopIPCore_0_s00_axis_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="s00_axis_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="StreamCopIPCore_0_s00_axis_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="s00_axis_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="511" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="StreamCopIPCore_0_s00_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="s00_axis_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="63" NAME="m_axis_tkeep" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="m_axis_tlast" SIGIS="undef" SIGNAME="StreamCopIPCore_0_s00_axis_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="s00_axis_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="microblaze_0_M0_AXIS" NAME="S_AXIS" TYPE="SLAVE" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="/clk_wiz_1_clk_out1"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_tready"/>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="s_axis_tlast"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="axis_dwidth_converter_1_M_AXIS" NAME="M_AXIS" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="64"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="1"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="/clk_wiz_1_clk_out1"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_tready"/>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_tdata"/>
+            <PORTMAP LOGICAL="TKEEP" PHYSICAL="m_axis_tkeep"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="m_axis_tlast"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -1102,6 +1360,8 @@
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="ACLK"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M00_ACLK"/>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="M01_ACLK"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_1" PORT="aclk"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="aclk"/>
             <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="s00_axis_aclk"/>
             <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="m00_axis_aclk"/>
           </CONNECTIONS>
@@ -1715,44 +1975,44 @@
             <CONNECTION INSTANCE="mdm_1" PORT="Dbg_Disable_0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M0_AXIS_TLAST" SIGIS="undef" SIGNAME="StreamCopIPCore_0_s00_axis_tlast">
+        <PORT DIR="O" NAME="M0_AXIS_TLAST" SIGIS="undef" SIGNAME="axis_dwidth_converter_1_s_axis_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="s00_axis_tlast"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_1" PORT="s_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="M0_AXIS_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="StreamCopIPCore_0_s00_axis_tdata">
+        <PORT DIR="O" LEFT="31" NAME="M0_AXIS_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="axis_dwidth_converter_1_s_axis_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="s00_axis_tdata"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_1" PORT="s_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="M0_AXIS_TVALID" SIGIS="undef" SIGNAME="StreamCopIPCore_0_s00_axis_tvalid">
+        <PORT DIR="O" NAME="M0_AXIS_TVALID" SIGIS="undef" SIGNAME="axis_dwidth_converter_1_s_axis_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="s00_axis_tvalid"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_1" PORT="s_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="M0_AXIS_TREADY" SIGIS="undef" SIGNAME="StreamCopIPCore_0_s00_axis_tready">
+        <PORT DIR="I" NAME="M0_AXIS_TREADY" SIGIS="undef" SIGNAME="axis_dwidth_converter_1_s_axis_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="s00_axis_tready"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_1" PORT="s_axis_tready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="S0_AXIS_TLAST" SIGIS="undef" SIGNAME="StreamCopIPCore_0_m00_axis_tlast">
+        <PORT DIR="I" NAME="S0_AXIS_TLAST" SIGIS="undef" SIGNAME="axis_dwidth_converter_0_m_axis_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="m00_axis_tlast"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="m_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="S0_AXIS_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="StreamCopIPCore_0_m00_axis_tdata">
+        <PORT DIR="I" LEFT="31" NAME="S0_AXIS_TDATA" RIGHT="0" SIGIS="undef" SIGNAME="axis_dwidth_converter_0_m_axis_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="m00_axis_tdata"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="m_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="S0_AXIS_TVALID" SIGIS="undef" SIGNAME="StreamCopIPCore_0_m00_axis_tvalid">
+        <PORT DIR="I" NAME="S0_AXIS_TVALID" SIGIS="undef" SIGNAME="axis_dwidth_converter_0_m_axis_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="m00_axis_tvalid"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="m_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="S0_AXIS_TREADY" SIGIS="undef" SIGNAME="StreamCopIPCore_0_m00_axis_tready">
+        <PORT DIR="O" NAME="S0_AXIS_TREADY" SIGIS="undef" SIGNAME="axis_dwidth_converter_0_m_axis_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="m00_axis_tready"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="m_axis_tready"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -1852,7 +2112,7 @@
             <PORTMAP LOGICAL="WVALID" PHYSICAL="M_AXI_DP_WVALID"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="microblaze_0_M0_AXIS" NAME="M0_AXIS" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="microblaze_0_M0_AXIS" NAME="M0_AXIS" TYPE="MASTER" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
@@ -1872,7 +2132,7 @@
             <PORTMAP LOGICAL="TVALID" PHYSICAL="M0_AXIS_TVALID"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="StreamCopIPCore_0_M00_AXIS" NAME="S0_AXIS" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="axis_dwidth_converter_0_M_AXIS" NAME="S0_AXIS" TYPE="SLAVE" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="4"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
@@ -1917,7 +2177,6 @@
         <PERIPHERAL INSTANCE="microblaze_0_local_memory_ilmb_bram_if_cntlr"/>
         <PERIPHERAL INSTANCE="axi_uartlite_0"/>
         <PERIPHERAL INSTANCE="microblaze_0_axi_intc"/>
-        <PERIPHERAL INSTANCE="StreamCopIPCore_0"/>
       </PERIPHERALS>
     </MODULE>
     <MODULE FULLNAME="/microblaze_0_axi_intc" HWVERSION="4.1" INSTANCE="microblaze_0_axi_intc" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="INTERRUPT_CNTLR" MODTYPE="axi_intc" VLNV="xilinx.com:ip:axi_intc:4.1">
@@ -4770,6 +5029,8 @@
         <PORT DIR="O" LEFT="0" NAME="interconnect_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="rst_clk_wiz_1_100M_interconnect_aresetn">
           <CONNECTIONS>
             <CONNECTION INSTANCE="microblaze_0_axi_periph" PORT="ARESETN"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_1" PORT="aresetn"/>
+            <CONNECTION INSTANCE="axis_dwidth_converter_0" PORT="aresetn"/>
             <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="s00_axis_aresetn"/>
             <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="m00_axis_aresetn"/>
           </CONNECTIONS>

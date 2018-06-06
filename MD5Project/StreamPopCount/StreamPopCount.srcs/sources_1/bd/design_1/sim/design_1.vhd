@@ -1,7 +1,7 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
---Date        : Tue Jun  5 19:10:28 2018
+--Date        : Wed Jun  6 22:40:03 2018
 --Host        : Miguel running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1371,7 +1371,7 @@ entity design_1 is
     usb_uart_txd : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=20,numReposBlks=15,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=7,da_clkrst_cnt=12,da_mb_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=22,numReposBlks=17,numNonXlnxBlks=0,numHierBlks=5,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=7,da_clkrst_cnt=14,da_mb_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -1544,17 +1544,48 @@ architecture STRUCTURE of design_1 is
     dout : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_1_xlconstant_0_1;
+  component design_1_axis_dwidth_converter_1_0 is
+  port (
+    aclk : in STD_LOGIC;
+    aresetn : in STD_LOGIC;
+    s_axis_tvalid : in STD_LOGIC;
+    s_axis_tready : out STD_LOGIC;
+    s_axis_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axis_tlast : in STD_LOGIC;
+    m_axis_tvalid : out STD_LOGIC;
+    m_axis_tready : in STD_LOGIC;
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 511 downto 0 );
+    m_axis_tkeep : out STD_LOGIC_VECTOR ( 63 downto 0 );
+    m_axis_tlast : out STD_LOGIC
+  );
+  end component design_1_axis_dwidth_converter_1_0;
+  component design_1_axis_dwidth_converter_0_0 is
+  port (
+    aclk : in STD_LOGIC;
+    aresetn : in STD_LOGIC;
+    s_axis_tvalid : in STD_LOGIC;
+    s_axis_tready : out STD_LOGIC;
+    s_axis_tdata : in STD_LOGIC_VECTOR ( 127 downto 0 );
+    s_axis_tstrb : in STD_LOGIC_VECTOR ( 15 downto 0 );
+    s_axis_tlast : in STD_LOGIC;
+    m_axis_tvalid : out STD_LOGIC;
+    m_axis_tready : in STD_LOGIC;
+    m_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    m_axis_tstrb : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    m_axis_tlast : out STD_LOGIC
+  );
+  end component design_1_axis_dwidth_converter_0_0;
   component design_1_StreamCopIPCore_0_0 is
   port (
-    s00_axis_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    s00_axis_tstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    s00_axis_tdata : in STD_LOGIC_VECTOR ( 511 downto 0 );
+    s00_axis_tstrb : in STD_LOGIC_VECTOR ( 63 downto 0 );
     s00_axis_tlast : in STD_LOGIC;
     s00_axis_tvalid : in STD_LOGIC;
     s00_axis_tready : out STD_LOGIC;
     s00_axis_aclk : in STD_LOGIC;
     s00_axis_aresetn : in STD_LOGIC;
-    m00_axis_tdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    m00_axis_tstrb : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    m00_axis_tdata : out STD_LOGIC_VECTOR ( 127 downto 0 );
+    m00_axis_tstrb : out STD_LOGIC_VECTOR ( 15 downto 0 );
     m00_axis_tlast : out STD_LOGIC;
     m00_axis_tvalid : out STD_LOGIC;
     m00_axis_tready : in STD_LOGIC;
@@ -1562,12 +1593,21 @@ architecture STRUCTURE of design_1 is
     m00_axis_aresetn : in STD_LOGIC
   );
   end component design_1_StreamCopIPCore_0_0;
-  signal StreamCopIPCore_0_M00_AXIS_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal StreamCopIPCore_0_M00_AXIS_TDATA : STD_LOGIC_VECTOR ( 127 downto 0 );
   signal StreamCopIPCore_0_M00_AXIS_TLAST : STD_LOGIC;
   signal StreamCopIPCore_0_M00_AXIS_TREADY : STD_LOGIC;
+  signal StreamCopIPCore_0_M00_AXIS_TSTRB : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal StreamCopIPCore_0_M00_AXIS_TVALID : STD_LOGIC;
   signal axi_uartlite_0_UART_RxD : STD_LOGIC;
   signal axi_uartlite_0_UART_TxD : STD_LOGIC;
+  signal axis_dwidth_converter_0_M_AXIS_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal axis_dwidth_converter_0_M_AXIS_TLAST : STD_LOGIC;
+  signal axis_dwidth_converter_0_M_AXIS_TREADY : STD_LOGIC;
+  signal axis_dwidth_converter_0_M_AXIS_TVALID : STD_LOGIC;
+  signal axis_dwidth_converter_1_M_AXIS_TDATA : STD_LOGIC_VECTOR ( 511 downto 0 );
+  signal axis_dwidth_converter_1_M_AXIS_TLAST : STD_LOGIC;
+  signal axis_dwidth_converter_1_M_AXIS_TREADY : STD_LOGIC;
+  signal axis_dwidth_converter_1_M_AXIS_TVALID : STD_LOGIC;
   signal clk_wiz_1_clk_out1 : STD_LOGIC;
   signal clk_wiz_1_locked : STD_LOGIC;
   signal mdm_1_debug_sys_rst : STD_LOGIC;
@@ -1667,8 +1707,9 @@ architecture STRUCTURE of design_1 is
   signal rst_clk_wiz_1_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal sys_clock_0_1 : STD_LOGIC;
   signal xlconstant_0_dout : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_StreamCopIPCore_0_m00_axis_tstrb_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_axi_uartlite_0_interrupt_UNCONNECTED : STD_LOGIC;
+  signal NLW_axis_dwidth_converter_0_m_axis_tstrb_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal NLW_axis_dwidth_converter_1_m_axis_tkeep_UNCONNECTED : STD_LOGIC_VECTOR ( 63 downto 0 );
   signal NLW_rst_clk_wiz_1_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   attribute BMM_INFO_PROCESSOR : string;
   attribute BMM_INFO_PROCESSOR of microblaze_0 : label is "microblaze-le > design_1 microblaze_0_local_memory/dlmb_bram_if_cntlr";
@@ -1691,18 +1732,18 @@ StreamCopIPCore_0: component design_1_StreamCopIPCore_0_0
      port map (
       m00_axis_aclk => clk_wiz_1_clk_out1,
       m00_axis_aresetn => rst_clk_wiz_1_100M_interconnect_aresetn(0),
-      m00_axis_tdata(31 downto 0) => StreamCopIPCore_0_M00_AXIS_TDATA(31 downto 0),
+      m00_axis_tdata(127 downto 0) => StreamCopIPCore_0_M00_AXIS_TDATA(127 downto 0),
       m00_axis_tlast => StreamCopIPCore_0_M00_AXIS_TLAST,
       m00_axis_tready => StreamCopIPCore_0_M00_AXIS_TREADY,
-      m00_axis_tstrb(3 downto 0) => NLW_StreamCopIPCore_0_m00_axis_tstrb_UNCONNECTED(3 downto 0),
+      m00_axis_tstrb(15 downto 0) => StreamCopIPCore_0_M00_AXIS_TSTRB(15 downto 0),
       m00_axis_tvalid => StreamCopIPCore_0_M00_AXIS_TVALID,
       s00_axis_aclk => clk_wiz_1_clk_out1,
       s00_axis_aresetn => rst_clk_wiz_1_100M_interconnect_aresetn(0),
-      s00_axis_tdata(31 downto 0) => microblaze_0_M0_AXIS_TDATA(31 downto 0),
-      s00_axis_tlast => microblaze_0_M0_AXIS_TLAST,
-      s00_axis_tready => microblaze_0_M0_AXIS_TREADY,
-      s00_axis_tstrb(3 downto 0) => B"1111",
-      s00_axis_tvalid => microblaze_0_M0_AXIS_TVALID
+      s00_axis_tdata(511 downto 0) => axis_dwidth_converter_1_M_AXIS_TDATA(511 downto 0),
+      s00_axis_tlast => axis_dwidth_converter_1_M_AXIS_TLAST,
+      s00_axis_tready => axis_dwidth_converter_1_M_AXIS_TREADY,
+      s00_axis_tstrb(63 downto 0) => B"1111111111111111111111111111111111111111111111111111111111111111",
+      s00_axis_tvalid => axis_dwidth_converter_1_M_AXIS_TVALID
     );
 axi_uartlite_0: component design_1_axi_uartlite_0_0
      port map (
@@ -1728,6 +1769,35 @@ axi_uartlite_0: component design_1_axi_uartlite_0_0
       s_axi_wstrb(3 downto 0) => microblaze_0_axi_periph_M01_AXI_WSTRB(3 downto 0),
       s_axi_wvalid => microblaze_0_axi_periph_M01_AXI_WVALID,
       tx => axi_uartlite_0_UART_TxD
+    );
+axis_dwidth_converter_0: component design_1_axis_dwidth_converter_0_0
+     port map (
+      aclk => clk_wiz_1_clk_out1,
+      aresetn => rst_clk_wiz_1_100M_interconnect_aresetn(0),
+      m_axis_tdata(31 downto 0) => axis_dwidth_converter_0_M_AXIS_TDATA(31 downto 0),
+      m_axis_tlast => axis_dwidth_converter_0_M_AXIS_TLAST,
+      m_axis_tready => axis_dwidth_converter_0_M_AXIS_TREADY,
+      m_axis_tstrb(3 downto 0) => NLW_axis_dwidth_converter_0_m_axis_tstrb_UNCONNECTED(3 downto 0),
+      m_axis_tvalid => axis_dwidth_converter_0_M_AXIS_TVALID,
+      s_axis_tdata(127 downto 0) => StreamCopIPCore_0_M00_AXIS_TDATA(127 downto 0),
+      s_axis_tlast => StreamCopIPCore_0_M00_AXIS_TLAST,
+      s_axis_tready => StreamCopIPCore_0_M00_AXIS_TREADY,
+      s_axis_tstrb(15 downto 0) => StreamCopIPCore_0_M00_AXIS_TSTRB(15 downto 0),
+      s_axis_tvalid => StreamCopIPCore_0_M00_AXIS_TVALID
+    );
+axis_dwidth_converter_1: component design_1_axis_dwidth_converter_1_0
+     port map (
+      aclk => clk_wiz_1_clk_out1,
+      aresetn => rst_clk_wiz_1_100M_interconnect_aresetn(0),
+      m_axis_tdata(511 downto 0) => axis_dwidth_converter_1_M_AXIS_TDATA(511 downto 0),
+      m_axis_tkeep(63 downto 0) => NLW_axis_dwidth_converter_1_m_axis_tkeep_UNCONNECTED(63 downto 0),
+      m_axis_tlast => axis_dwidth_converter_1_M_AXIS_TLAST,
+      m_axis_tready => axis_dwidth_converter_1_M_AXIS_TREADY,
+      m_axis_tvalid => axis_dwidth_converter_1_M_AXIS_TVALID,
+      s_axis_tdata(31 downto 0) => microblaze_0_M0_AXIS_TDATA(31 downto 0),
+      s_axis_tlast => microblaze_0_M0_AXIS_TLAST,
+      s_axis_tready => microblaze_0_M0_AXIS_TREADY,
+      s_axis_tvalid => microblaze_0_M0_AXIS_TVALID
     );
 clk_wiz_1: component design_1_clk_wiz_1_0
      port map (
@@ -1837,10 +1907,10 @@ microblaze_0: component design_1_microblaze_0_0
       M_AXI_DP_WVALID => microblaze_0_axi_dp_WVALID,
       Read_Strobe => microblaze_0_dlmb_1_READSTROBE,
       Reset => rst_clk_wiz_1_100M_mb_reset,
-      S0_AXIS_TDATA(31 downto 0) => StreamCopIPCore_0_M00_AXIS_TDATA(31 downto 0),
-      S0_AXIS_TLAST => StreamCopIPCore_0_M00_AXIS_TLAST,
-      S0_AXIS_TREADY => StreamCopIPCore_0_M00_AXIS_TREADY,
-      S0_AXIS_TVALID => StreamCopIPCore_0_M00_AXIS_TVALID,
+      S0_AXIS_TDATA(31 downto 0) => axis_dwidth_converter_0_M_AXIS_TDATA(31 downto 0),
+      S0_AXIS_TLAST => axis_dwidth_converter_0_M_AXIS_TLAST,
+      S0_AXIS_TREADY => axis_dwidth_converter_0_M_AXIS_TREADY,
+      S0_AXIS_TVALID => axis_dwidth_converter_0_M_AXIS_TVALID,
       Write_Strobe => microblaze_0_dlmb_1_WRITESTROBE
     );
 microblaze_0_axi_intc: component design_1_microblaze_0_axi_intc_0
