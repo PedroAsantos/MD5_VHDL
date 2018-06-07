@@ -1,7 +1,7 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-// Date        : Wed Jun  6 22:41:49 2018
+// Date        : Thu Jun  7 10:09:24 2018
 // Host        : Miguel running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/design_1_StreamCopIPCore_0_0_sim_netlist.v
@@ -46,141 +46,19 @@ module design_1_StreamCopIPCore_0_0
 
   wire \<const0> ;
   wire \<const1> ;
+  wire [95:64]\^m00_axis_tdata ;
   wire m00_axis_tready;
   wire m00_axis_tvalid;
   wire s00_axis_aclk;
   wire s00_axis_aresetn;
+  wire [511:0]s00_axis_tdata;
   wire s00_axis_tready;
   wire s00_axis_tvalid;
 
-  assign m00_axis_tdata[127] = \<const0> ;
-  assign m00_axis_tdata[126] = \<const0> ;
-  assign m00_axis_tdata[125] = \<const0> ;
-  assign m00_axis_tdata[124] = \<const0> ;
-  assign m00_axis_tdata[123] = \<const0> ;
-  assign m00_axis_tdata[122] = \<const0> ;
-  assign m00_axis_tdata[121] = \<const0> ;
-  assign m00_axis_tdata[120] = \<const0> ;
-  assign m00_axis_tdata[119] = \<const0> ;
-  assign m00_axis_tdata[118] = \<const0> ;
-  assign m00_axis_tdata[117] = \<const0> ;
-  assign m00_axis_tdata[116] = \<const0> ;
-  assign m00_axis_tdata[115] = \<const0> ;
-  assign m00_axis_tdata[114] = \<const0> ;
-  assign m00_axis_tdata[113] = \<const0> ;
-  assign m00_axis_tdata[112] = \<const0> ;
-  assign m00_axis_tdata[111] = \<const0> ;
-  assign m00_axis_tdata[110] = \<const0> ;
-  assign m00_axis_tdata[109] = \<const0> ;
-  assign m00_axis_tdata[108] = \<const0> ;
-  assign m00_axis_tdata[107] = \<const0> ;
-  assign m00_axis_tdata[106] = \<const0> ;
-  assign m00_axis_tdata[105] = \<const0> ;
-  assign m00_axis_tdata[104] = \<const0> ;
-  assign m00_axis_tdata[103] = \<const0> ;
-  assign m00_axis_tdata[102] = \<const0> ;
-  assign m00_axis_tdata[101] = \<const0> ;
-  assign m00_axis_tdata[100] = \<const0> ;
-  assign m00_axis_tdata[99] = \<const0> ;
-  assign m00_axis_tdata[98] = \<const0> ;
-  assign m00_axis_tdata[97] = \<const0> ;
-  assign m00_axis_tdata[96] = \<const0> ;
-  assign m00_axis_tdata[95] = \<const0> ;
-  assign m00_axis_tdata[94] = \<const0> ;
-  assign m00_axis_tdata[93] = \<const0> ;
-  assign m00_axis_tdata[92] = \<const0> ;
-  assign m00_axis_tdata[91] = \<const0> ;
-  assign m00_axis_tdata[90] = \<const0> ;
-  assign m00_axis_tdata[89] = \<const0> ;
-  assign m00_axis_tdata[88] = \<const0> ;
-  assign m00_axis_tdata[87] = \<const0> ;
-  assign m00_axis_tdata[86] = \<const0> ;
-  assign m00_axis_tdata[85] = \<const0> ;
-  assign m00_axis_tdata[84] = \<const0> ;
-  assign m00_axis_tdata[83] = \<const0> ;
-  assign m00_axis_tdata[82] = \<const0> ;
-  assign m00_axis_tdata[81] = \<const0> ;
-  assign m00_axis_tdata[80] = \<const0> ;
-  assign m00_axis_tdata[79] = \<const0> ;
-  assign m00_axis_tdata[78] = \<const0> ;
-  assign m00_axis_tdata[77] = \<const0> ;
-  assign m00_axis_tdata[76] = \<const0> ;
-  assign m00_axis_tdata[75] = \<const0> ;
-  assign m00_axis_tdata[74] = \<const0> ;
-  assign m00_axis_tdata[73] = \<const0> ;
-  assign m00_axis_tdata[72] = \<const0> ;
-  assign m00_axis_tdata[71] = \<const0> ;
-  assign m00_axis_tdata[70] = \<const0> ;
-  assign m00_axis_tdata[69] = \<const0> ;
-  assign m00_axis_tdata[68] = \<const0> ;
-  assign m00_axis_tdata[67] = \<const0> ;
-  assign m00_axis_tdata[66] = \<const0> ;
-  assign m00_axis_tdata[65] = \<const0> ;
-  assign m00_axis_tdata[64] = \<const0> ;
-  assign m00_axis_tdata[63] = \<const0> ;
-  assign m00_axis_tdata[62] = \<const0> ;
-  assign m00_axis_tdata[61] = \<const0> ;
-  assign m00_axis_tdata[60] = \<const0> ;
-  assign m00_axis_tdata[59] = \<const0> ;
-  assign m00_axis_tdata[58] = \<const0> ;
-  assign m00_axis_tdata[57] = \<const0> ;
-  assign m00_axis_tdata[56] = \<const0> ;
-  assign m00_axis_tdata[55] = \<const0> ;
-  assign m00_axis_tdata[54] = \<const0> ;
-  assign m00_axis_tdata[53] = \<const0> ;
-  assign m00_axis_tdata[52] = \<const0> ;
-  assign m00_axis_tdata[51] = \<const0> ;
-  assign m00_axis_tdata[50] = \<const0> ;
-  assign m00_axis_tdata[49] = \<const0> ;
-  assign m00_axis_tdata[48] = \<const0> ;
-  assign m00_axis_tdata[47] = \<const0> ;
-  assign m00_axis_tdata[46] = \<const0> ;
-  assign m00_axis_tdata[45] = \<const0> ;
-  assign m00_axis_tdata[44] = \<const0> ;
-  assign m00_axis_tdata[43] = \<const0> ;
-  assign m00_axis_tdata[42] = \<const0> ;
-  assign m00_axis_tdata[41] = \<const0> ;
-  assign m00_axis_tdata[40] = \<const0> ;
-  assign m00_axis_tdata[39] = \<const0> ;
-  assign m00_axis_tdata[38] = \<const0> ;
-  assign m00_axis_tdata[37] = \<const0> ;
-  assign m00_axis_tdata[36] = \<const0> ;
-  assign m00_axis_tdata[35] = \<const0> ;
-  assign m00_axis_tdata[34] = \<const0> ;
-  assign m00_axis_tdata[33] = \<const0> ;
-  assign m00_axis_tdata[32] = \<const0> ;
-  assign m00_axis_tdata[31] = \<const0> ;
-  assign m00_axis_tdata[30] = \<const0> ;
-  assign m00_axis_tdata[29] = \<const0> ;
-  assign m00_axis_tdata[28] = \<const0> ;
-  assign m00_axis_tdata[27] = \<const0> ;
-  assign m00_axis_tdata[26] = \<const0> ;
-  assign m00_axis_tdata[25] = \<const0> ;
-  assign m00_axis_tdata[24] = \<const0> ;
-  assign m00_axis_tdata[23] = \<const0> ;
-  assign m00_axis_tdata[22] = \<const0> ;
-  assign m00_axis_tdata[21] = \<const0> ;
-  assign m00_axis_tdata[20] = \<const0> ;
-  assign m00_axis_tdata[19] = \<const0> ;
-  assign m00_axis_tdata[18] = \<const0> ;
-  assign m00_axis_tdata[17] = \<const0> ;
-  assign m00_axis_tdata[16] = \<const0> ;
-  assign m00_axis_tdata[15] = \<const0> ;
-  assign m00_axis_tdata[14] = \<const0> ;
-  assign m00_axis_tdata[13] = \<const0> ;
-  assign m00_axis_tdata[12] = \<const0> ;
-  assign m00_axis_tdata[11] = \<const0> ;
-  assign m00_axis_tdata[10] = \<const0> ;
-  assign m00_axis_tdata[9] = \<const0> ;
-  assign m00_axis_tdata[8] = \<const0> ;
-  assign m00_axis_tdata[7] = \<const0> ;
-  assign m00_axis_tdata[6] = \<const0> ;
-  assign m00_axis_tdata[5] = \<const0> ;
-  assign m00_axis_tdata[4] = \<const0> ;
-  assign m00_axis_tdata[3] = \<const0> ;
-  assign m00_axis_tdata[2] = \<const0> ;
-  assign m00_axis_tdata[1] = \<const0> ;
-  assign m00_axis_tdata[0] = \<const0> ;
+  assign m00_axis_tdata[127:96] = \^m00_axis_tdata [95:64];
+  assign m00_axis_tdata[95:64] = \^m00_axis_tdata [95:64];
+  assign m00_axis_tdata[63:32] = \^m00_axis_tdata [95:64];
+  assign m00_axis_tdata[31:0] = \^m00_axis_tdata [95:64];
   assign m00_axis_tlast = \<const0> ;
   assign m00_axis_tstrb[15] = \<const1> ;
   assign m00_axis_tstrb[14] = \<const1> ;
@@ -201,10 +79,12 @@ module design_1_StreamCopIPCore_0_0
   GND GND
        (.G(\<const0> ));
   design_1_StreamCopIPCore_0_0_StreamCopIPCore_v1_0 U0
-       (.m00_axis_tready(m00_axis_tready),
+       (.m00_axis_tdata(\^m00_axis_tdata ),
+        .m00_axis_tready(m00_axis_tready),
         .m00_axis_tvalid(m00_axis_tvalid),
         .s00_axis_aclk(s00_axis_aclk),
         .s00_axis_aresetn(s00_axis_aresetn),
+        .s00_axis_tdata(s00_axis_tdata[31:0]),
         .s00_axis_tready(s00_axis_tready),
         .s00_axis_tvalid(s00_axis_tvalid));
   VCC VCC
@@ -215,29 +95,37 @@ endmodule
 module design_1_StreamCopIPCore_0_0_StreamCopIPCore_v1_0
    (m00_axis_tvalid,
     s00_axis_tready,
-    s00_axis_aclk,
-    s00_axis_aresetn,
+    m00_axis_tdata,
     m00_axis_tready,
-    s00_axis_tvalid);
+    s00_axis_tdata,
+    s00_axis_aclk,
+    s00_axis_tvalid,
+    s00_axis_aresetn);
   output m00_axis_tvalid;
   output s00_axis_tready;
-  input s00_axis_aclk;
-  input s00_axis_aresetn;
+  output [31:0]m00_axis_tdata;
   input m00_axis_tready;
+  input [31:0]s00_axis_tdata;
+  input s00_axis_aclk;
   input s00_axis_tvalid;
+  input s00_axis_aresetn;
 
+  wire [31:0]m00_axis_tdata;
   wire m00_axis_tready;
   wire m00_axis_tvalid;
   wire s00_axis_aclk;
   wire s00_axis_aresetn;
+  wire [31:0]s00_axis_tdata;
   wire s00_axis_tready;
   wire s00_axis_tvalid;
 
   design_1_StreamCopIPCore_0_0_StreamCopIPCore_v1_0_S00_AXIS StreamCopIPCore_v1_0_S00_AXIS_inst
-       (.m00_axis_tready(m00_axis_tready),
+       (.m00_axis_tdata(m00_axis_tdata),
+        .m00_axis_tready(m00_axis_tready),
         .m00_axis_tvalid(m00_axis_tvalid),
         .s00_axis_aclk(s00_axis_aclk),
         .s00_axis_aresetn(s00_axis_aresetn),
+        .s00_axis_tdata(s00_axis_tdata),
         .s00_axis_tready(s00_axis_tready),
         .s00_axis_tvalid(s00_axis_tvalid));
 endmodule
@@ -246,25 +134,339 @@ endmodule
 module design_1_StreamCopIPCore_0_0_StreamCopIPCore_v1_0_S00_AXIS
    (m00_axis_tvalid,
     s00_axis_tready,
-    s00_axis_aclk,
-    s00_axis_aresetn,
+    m00_axis_tdata,
     m00_axis_tready,
-    s00_axis_tvalid);
+    s00_axis_tdata,
+    s00_axis_aclk,
+    s00_axis_tvalid,
+    s00_axis_aresetn);
   output m00_axis_tvalid;
   output s00_axis_tready;
-  input s00_axis_aclk;
-  input s00_axis_aresetn;
+  output [31:0]m00_axis_tdata;
   input m00_axis_tready;
+  input [31:0]s00_axis_tdata;
+  input s00_axis_aclk;
   input s00_axis_tvalid;
+  input s00_axis_aresetn;
 
+  wire [31:0]M;
+  wire \M_reg[31]_i_1_n_0 ;
+  wire [0:0]currentState;
+  wire [31:0]m00_axis_tdata;
   wire m00_axis_tready;
   wire m00_axis_tvalid;
   wire s00_axis_aclk;
   wire s00_axis_aresetn;
+  wire [31:0]s00_axis_tdata;
   wire s00_axis_tready;
   wire s00_axis_tvalid;
+  wire \s_dataOut[127]_i_1_n_0 ;
+  wire s_validOut;
   wire s_validOut_i_1_n_0;
 
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[0] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[0]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[0]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[10] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[10]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[10]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[11] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[11]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[11]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[12] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[12]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[12]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[13] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[13]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[13]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[14] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[14]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[14]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[15] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[15]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[15]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[16] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[16]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[16]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[17] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[17]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[17]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[18] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[18]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[18]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[19] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[19]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[19]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[1] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[1]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[1]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[20] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[20]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[20]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[21] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[21]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[21]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[22] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[22]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[22]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[23] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[23]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[23]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[24] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[24]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[24]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[25] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[25]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[25]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[26] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[26]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[26]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[27] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[27]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[27]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[28] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[28]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[28]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[29] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[29]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[29]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[2] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[2]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[2]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[30] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[30]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[30]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[31] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[31]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[31]));
+  LUT3 #(
+    .INIT(8'h08)) 
+    \M_reg[31]_i_1 
+       (.I0(m00_axis_tready),
+        .I1(m00_axis_tvalid),
+        .I2(currentState),
+        .O(\M_reg[31]_i_1_n_0 ));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[3] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[3]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[3]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[4] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[4]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[4]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[5] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[5]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[5]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[6] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[6]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[6]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[7] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[7]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[7]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[8] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[8]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[8]));
+  (* XILINX_LEGACY_PRIM = "LD" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \M_reg[9] 
+       (.CLR(1'b0),
+        .D(s00_axis_tdata[9]),
+        .G(\M_reg[31]_i_1_n_0 ),
+        .GE(1'b1),
+        .Q(M[9]));
+  FDRE #(
+    .INIT(1'b0)) 
+    \currentState_reg[0]__0 
+       (.C(s00_axis_aclk),
+        .CE(1'b1),
+        .D(s00_axis_aresetn),
+        .Q(currentState),
+        .R(1'b0));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT2 #(
     .INIT(4'hB)) 
@@ -272,14 +474,218 @@ module design_1_StreamCopIPCore_0_0_StreamCopIPCore_v1_0_S00_AXIS
        (.I0(m00_axis_tready),
         .I1(m00_axis_tvalid),
         .O(s00_axis_tready));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \s_dataOut[127]_i_1 
+       (.I0(s00_axis_aresetn),
+        .O(\s_dataOut[127]_i_1_n_0 ));
+  LUT3 #(
+    .INIT(8'hA2)) 
+    \s_dataOut[127]_i_2 
+       (.I0(s00_axis_tvalid),
+        .I1(m00_axis_tvalid),
+        .I2(m00_axis_tready),
+        .O(s_validOut));
+  FDRE \s_dataOut_reg[100] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[4]),
+        .Q(m00_axis_tdata[4]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[101] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[5]),
+        .Q(m00_axis_tdata[5]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[102] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[6]),
+        .Q(m00_axis_tdata[6]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[103] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[7]),
+        .Q(m00_axis_tdata[7]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[104] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[8]),
+        .Q(m00_axis_tdata[8]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[105] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[9]),
+        .Q(m00_axis_tdata[9]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[106] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[10]),
+        .Q(m00_axis_tdata[10]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[107] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[11]),
+        .Q(m00_axis_tdata[11]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[108] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[12]),
+        .Q(m00_axis_tdata[12]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[109] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[13]),
+        .Q(m00_axis_tdata[13]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[110] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[14]),
+        .Q(m00_axis_tdata[14]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[111] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[15]),
+        .Q(m00_axis_tdata[15]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[112] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[16]),
+        .Q(m00_axis_tdata[16]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[113] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[17]),
+        .Q(m00_axis_tdata[17]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[114] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[18]),
+        .Q(m00_axis_tdata[18]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[115] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[19]),
+        .Q(m00_axis_tdata[19]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[116] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[20]),
+        .Q(m00_axis_tdata[20]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[117] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[21]),
+        .Q(m00_axis_tdata[21]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[118] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[22]),
+        .Q(m00_axis_tdata[22]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[119] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[23]),
+        .Q(m00_axis_tdata[23]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[120] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[24]),
+        .Q(m00_axis_tdata[24]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[121] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[25]),
+        .Q(m00_axis_tdata[25]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[122] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[26]),
+        .Q(m00_axis_tdata[26]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[123] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[27]),
+        .Q(m00_axis_tdata[27]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[124] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[28]),
+        .Q(m00_axis_tdata[28]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[125] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[29]),
+        .Q(m00_axis_tdata[29]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[126] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[30]),
+        .Q(m00_axis_tdata[30]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[127] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[31]),
+        .Q(m00_axis_tdata[31]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[96] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[0]),
+        .Q(m00_axis_tdata[0]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[97] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[1]),
+        .Q(m00_axis_tdata[1]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[98] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[2]),
+        .Q(m00_axis_tdata[2]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
+  FDRE \s_dataOut_reg[99] 
+       (.C(s00_axis_aclk),
+        .CE(s_validOut),
+        .D(M[3]),
+        .Q(m00_axis_tdata[3]),
+        .R(\s_dataOut[127]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT4 #(
-    .INIT(16'hAA20)) 
+    .INIT(16'hF400)) 
     s_validOut_i_1
-       (.I0(s00_axis_aresetn),
-        .I1(m00_axis_tready),
-        .I2(m00_axis_tvalid),
-        .I3(s00_axis_tvalid),
+       (.I0(m00_axis_tready),
+        .I1(m00_axis_tvalid),
+        .I2(s00_axis_tvalid),
+        .I3(s00_axis_aresetn),
         .O(s_validOut_i_1_n_0));
   FDRE s_validOut_reg
        (.C(s00_axis_aclk),

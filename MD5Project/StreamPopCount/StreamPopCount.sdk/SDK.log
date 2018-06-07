@@ -1,9 +1,851 @@
-22:57:59 INFO  : Registering command handlers for SDK TCF services
-22:58:00 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\temp_xsdb_launch_script.tcl
-22:58:03 INFO  : XSCT server has started successfully.
-22:58:03 INFO  : Successfully done setting XSCT server connection channel  
-22:58:04 INFO  : Successfully done setting SDK workspace  
-22:58:04 INFO  : Processing command line option -hwspec C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
-22:58:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
-22:58:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
-22:58:43 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+00:07:52 INFO  : Registering command handlers for SDK TCF services
+00:07:52 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\temp_xsdb_launch_script.tcl
+00:07:55 INFO  : XSCT server has started successfully.
+00:07:56 INFO  : Successfully done setting XSCT server connection channel  
+00:07:56 INFO  : Processing command line option -hwspec C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+00:07:56 INFO  : Successfully done setting SDK workspace  
+00:08:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:08:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:08:58 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+00:09:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:09:06 INFO  : 'fpga -state' command is executed.
+00:09:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:09:06 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+00:09:06 INFO  : 'jtag frequency' command is executed.
+00:09:06 INFO  : Context for processor 'microblaze_0' is selected.
+00:09:06 INFO  : Processor reset is completed for 'microblaze_0'.
+00:09:06 INFO  : Context for processor 'microblaze_0' is selected.
+00:09:06 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+00:09:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+00:09:06 INFO  : Memory regions updated for context MicroBlaze #0
+00:09:06 INFO  : Memory regions updated for context MicroBlaze #0
+00:09:07 INFO  : Context for processor 'microblaze_0' is selected.
+00:09:07 INFO  : 'con' command is executed.
+00:09:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+00:09:07 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+00:09:25 INFO  : Disconnected from the channel tcfchan#1.
+00:09:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:09:26 INFO  : 'fpga -state' command is executed.
+00:09:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:09:27 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+00:09:27 INFO  : 'jtag frequency' command is executed.
+00:09:27 INFO  : Context for processor 'microblaze_0' is selected.
+00:09:27 INFO  : Processor reset is completed for 'microblaze_0'.
+00:09:27 INFO  : Context for processor 'microblaze_0' is selected.
+00:09:27 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+00:09:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+00:09:27 INFO  : Memory regions updated for context MicroBlaze #0
+00:09:27 INFO  : Memory regions updated for context MicroBlaze #0
+00:09:27 INFO  : Context for processor 'microblaze_0' is selected.
+00:09:27 INFO  : 'con' command is executed.
+00:09:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+00:09:27 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+00:10:34 INFO  : Disconnected from the channel tcfchan#2.
+00:10:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:10:35 INFO  : 'fpga -state' command is executed.
+00:10:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:10:35 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+00:10:35 INFO  : 'jtag frequency' command is executed.
+00:10:35 INFO  : Context for processor 'microblaze_0' is selected.
+00:10:35 INFO  : Processor reset is completed for 'microblaze_0'.
+00:10:35 INFO  : Context for processor 'microblaze_0' is selected.
+00:10:36 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+00:10:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+00:10:36 INFO  : Memory regions updated for context MicroBlaze #0
+00:10:36 INFO  : Memory regions updated for context MicroBlaze #0
+00:10:36 INFO  : Context for processor 'microblaze_0' is selected.
+00:10:36 INFO  : 'con' command is executed.
+00:10:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+00:10:36 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+00:11:13 INFO  : Disconnected from the channel tcfchan#3.
+00:11:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:11:14 INFO  : 'fpga -state' command is executed.
+00:11:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:11:14 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+00:11:14 INFO  : 'jtag frequency' command is executed.
+00:11:14 INFO  : Context for processor 'microblaze_0' is selected.
+00:11:14 INFO  : Processor reset is completed for 'microblaze_0'.
+00:11:14 INFO  : Context for processor 'microblaze_0' is selected.
+00:11:15 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+00:11:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+00:11:15 INFO  : Memory regions updated for context MicroBlaze #0
+00:11:15 INFO  : Memory regions updated for context MicroBlaze #0
+00:11:15 INFO  : Context for processor 'microblaze_0' is selected.
+00:11:15 INFO  : 'con' command is executed.
+00:11:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+00:11:15 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+00:11:18 INFO  : Disconnected from the channel tcfchan#4.
+00:11:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:11:19 INFO  : 'fpga -state' command is executed.
+00:11:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:11:20 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+00:11:20 INFO  : 'jtag frequency' command is executed.
+00:11:20 INFO  : Context for processor 'microblaze_0' is selected.
+00:11:20 INFO  : Processor reset is completed for 'microblaze_0'.
+00:11:20 INFO  : Context for processor 'microblaze_0' is selected.
+00:11:20 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+00:11:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+00:11:20 INFO  : Memory regions updated for context MicroBlaze #0
+00:11:20 INFO  : Memory regions updated for context MicroBlaze #0
+00:11:20 INFO  : Context for processor 'microblaze_0' is selected.
+00:11:20 INFO  : 'con' command is executed.
+00:11:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+00:11:20 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+00:11:24 INFO  : Disconnected from the channel tcfchan#5.
+00:11:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:11:25 INFO  : 'fpga -state' command is executed.
+00:11:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:11:26 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+00:11:26 INFO  : 'jtag frequency' command is executed.
+00:11:26 INFO  : Context for processor 'microblaze_0' is selected.
+00:11:26 INFO  : Processor reset is completed for 'microblaze_0'.
+00:11:26 INFO  : Context for processor 'microblaze_0' is selected.
+00:11:26 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+00:11:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+00:11:26 INFO  : Memory regions updated for context MicroBlaze #0
+00:11:26 INFO  : Memory regions updated for context MicroBlaze #0
+00:11:26 INFO  : Context for processor 'microblaze_0' is selected.
+00:11:26 INFO  : 'con' command is executed.
+00:11:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+00:11:26 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+00:15:25 INFO  : Disconnected from the channel tcfchan#6.
+00:15:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:15:26 INFO  : 'fpga -state' command is executed.
+00:15:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:15:26 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+00:15:26 INFO  : 'jtag frequency' command is executed.
+00:15:26 INFO  : Context for processor 'microblaze_0' is selected.
+00:15:26 INFO  : Processor reset is completed for 'microblaze_0'.
+00:15:26 INFO  : Context for processor 'microblaze_0' is selected.
+00:15:27 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+00:15:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+00:15:27 INFO  : Memory regions updated for context MicroBlaze #0
+00:15:27 INFO  : Memory regions updated for context MicroBlaze #0
+00:15:27 INFO  : Context for processor 'microblaze_0' is selected.
+00:15:27 INFO  : 'con' command is executed.
+00:15:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+00:15:27 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+00:19:59 INFO  : Disconnected from the channel tcfchan#7.
+00:20:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:20:00 INFO  : 'fpga -state' command is executed.
+00:20:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:20:00 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+00:20:00 INFO  : 'jtag frequency' command is executed.
+00:20:00 INFO  : Context for processor 'microblaze_0' is selected.
+00:20:00 INFO  : Processor reset is completed for 'microblaze_0'.
+00:20:00 INFO  : Context for processor 'microblaze_0' is selected.
+00:20:01 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+00:20:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+00:20:01 INFO  : Memory regions updated for context MicroBlaze #0
+00:20:01 INFO  : Memory regions updated for context MicroBlaze #0
+00:20:01 INFO  : Context for processor 'microblaze_0' is selected.
+00:20:01 INFO  : 'con' command is executed.
+00:20:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+00:20:01 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+00:20:23 INFO  : Disconnected from the channel tcfchan#8.
+00:20:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:20:24 INFO  : 'fpga -state' command is executed.
+00:20:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:20:25 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+00:20:25 INFO  : 'jtag frequency' command is executed.
+00:20:25 INFO  : Context for processor 'microblaze_0' is selected.
+00:20:25 INFO  : Processor reset is completed for 'microblaze_0'.
+00:20:25 INFO  : Context for processor 'microblaze_0' is selected.
+00:20:25 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+00:20:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+00:20:25 INFO  : Memory regions updated for context MicroBlaze #0
+00:20:25 INFO  : Memory regions updated for context MicroBlaze #0
+00:20:25 INFO  : Context for processor 'microblaze_0' is selected.
+00:20:25 INFO  : 'con' command is executed.
+00:20:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+00:20:25 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+00:20:34 INFO  : Disconnected from the channel tcfchan#9.
+00:20:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:20:35 INFO  : 'fpga -state' command is executed.
+00:20:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:20:36 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+00:20:36 INFO  : 'jtag frequency' command is executed.
+00:20:36 INFO  : Context for processor 'microblaze_0' is selected.
+00:20:36 INFO  : Processor reset is completed for 'microblaze_0'.
+00:20:36 INFO  : Context for processor 'microblaze_0' is selected.
+00:20:36 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+00:20:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+00:20:36 INFO  : Memory regions updated for context MicroBlaze #0
+00:20:36 INFO  : Memory regions updated for context MicroBlaze #0
+00:20:36 INFO  : Context for processor 'microblaze_0' is selected.
+00:20:36 INFO  : 'con' command is executed.
+00:20:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+00:20:36 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+00:21:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:21:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:21:26 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+00:21:32 INFO  : Disconnected from the channel tcfchan#10.
+00:21:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:21:33 INFO  : 'fpga -state' command is executed.
+00:21:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:21:33 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+00:21:33 INFO  : 'jtag frequency' command is executed.
+00:21:33 INFO  : Context for processor 'microblaze_0' is selected.
+00:21:33 INFO  : Processor reset is completed for 'microblaze_0'.
+00:21:33 INFO  : Context for processor 'microblaze_0' is selected.
+00:21:34 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+00:21:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+00:21:34 INFO  : Memory regions updated for context MicroBlaze #0
+00:21:34 INFO  : Memory regions updated for context MicroBlaze #0
+00:21:34 INFO  : Context for processor 'microblaze_0' is selected.
+00:21:34 INFO  : 'con' command is executed.
+00:21:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+00:21:34 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+00:21:44 INFO  : Disconnected from the channel tcfchan#11.
+00:21:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:21:45 INFO  : 'fpga -state' command is executed.
+00:21:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:21:45 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+00:21:45 INFO  : 'jtag frequency' command is executed.
+00:21:45 INFO  : Context for processor 'microblaze_0' is selected.
+00:21:45 INFO  : Processor reset is completed for 'microblaze_0'.
+00:21:45 INFO  : Context for processor 'microblaze_0' is selected.
+00:21:46 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+00:21:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+00:21:46 INFO  : Memory regions updated for context MicroBlaze #0
+00:21:46 INFO  : Memory regions updated for context MicroBlaze #0
+00:21:46 INFO  : Context for processor 'microblaze_0' is selected.
+00:21:46 INFO  : 'con' command is executed.
+00:21:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+00:21:46 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+00:42:30 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1528328534551,  Project:1528326280528
+00:42:30 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+00:42:49 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification location will not be monitored anymore.
+00:42:53 INFO  : Disconnected from the channel tcfchan#12.
+00:43:21 INFO  : Registering command handlers for SDK TCF services
+00:43:22 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\temp_xsdb_launch_script.tcl
+00:43:24 INFO  : XSCT server has started successfully.
+00:43:24 INFO  : Successfully done setting XSCT server connection channel  
+00:43:25 INFO  : Successfully done setting SDK workspace  
+00:43:25 INFO  : Processing command line option -hwspec C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+00:44:18 INFO  : Registering command handlers for SDK TCF services
+00:44:19 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\temp_xsdb_launch_script.tcl
+00:44:22 INFO  : XSCT server has started successfully.
+00:44:23 INFO  : Successfully done setting XSCT server connection channel  
+00:44:23 INFO  : Processing command line option -hwspec C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+00:44:23 INFO  : Successfully done setting SDK workspace  
+00:44:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:44:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:45:01 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+00:45:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:45:05 INFO  : 'fpga -state' command is executed.
+00:45:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:45:05 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+00:45:05 INFO  : 'jtag frequency' command is executed.
+00:45:06 INFO  : Context for processor 'microblaze_0' is selected.
+00:45:06 INFO  : Processor reset is completed for 'microblaze_0'.
+00:45:06 INFO  : Context for processor 'microblaze_0' is selected.
+00:45:07 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+00:45:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+00:45:07 INFO  : Memory regions updated for context MicroBlaze #0
+00:45:07 INFO  : Memory regions updated for context MicroBlaze #0
+00:45:08 INFO  : Context for processor 'microblaze_0' is selected.
+00:45:08 INFO  : 'con' command is executed.
+00:45:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+00:45:08 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+00:45:08 INFO  : Disconnected from the channel tcfchan#1.
+00:45:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:45:09 INFO  : 'fpga -state' command is executed.
+00:45:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:45:09 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+00:45:09 INFO  : 'jtag frequency' command is executed.
+00:45:10 INFO  : Context for processor 'microblaze_0' is selected.
+00:45:10 INFO  : Processor reset is completed for 'microblaze_0'.
+00:45:10 INFO  : Context for processor 'microblaze_0' is selected.
+00:45:10 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+00:45:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+00:45:10 INFO  : Memory regions updated for context MicroBlaze #0
+00:45:10 INFO  : Memory regions updated for context MicroBlaze #0
+00:45:10 INFO  : Context for processor 'microblaze_0' is selected.
+00:45:10 INFO  : 'con' command is executed.
+00:45:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+00:45:10 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+00:45:19 INFO  : Disconnected from the channel tcfchan#2.
+00:45:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:45:20 INFO  : 'fpga -state' command is executed.
+00:45:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:45:21 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+00:45:21 INFO  : 'jtag frequency' command is executed.
+00:45:21 INFO  : Context for processor 'microblaze_0' is selected.
+00:45:21 INFO  : Processor reset is completed for 'microblaze_0'.
+00:45:21 INFO  : Context for processor 'microblaze_0' is selected.
+00:45:21 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+00:45:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+00:45:21 INFO  : Memory regions updated for context MicroBlaze #0
+00:45:21 INFO  : Memory regions updated for context MicroBlaze #0
+00:45:21 INFO  : Context for processor 'microblaze_0' is selected.
+00:45:21 INFO  : 'con' command is executed.
+00:45:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+00:45:21 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+00:45:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:45:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:45:49 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+00:46:21 INFO  : Disconnected from the channel tcfchan#3.
+00:46:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:46:22 INFO  : 'fpga -state' command is executed.
+00:46:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:46:23 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+00:46:23 INFO  : 'jtag frequency' command is executed.
+00:46:23 INFO  : Context for processor 'microblaze_0' is selected.
+00:46:23 INFO  : Processor reset is completed for 'microblaze_0'.
+00:46:23 INFO  : Context for processor 'microblaze_0' is selected.
+00:46:23 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+00:46:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+00:46:23 INFO  : Memory regions updated for context MicroBlaze #0
+00:46:23 INFO  : Memory regions updated for context MicroBlaze #0
+00:46:23 INFO  : Context for processor 'microblaze_0' is selected.
+00:46:23 INFO  : 'con' command is executed.
+00:46:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+00:46:23 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+00:56:18 INFO  : Disconnected from the channel tcfchan#4.
+00:58:09 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\temp_xsdb_launch_script.tcl
+00:58:11 INFO  : XSCT server has started successfully.
+00:58:11 INFO  : Successfully done setting XSCT server connection channel  
+00:58:12 INFO  : Successfully done setting SDK workspace  
+00:58:13 INFO  : Registering command handlers for SDK TCF services
+00:58:15 INFO  : Processing command line option -hwspec C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+00:58:15 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+00:58:15 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1528329460543,  Project:1528328534551
+00:58:15 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+00:58:15 INFO  : Copied contents of C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+00:58:16 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:58:19 INFO  : 
+00:58:20 INFO  : Updating hardware inferred compiler options for test.
+00:58:20 INFO  : Clearing existing target manager status.
+00:58:20 WARN  : Given IPC port value is invalid. Using default port 2350
+00:58:20 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+00:58:22 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+00:58:22 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:58:23 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+00:59:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:59:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:59:05 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+00:59:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+00:59:11 INFO  : 'fpga -state' command is executed.
+00:59:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:59:11 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+00:59:11 INFO  : 'jtag frequency' command is executed.
+00:59:11 INFO  : Context for processor 'microblaze_0' is selected.
+00:59:11 INFO  : Processor reset is completed for 'microblaze_0'.
+00:59:11 INFO  : Context for processor 'microblaze_0' is selected.
+00:59:12 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+00:59:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+00:59:12 INFO  : Memory regions updated for context MicroBlaze #0
+00:59:12 INFO  : Memory regions updated for context MicroBlaze #0
+00:59:12 INFO  : Context for processor 'microblaze_0' is selected.
+00:59:12 INFO  : 'con' command is executed.
+00:59:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+00:59:12 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+01:00:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:00:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+01:00:20 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+01:00:23 INFO  : Disconnected from the channel tcfchan#1.
+01:00:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+01:00:24 INFO  : 'fpga -state' command is executed.
+01:00:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:00:24 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+01:00:24 INFO  : 'jtag frequency' command is executed.
+01:00:24 INFO  : Context for processor 'microblaze_0' is selected.
+01:00:24 INFO  : Processor reset is completed for 'microblaze_0'.
+01:00:24 INFO  : Context for processor 'microblaze_0' is selected.
+01:00:25 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+01:00:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+01:00:25 INFO  : Memory regions updated for context MicroBlaze #0
+01:00:25 INFO  : Memory regions updated for context MicroBlaze #0
+01:00:25 INFO  : Context for processor 'microblaze_0' is selected.
+01:00:25 INFO  : 'con' command is executed.
+01:00:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+01:00:25 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+01:00:51 INFO  : Disconnected from the channel tcfchan#2.
+01:00:53 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+09:47:35 INFO  : Registering command handlers for SDK TCF services
+09:47:36 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\temp_xsdb_launch_script.tcl
+09:47:40 INFO  : XSCT server has started successfully.
+09:47:40 INFO  : Successfully done setting XSCT server connection channel  
+09:47:42 INFO  : Processing command line option -hwspec C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+09:47:42 INFO  : Successfully done setting SDK workspace  
+09:47:42 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+09:47:44 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1528361195590,  Project:1528329460543
+09:47:44 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+09:47:44 INFO  : Copied contents of C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+09:47:45 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+09:47:53 INFO  : 
+09:47:54 INFO  : Updating hardware inferred compiler options for test.
+09:47:55 INFO  : Clearing existing target manager status.
+09:47:55 WARN  : Given IPC port value is invalid. Using default port 2350
+09:47:55 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+09:47:57 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+09:47:57 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+09:47:58 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+09:48:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:49:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:51:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:51:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+09:51:05 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+09:51:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:51:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+09:51:52 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+09:52:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+09:52:10 INFO  : 'fpga -state' command is executed.
+09:52:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+09:52:11 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+09:52:11 INFO  : 'jtag frequency' command is executed.
+09:52:11 INFO  : Context for processor 'microblaze_0' is selected.
+09:52:11 INFO  : Processor reset is completed for 'microblaze_0'.
+09:52:11 INFO  : Context for processor 'microblaze_0' is selected.
+09:52:11 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+09:52:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+09:52:11 INFO  : Memory regions updated for context MicroBlaze #0
+09:52:11 INFO  : Memory regions updated for context MicroBlaze #0
+09:52:11 INFO  : Context for processor 'microblaze_0' is selected.
+09:52:11 INFO  : 'con' command is executed.
+09:52:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+09:52:11 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+10:15:28 INFO  : Disconnected from the channel tcfchan#1.
+10:15:29 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+10:15:52 INFO  : Registering command handlers for SDK TCF services
+10:15:52 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\temp_xsdb_launch_script.tcl
+10:15:55 INFO  : XSCT server has started successfully.
+10:15:55 INFO  : Successfully done setting XSCT server connection channel  
+10:15:56 INFO  : Successfully done setting SDK workspace  
+10:15:56 INFO  : Processing command line option -hwspec C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+10:15:56 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+10:15:57 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1528362797305,  Project:1528361195590
+10:15:57 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+10:15:57 INFO  : Copied contents of C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+10:15:58 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+10:16:00 INFO  : 
+10:16:01 INFO  : Updating hardware inferred compiler options for test.
+10:16:01 INFO  : Clearing existing target manager status.
+10:16:01 WARN  : Given IPC port value is invalid. Using default port 2350
+10:16:01 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+10:16:02 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+10:16:02 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+10:16:03 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+10:17:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:18:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+10:18:02 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+10:18:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+10:18:27 INFO  : 'fpga -state' command is executed.
+10:18:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:18:27 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+10:18:27 INFO  : 'jtag frequency' command is executed.
+10:18:27 INFO  : Context for processor 'microblaze_0' is selected.
+10:18:27 INFO  : Processor reset is completed for 'microblaze_0'.
+10:18:27 INFO  : Context for processor 'microblaze_0' is selected.
+10:18:28 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+10:18:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+10:18:28 INFO  : Memory regions updated for context MicroBlaze #0
+10:18:28 INFO  : Memory regions updated for context MicroBlaze #0
+10:18:28 INFO  : Context for processor 'microblaze_0' is selected.
+10:18:28 INFO  : 'con' command is executed.
+10:18:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+10:18:28 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+10:20:44 INFO  : Disconnected from the channel tcfchan#1.
+10:20:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+10:20:45 INFO  : 'fpga -state' command is executed.
+10:20:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:20:46 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+10:20:46 INFO  : 'jtag frequency' command is executed.
+10:20:46 INFO  : Context for processor 'microblaze_0' is selected.
+10:20:46 INFO  : Processor reset is completed for 'microblaze_0'.
+10:20:46 INFO  : Context for processor 'microblaze_0' is selected.
+10:20:46 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+10:20:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+10:20:46 INFO  : Memory regions updated for context MicroBlaze #0
+10:20:46 INFO  : Memory regions updated for context MicroBlaze #0
+10:20:46 INFO  : Context for processor 'microblaze_0' is selected.
+10:20:46 INFO  : 'con' command is executed.
+10:20:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+10:20:46 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+10:21:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:21:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+10:21:12 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+10:21:26 INFO  : Disconnected from the channel tcfchan#2.
+10:21:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+10:21:27 INFO  : 'fpga -state' command is executed.
+10:21:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:21:27 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+10:21:27 INFO  : 'jtag frequency' command is executed.
+10:21:27 INFO  : Context for processor 'microblaze_0' is selected.
+10:21:27 INFO  : Processor reset is completed for 'microblaze_0'.
+10:21:27 INFO  : Context for processor 'microblaze_0' is selected.
+10:21:28 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+10:21:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+10:21:28 INFO  : Memory regions updated for context MicroBlaze #0
+10:21:28 INFO  : Memory regions updated for context MicroBlaze #0
+10:21:28 INFO  : Context for processor 'microblaze_0' is selected.
+10:21:28 INFO  : 'con' command is executed.
+10:21:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+10:21:28 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+10:27:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:27:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+10:27:06 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+10:27:27 INFO  : Disconnected from the channel tcfchan#3.
+10:27:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+10:27:28 INFO  : 'fpga -state' command is executed.
+10:27:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:27:28 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+10:27:28 INFO  : 'jtag frequency' command is executed.
+10:27:28 INFO  : Context for processor 'microblaze_0' is selected.
+10:27:28 INFO  : Processor reset is completed for 'microblaze_0'.
+10:27:28 INFO  : Context for processor 'microblaze_0' is selected.
+10:27:29 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+10:27:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+10:27:29 INFO  : Memory regions updated for context MicroBlaze #0
+10:27:29 INFO  : Memory regions updated for context MicroBlaze #0
+10:27:29 INFO  : Context for processor 'microblaze_0' is selected.
+10:27:29 INFO  : 'con' command is executed.
+10:27:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+10:27:29 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+10:27:34 INFO  : Disconnected from the channel tcfchan#4.
+10:27:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+10:27:35 INFO  : 'fpga -state' command is executed.
+10:27:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:27:35 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+10:27:35 INFO  : 'jtag frequency' command is executed.
+10:27:36 INFO  : Context for processor 'microblaze_0' is selected.
+10:27:36 INFO  : Processor reset is completed for 'microblaze_0'.
+10:27:36 INFO  : Context for processor 'microblaze_0' is selected.
+10:27:36 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+10:27:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+10:27:36 INFO  : Memory regions updated for context MicroBlaze #0
+10:27:36 INFO  : Memory regions updated for context MicroBlaze #0
+10:27:36 INFO  : Context for processor 'microblaze_0' is selected.
+10:27:36 INFO  : 'con' command is executed.
+10:27:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+10:27:36 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+10:27:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:27:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+10:28:01 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+10:29:02 INFO  : Disconnected from the channel tcfchan#5.
+10:29:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+10:29:03 INFO  : 'fpga -state' command is executed.
+10:29:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:29:04 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+10:29:04 INFO  : 'jtag frequency' command is executed.
+10:29:04 INFO  : Context for processor 'microblaze_0' is selected.
+10:29:04 INFO  : Processor reset is completed for 'microblaze_0'.
+10:29:04 INFO  : Context for processor 'microblaze_0' is selected.
+10:29:04 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+10:29:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+10:29:04 INFO  : Memory regions updated for context MicroBlaze #0
+10:29:04 INFO  : Memory regions updated for context MicroBlaze #0
+10:29:04 INFO  : Context for processor 'microblaze_0' is selected.
+10:29:04 INFO  : 'con' command is executed.
+10:29:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+10:29:04 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+11:02:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:02:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+11:02:36 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+11:02:52 INFO  : Disconnected from the channel tcfchan#6.
+11:02:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+11:02:53 INFO  : 'fpga -state' command is executed.
+11:02:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:02:53 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+11:02:53 INFO  : 'jtag frequency' command is executed.
+11:02:53 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:53 INFO  : Processor reset is completed for 'microblaze_0'.
+11:02:54 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:54 INFO  : The application 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf' is downloaded to processor 'microblaze_0'.
+11:02:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/test/Debug/test.elf
+----------------End of Script----------------
+
+11:02:54 INFO  : Memory regions updated for context MicroBlaze #0
+11:02:54 INFO  : Memory regions updated for context MicroBlaze #0
+11:02:54 INFO  : Context for processor 'microblaze_0' is selected.
+11:02:54 INFO  : 'con' command is executed.
+11:02:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+11:02:54 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_test.elf_on_local.tcl'
+11:03:33 INFO  : Disconnected from the channel tcfchan#7.
+11:03:34 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

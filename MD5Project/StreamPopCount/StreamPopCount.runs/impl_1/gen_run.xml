@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1528321221">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1528362519">
   <File Type="PWROPT-DCP" Name="design_1_wrapper_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="design_1_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
@@ -102,21 +102,19 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_clk_wiz_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_microblaze_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_xlconstant_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_rst_clk_wiz_1_100M_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_mdm_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_lmb_bram_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_microblaze_0_xlconcat_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_dlmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_microblaze_0_axi_intc_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_dlmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_ilmb_v10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_ilmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axi_uartlite_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_rst_clk_wiz_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_xlconstant_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_ilmb_bram_if_cntlr_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_mdm_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_microblaze_0_xlconcat_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_clk_wiz_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_microblaze_0_axi_intc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axis_dwidth_converter_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_axis_dwidth_converter_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_microblaze_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_dlmb_bram_if_cntlr_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="design_1_lmb_bram_1"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_StreamCopIPCore_0_0"/>
 </GenRun>
