@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# updatemem v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# 
+# Start of session at: Thu Jul  5 16:29:10 2018
+# Process ID: 7892
+# Current directory: G:/CR_Santos/MD5Project/StreamPopCount
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/SDK/2017.4/scripts/updatemem/main.tcl -notrace -tclargs -meminfo G:/CR_Santos/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.mmi -data C:/Xilinx/SDK/2017.4/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc design_1_i/microblaze_0 -bit G:/CR_Santos/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit -out G:/CR_Santos/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit -force
+# Log file: G:/CR_Santos/MD5Project/StreamPopCount/updatemem.log
+# Journal file: G:/CR_Santos/MD5Project/StreamPopCount\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/SDK/2017.4/scripts/updatemem/main.tcl -notrace

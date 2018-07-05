@@ -2,27 +2,27 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Thu Jun  7 09:35:22 2018
-# Process ID: 29344
-# Current directory: C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent30828 C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.xpr
-# Log file: C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/vivado.log
-# Journal file: C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount\vivado.jou
+# Start of session at: Thu Jul  5 19:36:51 2018
+# Process ID: 10272
+# Current directory: C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16076 C:\Users\Miguel\Desktop\md5\MD5Project\StreamPopCount\StreamPopCount.xpr
+# Log file: C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/vivado.log
+# Journal file: C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.xpr
+open_project C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.xpr
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/ip_repo/StreamCopIPCore_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miguel/Desktop/md5/MD5Project/ip_repo/StreamCopIPCore_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
 WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
 List of locked IPs:
 design_1_StreamCopIPCore_0_0
 
-open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 850.832 ; gain = 177.168
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:14 . Memory (MB): peak = 836.430 ; gain = 139.133
 update_compile_order -fileset sources_1
-open_bd_design {C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd}
 Adding cell -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
 Adding cell -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
 Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
@@ -40,46 +40,22 @@ Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
 Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
 Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
 Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
-Successfully read diagram <design_1> from BD file <C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd>
-open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 937.051 ; gain = 86.219
-ipx::edit_ip_in_project -upgrade true -name StreamCopIPCore_v1_0_project -directory C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.tmp/StreamCopIPCore_v1_0_project c:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/ip_repo/StreamCopIPCore_1.0/component.xml
-INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'c:/users/miguel/desktop/ect/4_ano/2_semestre/cr/pratica/xoto8/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project'
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
-create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 952.465 ; gain = 12.539
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/ip_repo/StreamCopIPCore_1.0'.
-INFO: [IP_Flow 19-795] Syncing license key meta-data
-ipx::edit_ip_in_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 953.055 ; gain = 13.129
-update_compile_order -fileset sources_1
-launch_runs impl_1 -jobs 2
-[Thu Jun  7 09:38:00 2018] Launched synth_1...
-Run output will be captured here: c:/users/miguel/desktop/ect/4_ano/2_semestre/cr/pratica/xoto8/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project/StreamCopIPCore_v1_0_project.runs/synth_1/runme.log
-[Thu Jun  7 09:38:00 2018] Launched impl_1...
-Run output will be captured here: c:/users/miguel/desktop/ect/4_ano/2_semestre/cr/pratica/xoto8/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project/StreamCopIPCore_v1_0_project.runs/impl_1/runme.log
-set_property core_revision 16 [ipx::current_core]
-ipx::create_xgui_files [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::save_core [ipx::current_core]
-close_project -delete
-update_ip_catalog -rebuild -repo_path c:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/ip_repo/StreamCopIPCore_1.0
-INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/ip_repo/StreamCopIPCore_1.0'
+Successfully read diagram <design_1> from BD file <C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 926.027 ; gain = 84.660
 report_ip_status -name ip_status 
 upgrade_ip -vlnv xilinx.com:user:StreamCopIPCore:1.0 [get_ips  design_1_StreamCopIPCore_0_0] -log ip_upgrade.log
-Upgrading 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd'
-INFO: [IP_Flow 19-3422] Upgraded design_1_StreamCopIPCore_0_0 (StreamCopIPCore_v1.0 1.0) from revision 11 to revision 16
-Wrote  : <C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd> 
-INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/ip_upgrade.log'.
+Upgrading 'C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_StreamCopIPCore_0_0 (StreamCopIPCore_v1.0 1.0) from revision 36 to revision 37
+Wrote  : <C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/ip_upgrade.log'.
 export_ip_user_files -of_objects [get_ips design_1_StreamCopIPCore_0_0] -no_script -sync -force -quiet
-generate_target all [get_files  C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd]
 INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
 WARNING: [xilinx.com:ip:axi_intc:4.1-4] /microblaze_0_axi_intc: Could not determine interrupt input port type - using default interrupt type Rising Edge. Please change this manually if necessary.
-Wrote  : <C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd> 
-VHDL Output written to : C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd
-VHDL Output written to : C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/sim/design_1.vhd
-VHDL Output written to : C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Wrote  : <C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
 INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamCopIPCore_0 .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
@@ -97,74 +73,87 @@ INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0
 INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
-Exporting to file C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
-Generated Block Design Tcl file C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
-Generated Hardware Definition File C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.hwdef
-generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1105.555 ; gain = 110.465
+Exporting to file C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+generate_target: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1069.043 ; gain = 113.941
 catch { config_ip_cache -export [get_ips -all design_1_StreamCopIPCore_0_0] }
-export_ip_user_files -of_objects [get_files C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd]
 launch_runs -jobs 2 design_1_StreamCopIPCore_0_0_synth_1
-[Thu Jun  7 09:40:27 2018] Launched design_1_StreamCopIPCore_0_0_synth_1...
-Run output will be captured here: C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1/runme.log
-export_simulation -of_objects [get_files C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.ip_user_files -ipstatic_source_dir C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.cache/compile_simlib/modelsim} {questa=C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.cache/compile_simlib/questa} {riviera=C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.cache/compile_simlib/riviera} {activehdl=C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-report_ip_status -name ip_status 
+[Thu Jul  5 19:38:34 2018] Launched design_1_StreamCopIPCore_0_0_synth_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.ip_user_files -ipstatic_source_dir C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.cache/compile_simlib/modelsim} {questa=C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.cache/compile_simlib/questa} {riviera=C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.cache/compile_simlib/riviera} {activehdl=C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+ipx::edit_ip_in_project -upgrade true -name StreamCopIPCore_v1_0_project -directory C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.tmp/StreamCopIPCore_v1_0_project c:/Users/Miguel/Desktop/md5/MD5Project/ip_repo/StreamCopIPCore_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/miguel/desktop/md5/md5project/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1102.531 ; gain = 21.063
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miguel/Desktop/md5/MD5Project/ip_repo/StreamCopIPCore_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 1102.531 ; gain = 21.063
+update_compile_order -fileset sources_1
+close_project
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Thu Jun  7 09:42:52 2018] Launched synth_1...
-Run output will be captured here: C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.runs/synth_1/runme.log
-[Thu Jun  7 09:42:52 2018] Launched impl_1...
-Run output will be captured here: C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.runs/impl_1/runme.log
-file copy -force C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.runs/impl_1/design_1_wrapper.sysdef C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
+[Thu Jul  5 19:39:56 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.runs/synth_1/runme.log
+[Thu Jul  5 19:39:56 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.runs/impl_1/runme.log
+file copy -force C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.runs/impl_1/design_1_wrapper.sysdef C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
 
-launch_sdk -workspace C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk -hwspec C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.sdk -hwspec C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
 INFO: [Vivado 12-393] Launching SDK...
-INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk -hwspec C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.sdk -hwspec C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
 INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
-ipx::edit_ip_in_project -upgrade true -name StreamCopIPCore_v1_0_project -directory C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.tmp/StreamCopIPCore_v1_0_project c:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/ip_repo/StreamCopIPCore_1.0/component.xml
+ipx::edit_ip_in_project -upgrade true -name StreamCopIPCore_v1_0_project -directory C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.tmp/StreamCopIPCore_v1_0_project c:/Users/Miguel/Desktop/md5/MD5Project/ip_repo/StreamCopIPCore_1.0/component.xml
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'c:/users/miguel/desktop/ect/4_ano/2_semestre/cr/pratica/xoto8/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project'
+Current project path is 'c:/users/miguel/desktop/md5/md5project/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project'
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/ip_repo/StreamCopIPCore_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miguel/Desktop/md5/MD5Project/ip_repo/StreamCopIPCore_1.0'.
 INFO: [IP_Flow 19-795] Syncing license key meta-data
-ipx::edit_ip_in_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1153.676 ; gain = 0.000
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1117.289 ; gain = 0.000
 update_compile_order -fileset sources_1
 launch_runs impl_1 -jobs 2
-[Thu Jun  7 10:03:12 2018] Launched synth_1...
-Run output will be captured here: c:/users/miguel/desktop/ect/4_ano/2_semestre/cr/pratica/xoto8/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project/StreamCopIPCore_v1_0_project.runs/synth_1/runme.log
-[Thu Jun  7 10:03:12 2018] Launched impl_1...
-Run output will be captured here: c:/users/miguel/desktop/ect/4_ano/2_semestre/cr/pratica/xoto8/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project/StreamCopIPCore_v1_0_project.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-[Thu Jun  7 10:05:39 2018] Launched synth_1...
-Run output will be captured here: c:/users/miguel/desktop/ect/4_ano/2_semestre/cr/pratica/xoto8/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project/StreamCopIPCore_v1_0_project.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 2
-[Thu Jun  7 10:06:11 2018] Launched impl_1...
-Run output will be captured here: c:/users/miguel/desktop/ect/4_ano/2_semestre/cr/pratica/xoto8/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project/StreamCopIPCore_v1_0_project.runs/impl_1/runme.log
-set_property core_revision 17 [ipx::current_core]
+[Thu Jul  5 21:29:57 2018] Launched synth_1...
+Run output will be captured here: c:/users/miguel/desktop/md5/md5project/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project/StreamCopIPCore_v1_0_project.runs/synth_1/runme.log
+[Thu Jul  5 21:29:57 2018] Launched impl_1...
+Run output will be captured here: c:/users/miguel/desktop/md5/md5project/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project/StreamCopIPCore_v1_0_project.runs/impl_1/runme.log
+current_project StreamPopCount
+file copy -force C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.runs/impl_1/design_1_wrapper.sysdef C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.sdk -hwspec C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.sdk -hwspec C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+current_project StreamCopIPCore_v1_0_project
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 38 [ipx::current_core]
 ipx::create_xgui_files [ipx::current_core]
 ipx::update_checksums [ipx::current_core]
 ipx::save_core [ipx::current_core]
 close_project -delete
-update_ip_catalog -rebuild -repo_path c:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/ip_repo/StreamCopIPCore_1.0
-INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/ip_repo/StreamCopIPCore_1.0'
-report_ip_status -name ip_status 
+update_ip_catalog -rebuild -repo_path c:/Users/Miguel/Desktop/md5/MD5Project/ip_repo/StreamCopIPCore_1.0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Miguel/Desktop/md5/MD5Project/ip_repo/StreamCopIPCore_1.0'
 upgrade_ip -vlnv xilinx.com:user:StreamCopIPCore:1.0 [get_ips  design_1_StreamCopIPCore_0_0] -log ip_upgrade.log
-Upgrading 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd'
-INFO: [IP_Flow 19-3422] Upgraded design_1_StreamCopIPCore_0_0 (StreamCopIPCore_v1.0 1.0) from revision 16 to revision 17
-Wrote  : <C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd> 
-INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/ip_upgrade.log'.
+Upgrading 'C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-3422] Upgraded design_1_StreamCopIPCore_0_0 (StreamCopIPCore_v1.0 1.0) from revision 37 to revision 38
+Wrote  : <C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/ip_upgrade.log'.
 export_ip_user_files -of_objects [get_ips design_1_StreamCopIPCore_0_0] -no_script -sync -force -quiet
-generate_target all [get_files  C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd]
+generate_target all [get_files  C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd]
 INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
 WARNING: [xilinx.com:ip:axi_intc:4.1-4] /microblaze_0_axi_intc: Could not determine interrupt input port type - using default interrupt type Rising Edge. Please change this manually if necessary.
-Wrote  : <C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd> 
-VHDL Output written to : C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd
-VHDL Output written to : C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/sim/design_1.vhd
-VHDL Output written to : C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+Wrote  : <C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
 INFO: [BD 41-1029] Generation completed for the IP Integrator block StreamCopIPCore_0 .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_axi_intc .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_xlconcat .
@@ -182,45 +171,39 @@ INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0
 INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
 INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
-Exporting to file C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
-Generated Block Design Tcl file C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
-Generated Hardware Definition File C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+Exporting to file C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.hwdef
 catch { config_ip_cache -export [get_ips -all design_1_StreamCopIPCore_0_0] }
-export_ip_user_files -of_objects [get_files C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd]
+export_ip_user_files -of_objects [get_files C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd]
 launch_runs -jobs 2 design_1_StreamCopIPCore_0_0_synth_1
-[Thu Jun  7 10:08:22 2018] Launched design_1_StreamCopIPCore_0_0_synth_1...
-Run output will be captured here: C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1/runme.log
-export_simulation -of_objects [get_files C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.ip_user_files -ipstatic_source_dir C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.cache/compile_simlib/modelsim} {questa=C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.cache/compile_simlib/questa} {riviera=C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.cache/compile_simlib/riviera} {activehdl=C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+[Thu Jul  5 21:32:40 2018] Launched design_1_StreamCopIPCore_0_0_synth_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.ip_user_files -ipstatic_source_dir C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.cache/compile_simlib/modelsim} {questa=C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.cache/compile_simlib/questa} {riviera=C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.cache/compile_simlib/riviera} {activehdl=C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
 report_ip_status -name ip_status 
 reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.runs/synth_1
-
 launch_runs impl_1 -to_step write_bitstream -jobs 2
-[Thu Jun  7 10:08:39 2018] Launched design_1_StreamCopIPCore_0_0_synth_1, synth_1...
-Run output will be captured here:
-design_1_StreamCopIPCore_0_0_synth_1: C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1/runme.log
-synth_1: C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.runs/synth_1/runme.log
-[Thu Jun  7 10:08:39 2018] Launched impl_1...
-Run output will be captured here: C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.runs/impl_1/runme.log
-file copy -force C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.runs/impl_1/design_1_wrapper.sysdef C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
+[Thu Jul  5 21:33:43 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.runs/synth_1/runme.log
+[Thu Jul  5 21:33:43 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.runs/impl_1/runme.log
+file copy -force C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.runs/impl_1/design_1_wrapper.sysdef C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
 
-launch_sdk -workspace C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk -hwspec C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
+launch_sdk -workspace C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.sdk -hwspec C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
 INFO: [Vivado 12-393] Launching SDK...
-INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk -hwspec C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.sdk -hwspec C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
 INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
-ipx::edit_ip_in_project -upgrade true -name StreamCopIPCore_v1_0_project -directory C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.tmp/StreamCopIPCore_v1_0_project c:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/ip_repo/StreamCopIPCore_1.0/component.xml
+ipx::edit_ip_in_project -upgrade true -name StreamCopIPCore_v1_0_project -directory C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.tmp/StreamCopIPCore_v1_0_project c:/Users/Miguel/Desktop/md5/MD5Project/ip_repo/StreamCopIPCore_1.0/component.xml
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
-Current project path is 'c:/users/miguel/desktop/ect/4_ano/2_semestre/cr/pratica/xoto8/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project'
+Current project path is 'c:/users/miguel/desktop/md5/md5project/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project'
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/ip_repo/StreamCopIPCore_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miguel/Desktop/md5/MD5Project/ip_repo/StreamCopIPCore_1.0'.
 INFO: [IP_Flow 19-795] Syncing license key meta-data
-ipx::edit_ip_in_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1209.520 ; gain = 0.000
 update_compile_order -fileset sources_1
 close_project
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Jun  7 11:04:00 2018...
+INFO: [Common 17-206] Exiting Vivado at Thu Jul  5 21:47:47 2018...

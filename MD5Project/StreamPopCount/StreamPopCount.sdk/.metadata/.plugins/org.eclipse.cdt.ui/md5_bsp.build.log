@@ -1,4 +1,4 @@
-22:59:09 **** Build of project md5_bsp ****
+21:38:21 **** Build of project MD5_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_2/src"
 make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -28,5 +28,5 @@ make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-
 "Compiling uartlite"
 'Finished building libraries'
 
-22:59:16 Build Finished (took 7s.507ms)
+21:38:27 Build Finished (took 6s.600ms)
 

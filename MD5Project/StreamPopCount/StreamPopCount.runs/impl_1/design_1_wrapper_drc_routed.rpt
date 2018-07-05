@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Thu Jun  7 10:12:38 2018
+| Date         : Thu Jul  5 21:36:54 2018
 | Host         : Miguel running 64-bit major release  (build 9200)
 | Command      : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -49,7 +49,7 @@ Related violations: <none>
 
 PDRC-153#1 Warning
 Gated clock check  
-Net design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/M_reg[31]_i_1_n_0 is a gated clock net sourced by a combinational pin design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/M_reg[31]_i_1/O, cell design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/M_reg[31]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/startFor21_out is a gated clock net sourced by a combinational pin design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/startFor2_reg_i_1/O, cell design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/startFor2_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

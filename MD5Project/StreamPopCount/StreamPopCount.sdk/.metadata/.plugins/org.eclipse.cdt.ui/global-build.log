@@ -1,4 +1,10 @@
-00:08:12 **** Build of project test_bsp ****
+16:29:25 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+make: Nothing to be done for `all'.
+16:31:09 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+make: Nothing to be done for `all'.
+17:19:53 **** Auto Build of project MD5_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_2/src"
 make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -27,311 +33,1359 @@ make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=m
 make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Compiling uartlite"
 'Finished building libraries'
-00:08:20 **** Build of configuration Debug for project test ****
+17:19:59 **** Auto Build of configuration Debug for project MD5 ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+../src/helloworld.c:29:9: warning: unused variable 'length' [-Wunused-variable]
+  size_t length = 64;
+         ^~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
 'Building file: ../src/platform.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
 'Finished building: ../src/platform.c'
 ' '
-'Building target: test.elf'
+'Building target: MD5.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
-mb-size test.elf  |tee "test.elf.size"
+mb-size MD5.elf  |tee "MD5.elf.size"
    text	   data	    bss	    dec	    hex	filename
-   2748	    268	   3112	   6128	   17f0	test.elf
-'Finished building: test.elf.size'
+  16972	   1312	   3172	  21456	   53d0	MD5.elf
+'Finished building: MD5.elf.size'
 ' '
-00:08:31 **** Auto Build of configuration Debug for project test ****
+17:22:28 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+make: Nothing to be done for `all'.
+19:36:07 **** Incremental Build of configuration Debug for project MD5 ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:39:29: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
-   int numberOfBlocks = (int)ceil(initial_len/448.0);
-                             ^~~~
-../src/helloworld.c:39:29: warning: incompatible implicit declaration of built-in function 'ceil'
-../src/helloworld.c:39:29: note: include '<math.h>' or provide a declaration of 'ceil'
-../src/helloworld.c:47:19: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
-   block = (char *)calloc(length, sizeof(char));
-                   ^~~~~~
-../src/helloworld.c:47:19: warning: incompatible implicit declaration of built-in function 'calloc'
-../src/helloworld.c:47:19: note: include '<stdlib.h>' or provide a declaration of 'calloc'
-../src/helloworld.c:56:7: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
-       exit(1);
-       ^~~~
-../src/helloworld.c:56:7: warning: incompatible implicit declaration of built-in function 'exit'
-../src/helloworld.c:56:7: note: include '<stdlib.h>' or provide a declaration of 'exit'
-../src/helloworld.c:36:10: warning: unused variable 'initial_len_double' [-Wunused-variable]
-   double initial_len_double = (double) sizeof(message);
-          ^~~~~~~~~~~~~~~~~~
-../src/helloworld.c:33:16: warning: unused variable 'ch' [-Wunused-variable]
-   unsigned int ch;
-                ^~
-../src/helloworld.c:32:10: warning: unused variable 'array' [-Wunused-variable]
-     char array[5];
-          ^~~~~
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: test.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size test.elf  |tee "test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  39800	   1312	   3168	  44280	   acf8	test.elf
-'Finished building: test.elf.size'
-' '
-00:09:05 **** Incremental Build of configuration Debug for project test ****
-make all 
-make: Nada a ser feito para `all'.
-00:09:22 **** Incremental Build of configuration Debug for project test ****
-make all 
-make: Nada a ser feito para `all'.
-00:10:32 **** Incremental Build of configuration Debug for project test ****
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+19:58:46 **** Auto Build of project MD5_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+19:59:02 **** Auto Build of configuration Debug for project MD5 ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:39:29: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
-   int numberOfBlocks = (int)ceil(initial_len/448.0);
-                             ^~~~
-../src/helloworld.c:39:29: warning: incompatible implicit declaration of built-in function 'ceil'
-../src/helloworld.c:39:29: note: include '<math.h>' or provide a declaration of 'ceil'
-../src/helloworld.c:47:19: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
-   block = (char *)calloc(length, sizeof(char));
-                   ^~~~~~
-../src/helloworld.c:47:19: warning: incompatible implicit declaration of built-in function 'calloc'
-../src/helloworld.c:47:19: note: include '<stdlib.h>' or provide a declaration of 'calloc'
-../src/helloworld.c:56:7: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
-       exit(1);
-       ^~~~
-../src/helloworld.c:56:7: warning: incompatible implicit declaration of built-in function 'exit'
-../src/helloworld.c:56:7: note: include '<stdlib.h>' or provide a declaration of 'exit'
-../src/helloworld.c:36:10: warning: unused variable 'initial_len_double' [-Wunused-variable]
-   double initial_len_double = (double) sizeof(message);
-          ^~~~~~~~~~~~~~~~~~
-../src/helloworld.c:33:16: warning: unused variable 'ch' [-Wunused-variable]
-   unsigned int ch;
-                ^~
-../src/helloworld.c:32:10: warning: unused variable 'array' [-Wunused-variable]
-     char array[5];
-          ^~~~~
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+../src/helloworld.c:29:9: warning: unused variable 'length' [-Wunused-variable]
+  size_t length = 64;
+         ^~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
-'Building target: test.elf'
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: MD5.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
-mb-size test.elf  |tee "test.elf.size"
+mb-size MD5.elf  |tee "MD5.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  39800	   1312	   3168	  44280	   acf8	test.elf
-'Finished building: test.elf.size'
+  16972	   1312	   3172	  21456	   53d0	MD5.elf
+'Finished building: MD5.elf.size'
 ' '
-00:11:10 **** Auto Build of configuration Debug for project test ****
+20:00:46 **** Incremental Build of configuration Debug for project MD5 ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:39:29: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
-   int numberOfBlocks = (int)ceil(initial_len/448.0);
-                             ^~~~
-../src/helloworld.c:39:29: warning: incompatible implicit declaration of built-in function 'ceil'
-../src/helloworld.c:39:29: note: include '<math.h>' or provide a declaration of 'ceil'
-../src/helloworld.c:47:19: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
-   block = (char *)calloc(length, sizeof(char));
-                   ^~~~~~
-../src/helloworld.c:47:19: warning: incompatible implicit declaration of built-in function 'calloc'
-../src/helloworld.c:47:19: note: include '<stdlib.h>' or provide a declaration of 'calloc'
-../src/helloworld.c:56:7: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
-       exit(1);
-       ^~~~
-../src/helloworld.c:56:7: warning: incompatible implicit declaration of built-in function 'exit'
-../src/helloworld.c:56:7: note: include '<stdlib.h>' or provide a declaration of 'exit'
-../src/helloworld.c:78:14: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
-   xil_printf(r);
-              ^
-In file included from c:\xilinx\sdk\2017.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
-                 from ../src/helloworld.c:16:
-c:\xilinx\sdk\2017.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:229:9: note: expected 'const char *' but argument is of type 'int'
- void    _EXFUN(xil_printf, (const char*, ...));
-         ^
-../src/helloworld.c:36:10: warning: unused variable 'initial_len_double' [-Wunused-variable]
-   double initial_len_double = (double) sizeof(message);
-          ^~~~~~~~~~~~~~~~~~
-../src/helloworld.c:33:16: warning: unused variable 'ch' [-Wunused-variable]
-   unsigned int ch;
-                ^~
-../src/helloworld.c:32:10: warning: unused variable 'array' [-Wunused-variable]
-     char array[5];
-          ^~~~~
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: test.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size test.elf  |tee "test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  39796	   1312	   3172	  44280	   acf8	test.elf
-'Finished building: test.elf.size'
-' '
-00:11:12 **** Incremental Build of configuration Debug for project test ****
-make all 
-make: Nada a ser feito para `all'.
-00:11:18 **** Incremental Build of configuration Debug for project test ****
-make all 
-make: Nada a ser feito para `all'.
-00:11:24 **** Incremental Build of configuration Debug for project test ****
-make all 
-make: Nada a ser feito para `all'.
-00:15:24 **** Incremental Build of configuration Debug for project test ****
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+20:24:40 **** Auto Build of project MD5_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+20:25:12 **** Auto Build of configuration Debug for project MD5 ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:39:29: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
-   int numberOfBlocks = (int)ceil(initial_len/448.0);
-                             ^~~~
-../src/helloworld.c:39:29: warning: incompatible implicit declaration of built-in function 'ceil'
-../src/helloworld.c:39:29: note: include '<math.h>' or provide a declaration of 'ceil'
-../src/helloworld.c:47:19: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
-   block = (char *)calloc(length, sizeof(char));
-                   ^~~~~~
-../src/helloworld.c:47:19: warning: incompatible implicit declaration of built-in function 'calloc'
-../src/helloworld.c:47:19: note: include '<stdlib.h>' or provide a declaration of 'calloc'
-../src/helloworld.c:56:7: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
-       exit(1);
-       ^~~~
-../src/helloworld.c:56:7: warning: incompatible implicit declaration of built-in function 'exit'
-../src/helloworld.c:56:7: note: include '<stdlib.h>' or provide a declaration of 'exit'
-../src/helloworld.c:75:14: warning: unknown escape sequence: '\o'
-   xil_printf("\n\oll!");
-              ^~~~~~~~~
-../src/helloworld.c:78:14: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
-   xil_printf(r);
-              ^
-In file included from c:\xilinx\sdk\2017.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
-                 from ../src/helloworld.c:16:
-c:\xilinx\sdk\2017.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:229:9: note: expected 'const char *' but argument is of type 'int'
- void    _EXFUN(xil_printf, (const char*, ...));
-         ^
-../src/helloworld.c:36:10: warning: unused variable 'initial_len_double' [-Wunused-variable]
-   double initial_len_double = (double) sizeof(message);
-          ^~~~~~~~~~~~~~~~~~
-../src/helloworld.c:33:16: warning: unused variable 'ch' [-Wunused-variable]
-   unsigned int ch;
-                ^~
-../src/helloworld.c:32:10: warning: unused variable 'array' [-Wunused-variable]
-     char array[5];
-          ^~~~~
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+../src/helloworld.c:29:9: warning: unused variable 'length' [-Wunused-variable]
+  size_t length = 64;
+         ^~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
-'Building target: test.elf'
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: MD5.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
-mb-size test.elf  |tee "test.elf.size"
+mb-size MD5.elf  |tee "MD5.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  39824	   1312	   3168	  44304	   ad10	test.elf
-'Finished building: test.elf.size'
+  16972	   1312	   3172	  21456	   53d0	MD5.elf
+'Finished building: MD5.elf.size'
 ' '
-00:19:57 **** Incremental Build of configuration Debug for project test ****
+20:25:36 **** Incremental Build of configuration Debug for project MD5 ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+20:57:03 **** Auto Build of project MD5_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+20:57:15 **** Auto Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:39:29: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
-   int numberOfBlocks = (int)ceil(initial_len/448.0);
-                             ^~~~
-../src/helloworld.c:39:29: warning: incompatible implicit declaration of built-in function 'ceil'
-../src/helloworld.c:39:29: note: include '<math.h>' or provide a declaration of 'ceil'
-../src/helloworld.c:47:19: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
-   block = (char *)calloc(length, sizeof(char));
-                   ^~~~~~
-../src/helloworld.c:47:19: warning: incompatible implicit declaration of built-in function 'calloc'
-../src/helloworld.c:47:19: note: include '<stdlib.h>' or provide a declaration of 'calloc'
-../src/helloworld.c:56:7: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
-       exit(1);
-       ^~~~
-../src/helloworld.c:56:7: warning: incompatible implicit declaration of built-in function 'exit'
-../src/helloworld.c:56:7: note: include '<stdlib.h>' or provide a declaration of 'exit'
-../src/helloworld.c:79:14: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
-   xil_printf(r);
-              ^
-In file included from c:\xilinx\sdk\2017.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
-                 from ../src/helloworld.c:16:
-c:\xilinx\sdk\2017.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:229:9: note: expected 'const char *' but argument is of type 'int'
- void    _EXFUN(xil_printf, (const char*, ...));
-         ^
-../src/helloworld.c:36:10: warning: unused variable 'initial_len_double' [-Wunused-variable]
-   double initial_len_double = (double) sizeof(message);
-          ^~~~~~~~~~~~~~~~~~
-../src/helloworld.c:33:16: warning: unused variable 'ch' [-Wunused-variable]
-   unsigned int ch;
-                ^~
-../src/helloworld.c:32:10: warning: unused variable 'array' [-Wunused-variable]
-     char array[5];
-          ^~~~~
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+../src/helloworld.c:29:9: warning: unused variable 'length' [-Wunused-variable]
+  size_t length = 64;
+         ^~~~~~
 'Finished building: ../src/helloworld.c'
 ' '
-'Building target: test.elf'
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: MD5.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
-mb-size test.elf  |tee "test.elf.size"
+mb-size MD5.elf  |tee "MD5.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  39832	   1312	   3168	  44312	   ad18	test.elf
-'Finished building: test.elf.size'
+  16972	   1312	   3172	  21456	   53d0	MD5.elf
+'Finished building: MD5.elf.size'
 ' '
-00:20:23 **** Incremental Build of configuration Debug for project test ****
+20:59:23 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+21:13:22 **** Auto Build of project MD5_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+21:13:30 **** Auto Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+../src/helloworld.c:29:9: warning: unused variable 'length' [-Wunused-variable]
+  size_t length = 64;
+         ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: MD5.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MD5.elf  |tee "MD5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16972	   1312	   3172	  21456	   53d0	MD5.elf
+'Finished building: MD5.elf.size'
+' '
+21:14:51 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+21:52:23 **** Auto Build of project MD5_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+21:52:35 **** Auto Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+../src/helloworld.c:29:9: warning: unused variable 'length' [-Wunused-variable]
+  size_t length = 64;
+         ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: MD5.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MD5.elf  |tee "MD5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16972	   1312	   3172	  21456	   53d0	MD5.elf
+'Finished building: MD5.elf.size'
+' '
+21:54:17 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+22:20:33 **** Auto Build of project MD5_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+22:20:40 **** Auto Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+../src/helloworld.c:29:9: warning: unused variable 'length' [-Wunused-variable]
+  size_t length = 64;
+         ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: MD5.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MD5.elf  |tee "MD5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16972	   1312	   3172	  21456	   53d0	MD5.elf
+'Finished building: MD5.elf.size'
+' '
+22:23:25 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+22:23:37 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+22:38:17 **** Auto Build of project MD5_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+22:38:25 **** Auto Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+../src/helloworld.c:29:9: warning: unused variable 'length' [-Wunused-variable]
+  size_t length = 64;
+         ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: MD5.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MD5.elf  |tee "MD5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16972	   1312	   3172	  21456	   53d0	MD5.elf
+'Finished building: MD5.elf.size'
+' '
+22:40:21 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+22:40:32 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+22:41:57 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+22:45:09 **** Auto Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+22:58:09 **** Auto Build of project MD5_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+22:58:22 **** Auto Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:31:1: warning: "/*" within comment [-Wcomment]
+ /*
+  
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: MD5.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MD5.elf  |tee "MD5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16964	   1312	   3172	  21448	   53c8	MD5.elf
+'Finished building: MD5.elf.size'
+' '
+22:59:45 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+23:13:14 **** Auto Build of project MD5_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+23:13:28 **** Auto Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:31:1: warning: "/*" within comment [-Wcomment]
+ /*
+  
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: MD5.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MD5.elf  |tee "MD5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16964	   1312	   3172	  21448	   53c8	MD5.elf
+'Finished building: MD5.elf.size'
+' '
+23:15:15 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+23:18:58 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+12:56:39 **** Auto Build of project MD5_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+12:56:53 **** Auto Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:31:1: warning: "/*" within comment [-Wcomment]
+ /*
+  
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: MD5.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MD5.elf  |tee "MD5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16964	   1312	   3172	  21448	   53c8	MD5.elf
+'Finished building: MD5.elf.size'
+' '
+12:58:22 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+13:00:03 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+13:02:34 **** Auto Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+13:03:33 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+13:04:23 **** Auto Build of project MD5_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+13:04:29 **** Auto Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:31:1: warning: "/*" within comment [-Wcomment]
+ /*
+  
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: MD5.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MD5.elf  |tee "MD5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16976	   1312	   3168	  21456	   53d0	MD5.elf
+'Finished building: MD5.elf.size'
+' '
+13:04:59 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+make: Nothing to be done for `all'.
+13:05:21 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+make: Nothing to be done for `all'.
+13:05:52 **** Auto Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:31:1: warning: "/*" within comment [-Wcomment]
+ /*
+  
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MD5.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MD5.elf  |tee "MD5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16984	   1312	   3168	  21464	   53d8	MD5.elf
+'Finished building: MD5.elf.size'
+' '
+13:06:17 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+make: Nothing to be done for `all'.
+13:06:25 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+make: Nothing to be done for `all'.
+13:07:04 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+make: Nothing to be done for `all'.
+13:07:28 **** Auto Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:31:1: warning: "/*" within comment [-Wcomment]
+ /*
+  
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MD5.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MD5.elf  |tee "MD5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16484	   1312	   3172	  20968	   51e8	MD5.elf
+'Finished building: MD5.elf.size'
+' '
+13:07:55 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+make: Nothing to be done for `all'.
+13:11:27 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+make: Nothing to be done for `all'.
+13:12:00 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+make: Nothing to be done for `all'.
+13:38:37 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: *** [src/helloworld.o] Error 1
+16:24:16 **** Auto Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:3:24: fatal error: xil_printf.h: No such file or directory
+ #include "xil_printf.h"
+                        ^
+compilation terminated.
+make: ** [src/helloworld.o] Erro 1
+16:24:45 **** Auto Build of project MD5_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+16:26:12 **** Auto Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:31:1: warning: "/*" within comment [-Wcomment]
+ /*
+  
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: MD5.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MD5.elf  |tee "MD5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16284	   1312	   3172	  20768	   5120	MD5.elf
+'Finished building: MD5.elf.size'
+' '
+16:27:43 **** Incremental Build of configuration Debug for project MD5 ****
 make all 
 make: Nada a ser feito para `all'.
-00:20:34 **** Incremental Build of configuration Debug for project test ****
+16:29:01 **** Auto Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:31:1: warning: "/*" within comment [-Wcomment]
+ /*
+  
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MD5.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MD5.elf  |tee "MD5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16320	   1312	   3168	  20800	   5140	MD5.elf
+'Finished building: MD5.elf.size'
+' '
+16:29:49 **** Incremental Build of configuration Debug for project MD5 ****
 make all 
 make: Nada a ser feito para `all'.
-00:21:31 **** Incremental Build of configuration Debug for project test ****
+16:49:26 **** Auto Build of project MD5_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_6/src"
+make -C microblaze_0/libsrc/cpu_v2_6/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/intc_v3_7/src"
+make -C microblaze_0/libsrc/intc_v3_7/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling intc"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_5/src"
+make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+16:49:34 **** Auto Build of configuration Debug for project MD5 ****
 make all 
-make: Nada a ser feito para `all'.
-00:21:44 **** Incremental Build of configuration Debug for project test ****
-make all 
-make: Nada a ser feito para `all'.
-00:45:03 **** Incremental Build of configuration Debug for project test ****
-make all 
-make: Nada a ser feito para `all'.
-00:45:08 **** Incremental Build of configuration Debug for project test ****
-make all 
-make: Nada a ser feito para `all'.
-00:45:19 **** Incremental Build of configuration Debug for project test ****
-make all 
-make: Nada a ser feito para `all'.
-00:46:21 **** Incremental Build of configuration Debug for project test ****
-make all 
-make: Nada a ser feito para `all'.
-00:58:22 **** Clean-only build of project test_bsp ****
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:31:1: warning: "/*" within comment [-Wcomment]
+ /*
+  
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: MD5.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MD5.elf  |tee "MD5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16320	   1312	   3168	  20800	   5140	MD5.elf
+'Finished building: MD5.elf.size'
+' '
+19:03:45 **** Clean-only build of project MD5_bsp ****
 make -k clean 
 make -C microblaze_0/libsrc/bram_v4_2/src -s clean 
 make -C microblaze_0/libsrc/cpu_v2_6/src -s clean 
@@ -339,11 +1393,11 @@ make -C microblaze_0/libsrc/intc_v3_7/src -s clean
 make -C microblaze_0/libsrc/standalone_v6_5/src -s clean 
 make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
 rm -f microblaze_0/lib/libxil.a
-00:58:23 **** Clean-only build of configuration Debug for project test ****
+19:03:46 **** Clean-only build of configuration Debug for project MD5 ****
 make clean 
-rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  test.elf.size  test.elf
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  MD5.elf.size  MD5.elf
 ' '
-00:58:23 **** Build of project test_bsp ****
+19:03:46 **** Build of project MD5_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_2/src"
 make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -372,112 +1426,54 @@ make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=m
 make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Compiling uartlite"
 'Finished building libraries'
-00:58:30 **** Build of configuration Debug for project test ****
+19:03:53 **** Build of configuration Debug for project MD5 ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:39:29: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
-   int numberOfBlocks = (int)ceil(initial_len/448.0);
-                             ^~~~
-../src/helloworld.c:39:29: warning: incompatible implicit declaration of built-in function 'ceil'
-../src/helloworld.c:39:29: note: include '<math.h>' or provide a declaration of 'ceil'
-../src/helloworld.c:47:19: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
-   block = (char *)calloc(length, sizeof(char));
-                   ^~~~~~
-../src/helloworld.c:47:19: warning: incompatible implicit declaration of built-in function 'calloc'
-../src/helloworld.c:47:19: note: include '<stdlib.h>' or provide a declaration of 'calloc'
-../src/helloworld.c:56:7: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
-       exit(1);
-       ^~~~
-../src/helloworld.c:56:7: warning: incompatible implicit declaration of built-in function 'exit'
-../src/helloworld.c:56:7: note: include '<stdlib.h>' or provide a declaration of 'exit'
-../src/helloworld.c:79:14: warning: passing argument 1 of 'xil_printf' makes pointer from integer without a cast [-Wint-conversion]
-   xil_printf(r);
-              ^
-In file included from c:\xilinx\sdk\2017.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
-                 from ../src/helloworld.c:16:
-c:\xilinx\sdk\2017.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:229:9: note: expected 'const char *' but argument is of type 'int'
- void    _EXFUN(xil_printf, (const char*, ...));
-         ^
-../src/helloworld.c:36:10: warning: unused variable 'initial_len_double' [-Wunused-variable]
-   double initial_len_double = (double) sizeof(message);
-          ^~~~~~~~~~~~~~~~~~
-../src/helloworld.c:33:16: warning: unused variable 'ch' [-Wunused-variable]
-   unsigned int ch;
-                ^~
-../src/helloworld.c:32:10: warning: unused variable 'array' [-Wunused-variable]
-     char array[5];
-          ^~~~~
+../src/helloworld.c:31:1: warning: "/*" within comment [-Wcomment]
+ /*
+  
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
 'Finished building: ../src/helloworld.c'
 ' '
 'Building file: ../src/platform.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
 'Finished building: ../src/platform.c'
 ' '
-'Building target: test.elf'
+'Building target: MD5.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
-mb-size test.elf  |tee "test.elf.size"
+mb-size MD5.elf  |tee "MD5.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  39832	   1312	   3168	  44312	   ad18	test.elf
-'Finished building: test.elf.size'
+  16320	   1312	   3168	  20800	   5140	MD5.elf
+'Finished building: MD5.elf.size'
 ' '
-00:59:10 **** Incremental Build of configuration Debug for project test ****
+19:05:03 **** Incremental Build of configuration Debug for project MD5 ****
 make all 
 make: Nada a ser feito para `all'.
-00:59:53 **** Auto Build of configuration Debug for project test ****
-make all 
-'Building file: ../src/helloworld.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:39:29: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
-   int numberOfBlocks = (int)ceil(initial_len/448.0);
-                             ^~~~
-../src/helloworld.c:39:29: warning: incompatible implicit declaration of built-in function 'ceil'
-../src/helloworld.c:39:29: note: include '<math.h>' or provide a declaration of 'ceil'
-../src/helloworld.c:47:19: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
-   block = (char *)calloc(length, sizeof(char));
-                   ^~~~~~
-../src/helloworld.c:47:19: warning: incompatible implicit declaration of built-in function 'calloc'
-../src/helloworld.c:47:19: note: include '<stdlib.h>' or provide a declaration of 'calloc'
-../src/helloworld.c:56:7: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
-       exit(1);
-       ^~~~
-../src/helloworld.c:56:7: warning: incompatible implicit declaration of built-in function 'exit'
-../src/helloworld.c:56:7: note: include '<stdlib.h>' or provide a declaration of 'exit'
-../src/helloworld.c:36:10: warning: unused variable 'initial_len_double' [-Wunused-variable]
-   double initial_len_double = (double) sizeof(message);
-          ^~~~~~~~~~~~~~~~~~
-../src/helloworld.c:33:16: warning: unused variable 'ch' [-Wunused-variable]
-   unsigned int ch;
-                ^~
-../src/helloworld.c:32:10: warning: unused variable 'array' [-Wunused-variable]
-     char array[5];
-          ^~~~~
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: test.elf'
-'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size test.elf  |tee "test.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  39844	   1312	   3172	  44328	   ad28	test.elf
-'Finished building: test.elf.size'
-' '
-01:00:22 **** Incremental Build of configuration Debug for project test ****
-make all 
-make: Nada a ser feito para `all'.
-09:47:57 **** Clean-only build of project test_bsp ****
+19:44:47 **** Clean-only build of project MD5_bsp ****
 make -k clean 
 make -C microblaze_0/libsrc/bram_v4_2/src -s clean 
 make -C microblaze_0/libsrc/cpu_v2_6/src -s clean 
@@ -485,11 +1481,11 @@ make -C microblaze_0/libsrc/intc_v3_7/src -s clean
 make -C microblaze_0/libsrc/standalone_v6_5/src -s clean 
 make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
 rm -f microblaze_0/lib/libxil.a
-09:47:58 **** Clean-only build of configuration Debug for project test ****
+19:44:48 **** Clean-only build of configuration Debug for project MD5 ****
 make clean 
-rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  test.elf.size  test.elf
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  MD5.elf.size  MD5.elf
 ' '
-09:47:58 **** Build of project test_bsp ****
+19:44:48 **** Build of project MD5_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_2/src"
 make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -518,58 +1514,96 @@ make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=m
 make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Compiling uartlite"
 'Finished building libraries'
-09:48:10 **** Build of configuration Debug for project test ****
+19:44:56 **** Build of configuration Debug for project MD5 ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:39:29: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
-   int numberOfBlocks = (int)ceil(initial_len/448.0);
-                             ^~~~
-../src/helloworld.c:39:29: warning: incompatible implicit declaration of built-in function 'ceil'
-../src/helloworld.c:39:29: note: include '<math.h>' or provide a declaration of 'ceil'
-../src/helloworld.c:47:19: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
-   block = (char *)calloc(length, sizeof(char));
-                   ^~~~~~
-../src/helloworld.c:47:19: warning: incompatible implicit declaration of built-in function 'calloc'
-../src/helloworld.c:47:19: note: include '<stdlib.h>' or provide a declaration of 'calloc'
-../src/helloworld.c:56:7: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
-       exit(1);
-       ^~~~
-../src/helloworld.c:56:7: warning: incompatible implicit declaration of built-in function 'exit'
-../src/helloworld.c:56:7: note: include '<stdlib.h>' or provide a declaration of 'exit'
-../src/helloworld.c:36:10: warning: unused variable 'initial_len_double' [-Wunused-variable]
-   double initial_len_double = (double) sizeof(message);
-          ^~~~~~~~~~~~~~~~~~
-../src/helloworld.c:33:16: warning: unused variable 'ch' [-Wunused-variable]
-   unsigned int ch;
-                ^~
-../src/helloworld.c:32:10: warning: unused variable 'array' [-Wunused-variable]
-     char array[5];
-          ^~~~~
+../src/helloworld.c:31:1: warning: "/*" within comment [-Wcomment]
+ /*
+  
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
 'Finished building: ../src/helloworld.c'
 ' '
 'Building file: ../src/platform.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
 'Finished building: ../src/platform.c'
 ' '
-'Building target: test.elf'
+'Building target: MD5.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
-mb-size test.elf  |tee "test.elf.size"
+mb-size MD5.elf  |tee "MD5.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  39844	   1312	   3172	  44328	   ad28	test.elf
-'Finished building: test.elf.size'
+  16320	   1312	   3168	  20800	   5140	MD5.elf
+'Finished building: MD5.elf.size'
 ' '
-09:52:09 **** Incremental Build of configuration Debug for project test ****
+19:45:17 **** Incremental Build of configuration Debug for project MD5 ****
 make all 
 make: Nada a ser feito para `all'.
-10:16:02 **** Clean-only build of project test_bsp ****
+19:45:54 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+make: Nada a ser feito para `all'.
+21:31:04 **** Auto Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:31:1: warning: "/*" within comment [-Wcomment]
+ /*
+  
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MD5.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MD5.elf  |tee "MD5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  16320	   1312	   3168	  20800	   5140	MD5.elf
+'Finished building: MD5.elf.size'
+' '
+21:38:19 **** Clean-only build of project MD5_bsp ****
 make -k clean 
 make -C microblaze_0/libsrc/bram_v4_2/src -s clean 
 make -C microblaze_0/libsrc/cpu_v2_6/src -s clean 
@@ -577,11 +1611,11 @@ make -C microblaze_0/libsrc/intc_v3_7/src -s clean
 make -C microblaze_0/libsrc/standalone_v6_5/src -s clean 
 make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
 rm -f microblaze_0/lib/libxil.a
-10:16:03 **** Clean-only build of configuration Debug for project test ****
+21:38:20 **** Clean-only build of configuration Debug for project MD5 ****
 make clean 
-rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  test.elf.size  test.elf
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  MD5.elf.size  MD5.elf
 ' '
-10:16:04 **** Build of project test_bsp ****
+21:38:21 **** Build of project MD5_bsp ****
 make -k all 
 "Running Make include in microblaze_0/libsrc/bram_v4_2/src"
 make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
@@ -610,453 +1644,92 @@ make -C microblaze_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=m
 make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v10.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
 "Compiling uartlite"
 'Finished building libraries'
-10:16:10 **** Build of configuration Debug for project test ****
+21:38:27 **** Build of configuration Debug for project MD5 ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:39:29: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
-   int numberOfBlocks = (int)ceil(initial_len/448.0);
-                             ^~~~
-../src/helloworld.c:39:29: warning: incompatible implicit declaration of built-in function 'ceil'
-../src/helloworld.c:39:29: note: include '<math.h>' or provide a declaration of 'ceil'
-../src/helloworld.c:47:19: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
-   block = (char *)calloc(length, sizeof(char));
-                   ^~~~~~
-../src/helloworld.c:47:19: warning: incompatible implicit declaration of built-in function 'calloc'
-../src/helloworld.c:47:19: note: include '<stdlib.h>' or provide a declaration of 'calloc'
-../src/helloworld.c:56:7: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
-       exit(1);
-       ^~~~
-../src/helloworld.c:56:7: warning: incompatible implicit declaration of built-in function 'exit'
-../src/helloworld.c:56:7: note: include '<stdlib.h>' or provide a declaration of 'exit'
-../src/helloworld.c:36:10: warning: unused variable 'initial_len_double' [-Wunused-variable]
-   double initial_len_double = (double) sizeof(message);
-          ^~~~~~~~~~~~~~~~~~
-../src/helloworld.c:33:16: warning: unused variable 'ch' [-Wunused-variable]
-   unsigned int ch;
-                ^~
-../src/helloworld.c:32:10: warning: unused variable 'array' [-Wunused-variable]
-     char array[5];
-          ^~~~~
+../src/helloworld.c:31:1: warning: "/*" within comment [-Wcomment]
+ /*
+  
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
 'Finished building: ../src/helloworld.c'
 ' '
 'Building file: ../src/platform.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
 'Finished building: ../src/platform.c'
 ' '
-'Building target: test.elf'
+'Building target: MD5.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
-mb-size test.elf  |tee "test.elf.size"
+mb-size MD5.elf  |tee "MD5.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  39844	   1312	   3172	  44328	   ad28	test.elf
-'Finished building: test.elf.size'
+  16320	   1312	   3168	  20800	   5140	MD5.elf
+'Finished building: MD5.elf.size'
 ' '
-10:18:26 **** Incremental Build of configuration Debug for project test ****
+21:39:24 **** Incremental Build of configuration Debug for project MD5 ****
 make all 
 make: Nada a ser feito para `all'.
-10:20:44 **** Incremental Build of configuration Debug for project test ****
+21:40:20 **** Incremental Build of configuration Debug for project MD5 ****
 make all 
 make: Nada a ser feito para `all'.
-10:21:25 **** Incremental Build of configuration Debug for project test ****
-make all 
-make: Nada a ser feito para `all'.
-10:26:33 **** Auto Build of configuration Debug for project test ****
+21:40:40 **** Auto Build of configuration Debug for project MD5 ****
 make all 
 'Building file: ../src/helloworld.c'
 'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
 ../src/helloworld.c: In function 'main':
-../src/helloworld.c:24:28: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
-  int numberOfBlocks = (int)ceil(initial_len/448.0);
-                            ^~~~
-../src/helloworld.c:24:28: warning: incompatible implicit declaration of built-in function 'ceil'
-../src/helloworld.c:24:28: note: include '<math.h>' or provide a declaration of 'ceil'
-../src/helloworld.c:32:18: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
-  block = (char *)calloc(length, sizeof(char));
-                  ^~~~~~
-../src/helloworld.c:32:18: warning: incompatible implicit declaration of built-in function 'calloc'
-../src/helloworld.c:32:18: note: include '<stdlib.h>' or provide a declaration of 'calloc'
-../src/helloworld.c:41:6: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
-      exit(1);
-      ^~~~
-../src/helloworld.c:41:6: warning: incompatible implicit declaration of built-in function 'exit'
-../src/helloworld.c:41:6: note: include '<stdlib.h>' or provide a declaration of 'exit'
-In file included from ../src/helloworld.c:4:0:
-../../test_bsp/microblaze_0/include/mb_interface.h:98:33: error: expected ';' before 'asm'
- #define putfsl(val, id)         asm volatile ("put\t%0,rfsl" stringify(id) :: "d" (val))
-                                 ^
-../src/helloworld.c:61:13: note: in expansion of macro 'putfsl'
-             putfsl(subBlock, 0);
-             ^~~~~~
-../../test_bsp/microblaze_0/include/mb_interface.h:98:33: error: expected ';' before 'asm'
- #define putfsl(val, id)         asm volatile ("put\t%0,rfsl" stringify(id) :: "d" (val))
-                                 ^
-../src/helloworld.c:69:11: note: in expansion of macro 'putfsl'
-           putfsl(subBlock, 0);
-           ^~~~~~
-../src/helloworld.c:21:9: warning: unused variable 'initial_len_double' [-Wunused-variable]
-  double initial_len_double = (double) sizeof(message);
-         ^~~~~~~~~~~~~~~~~~
-../src/helloworld.c:18:15: warning: unused variable 'ch' [-Wunused-variable]
-  unsigned int ch;
-               ^~
-../src/helloworld.c:17:10: warning: unused variable 'array' [-Wunused-variable]
-     char array[5];
-          ^~~~~
-make: ** [src/helloworld.o] Erro 1
-10:27:26 **** Incremental Build of configuration Debug for project test ****
-make all 
-'Building file: ../src/helloworld.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:24:28: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
-  int numberOfBlocks = (int)ceil(initial_len/448.0);
-                            ^~~~
-../src/helloworld.c:24:28: warning: incompatible implicit declaration of built-in function 'ceil'
-../src/helloworld.c:24:28: note: include '<math.h>' or provide a declaration of 'ceil'
-../src/helloworld.c:32:18: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
-  block = (char *)calloc(length, sizeof(char));
-                  ^~~~~~
-../src/helloworld.c:32:18: warning: incompatible implicit declaration of built-in function 'calloc'
-../src/helloworld.c:32:18: note: include '<stdlib.h>' or provide a declaration of 'calloc'
-../src/helloworld.c:41:6: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
-      exit(1);
-      ^~~~
-../src/helloworld.c:41:6: warning: incompatible implicit declaration of built-in function 'exit'
-../src/helloworld.c:41:6: note: include '<stdlib.h>' or provide a declaration of 'exit'
-In file included from ../src/helloworld.c:4:0:
-../../test_bsp/microblaze_0/include/mb_interface.h:98:33: error: expected ';' before 'asm'
- #define putfsl(val, id)         asm volatile ("put\t%0,rfsl" stringify(id) :: "d" (val))
-                                 ^
-../src/helloworld.c:61:13: note: in expansion of macro 'putfsl'
-             putfsl(subBlock, 0);
-             ^~~~~~
-../../test_bsp/microblaze_0/include/mb_interface.h:98:33: error: expected ';' before 'asm'
- #define putfsl(val, id)         asm volatile ("put\t%0,rfsl" stringify(id) :: "d" (val))
-                                 ^
-../src/helloworld.c:69:11: note: in expansion of macro 'putfsl'
-           putfsl(subBlock, 0);
-           ^~~~~~
-../src/helloworld.c:21:9: warning: unused variable 'initial_len_double' [-Wunused-variable]
-  double initial_len_double = (double) sizeof(message);
-         ^~~~~~~~~~~~~~~~~~
-../src/helloworld.c:18:15: warning: unused variable 'ch' [-Wunused-variable]
-  unsigned int ch;
-               ^~
-../src/helloworld.c:17:10: warning: unused variable 'array' [-Wunused-variable]
-     char array[5];
-          ^~~~~
-make: ** [src/helloworld.o] Erro 1
-10:27:33 **** Incremental Build of configuration Debug for project test ****
-make all 
-'Building file: ../src/helloworld.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:24:28: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
-  int numberOfBlocks = (int)ceil(initial_len/448.0);
-                            ^~~~
-../src/helloworld.c:24:28: warning: incompatible implicit declaration of built-in function 'ceil'
-../src/helloworld.c:24:28: note: include '<math.h>' or provide a declaration of 'ceil'
-../src/helloworld.c:32:18: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
-  block = (char *)calloc(length, sizeof(char));
-                  ^~~~~~
-../src/helloworld.c:32:18: warning: incompatible implicit declaration of built-in function 'calloc'
-../src/helloworld.c:32:18: note: include '<stdlib.h>' or provide a declaration of 'calloc'
-../src/helloworld.c:41:6: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
-      exit(1);
-      ^~~~
-../src/helloworld.c:41:6: warning: incompatible implicit declaration of built-in function 'exit'
-../src/helloworld.c:41:6: note: include '<stdlib.h>' or provide a declaration of 'exit'
-In file included from ../src/helloworld.c:4:0:
-../../test_bsp/microblaze_0/include/mb_interface.h:98:33: error: expected ';' before 'asm'
- #define putfsl(val, id)         asm volatile ("put\t%0,rfsl" stringify(id) :: "d" (val))
-                                 ^
-../src/helloworld.c:61:13: note: in expansion of macro 'putfsl'
-             putfsl(subBlock, 0);
-             ^~~~~~
-../../test_bsp/microblaze_0/include/mb_interface.h:98:33: error: expected ';' before 'asm'
- #define putfsl(val, id)         asm volatile ("put\t%0,rfsl" stringify(id) :: "d" (val))
-                                 ^
-../src/helloworld.c:69:11: note: in expansion of macro 'putfsl'
-           putfsl(subBlock, 0);
-           ^~~~~~
-../src/helloworld.c:21:9: warning: unused variable 'initial_len_double' [-Wunused-variable]
-  double initial_len_double = (double) sizeof(message);
-         ^~~~~~~~~~~~~~~~~~
-../src/helloworld.c:18:15: warning: unused variable 'ch' [-Wunused-variable]
-  unsigned int ch;
-               ^~
-../src/helloworld.c:17:10: warning: unused variable 'array' [-Wunused-variable]
-     char array[5];
-          ^~~~~
-make: ** [src/helloworld.o] Erro 1
-10:29:02 **** Incremental Build of configuration Debug for project test ****
-make all 
-'Building file: ../src/helloworld.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:24:28: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
-  int numberOfBlocks = (int)ceil(initial_len/448.0);
-                            ^~~~
-../src/helloworld.c:24:28: warning: incompatible implicit declaration of built-in function 'ceil'
-../src/helloworld.c:24:28: note: include '<math.h>' or provide a declaration of 'ceil'
-../src/helloworld.c:32:18: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
-  block = (char *)calloc(length, sizeof(char));
-                  ^~~~~~
-../src/helloworld.c:32:18: warning: incompatible implicit declaration of built-in function 'calloc'
-../src/helloworld.c:32:18: note: include '<stdlib.h>' or provide a declaration of 'calloc'
-../src/helloworld.c:41:6: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
-      exit(1);
-      ^~~~
-../src/helloworld.c:41:6: warning: incompatible implicit declaration of built-in function 'exit'
-../src/helloworld.c:41:6: note: include '<stdlib.h>' or provide a declaration of 'exit'
-In file included from ../src/helloworld.c:4:0:
-../../test_bsp/microblaze_0/include/mb_interface.h:98:33: error: expected ';' before 'asm'
- #define putfsl(val, id)         asm volatile ("put\t%0,rfsl" stringify(id) :: "d" (val))
-                                 ^
-../src/helloworld.c:61:13: note: in expansion of macro 'putfsl'
-             putfsl(subBlock, 0);
-             ^~~~~~
-../../test_bsp/microblaze_0/include/mb_interface.h:98:33: error: expected ';' before 'asm'
- #define putfsl(val, id)         asm volatile ("put\t%0,rfsl" stringify(id) :: "d" (val))
-                                 ^
-../src/helloworld.c:69:11: note: in expansion of macro 'putfsl'
-           putfsl(subBlock, 0);
-           ^~~~~~
-../src/helloworld.c:21:9: warning: unused variable 'initial_len_double' [-Wunused-variable]
-  double initial_len_double = (double) sizeof(message);
-         ^~~~~~~~~~~~~~~~~~
-../src/helloworld.c:18:15: warning: unused variable 'ch' [-Wunused-variable]
-  unsigned int ch;
-               ^~
-../src/helloworld.c:17:10: warning: unused variable 'array' [-Wunused-variable]
-     char array[5];
-          ^~~~~
-make: ** [src/helloworld.o] Erro 1
-10:54:58 **** Auto Build of configuration Debug for project test ****
-make all 
-'Building file: ../src/helloworld.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:24:28: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
-  int numberOfBlocks = (int)ceil(initial_len/448.0);
-                            ^~~~
-../src/helloworld.c:24:28: warning: incompatible implicit declaration of built-in function 'ceil'
-../src/helloworld.c:24:28: note: include '<math.h>' or provide a declaration of 'ceil'
-../src/helloworld.c:32:18: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
-  block = (char *)calloc(length, sizeof(char));
-                  ^~~~~~
-../src/helloworld.c:32:18: warning: incompatible implicit declaration of built-in function 'calloc'
-../src/helloworld.c:32:18: note: include '<stdlib.h>' or provide a declaration of 'calloc'
-../src/helloworld.c:41:6: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
-      exit(1);
-      ^~~~
-../src/helloworld.c:41:6: warning: incompatible implicit declaration of built-in function 'exit'
-../src/helloworld.c:41:6: note: include '<stdlib.h>' or provide a declaration of 'exit'
-../src/helloworld.c:62:11: error: expected ';' before '}' token
-           }
-           ^
-../src/helloworld.c:70:9: error: expected ';' before '}' token
-         }
-         ^
-../src/helloworld.c:86:15: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-     blockTemp = 'a';
-               ^
-../src/helloworld.c:84:10: warning: unused variable 'basePtr' [-Wunused-variable]
-    char *basePtr=blockTemp;
-          ^~~~~~~
-../src/helloworld.c:21:9: warning: unused variable 'initial_len_double' [-Wunused-variable]
-  double initial_len_double = (double) sizeof(message);
-         ^~~~~~~~~~~~~~~~~~
-../src/helloworld.c:18:15: warning: unused variable 'ch' [-Wunused-variable]
-  unsigned int ch;
-               ^~
-../src/helloworld.c:17:10: warning: unused variable 'array' [-Wunused-variable]
-     char array[5];
-          ^~~~~
-make: ** [src/helloworld.o] Erro 1
-11:01:39 **** Auto Build of configuration Debug for project test ****
-make all 
-'Building file: ../src/helloworld.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:24:28: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
-  int numberOfBlocks = (int)ceil(initial_len/448.0);
-                            ^~~~
-../src/helloworld.c:24:28: warning: incompatible implicit declaration of built-in function 'ceil'
-../src/helloworld.c:24:28: note: include '<math.h>' or provide a declaration of 'ceil'
-../src/helloworld.c:32:18: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
-  block = (char *)calloc(length, sizeof(char));
-                  ^~~~~~
-../src/helloworld.c:32:18: warning: incompatible implicit declaration of built-in function 'calloc'
-../src/helloworld.c:32:18: note: include '<stdlib.h>' or provide a declaration of 'calloc'
-../src/helloworld.c:41:6: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
-      exit(1);
-      ^~~~
-../src/helloworld.c:41:6: warning: incompatible implicit declaration of built-in function 'exit'
-../src/helloworld.c:41:6: note: include '<stdlib.h>' or provide a declaration of 'exit'
-../src/helloworld.c:62:11: error: expected ';' before '}' token
-           }
-           ^
-../src/helloworld.c:70:9: error: expected ';' before '}' token
-         }
-         ^
-../src/helloworld.c:86:15: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-     blockTemp = 'a';
-               ^
-../src/helloworld.c:21:9: warning: unused variable 'initial_len_double' [-Wunused-variable]
-  double initial_len_double = (double) sizeof(message);
-         ^~~~~~~~~~~~~~~~~~
-../src/helloworld.c:18:15: warning: unused variable 'ch' [-Wunused-variable]
-  unsigned int ch;
-               ^~
-../src/helloworld.c:17:10: warning: unused variable 'array' [-Wunused-variable]
-     char array[5];
-          ^~~~~
-make: ** [src/helloworld.o] Erro 1
-11:01:55 **** Auto Build of configuration Debug for project test ****
-make all 
-'Building file: ../src/helloworld.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:24:28: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
-  int numberOfBlocks = (int)ceil(initial_len/448.0);
-                            ^~~~
-../src/helloworld.c:24:28: warning: incompatible implicit declaration of built-in function 'ceil'
-../src/helloworld.c:24:28: note: include '<math.h>' or provide a declaration of 'ceil'
-../src/helloworld.c:32:18: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
-  block = (char *)calloc(length, sizeof(char));
-                  ^~~~~~
-../src/helloworld.c:32:18: warning: incompatible implicit declaration of built-in function 'calloc'
-../src/helloworld.c:32:18: note: include '<stdlib.h>' or provide a declaration of 'calloc'
-../src/helloworld.c:41:6: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
-      exit(1);
-      ^~~~
-../src/helloworld.c:41:6: warning: incompatible implicit declaration of built-in function 'exit'
-../src/helloworld.c:41:6: note: include '<stdlib.h>' or provide a declaration of 'exit'
-../src/helloworld.c:70:9: error: expected ';' before '}' token
-         }
-         ^
-../src/helloworld.c:86:15: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-     blockTemp = 'a';
-               ^
-../src/helloworld.c:21:9: warning: unused variable 'initial_len_double' [-Wunused-variable]
-  double initial_len_double = (double) sizeof(message);
-         ^~~~~~~~~~~~~~~~~~
-../src/helloworld.c:18:15: warning: unused variable 'ch' [-Wunused-variable]
-  unsigned int ch;
-               ^~
-../src/helloworld.c:17:10: warning: unused variable 'array' [-Wunused-variable]
-     char array[5];
-          ^~~~~
-make: ** [src/helloworld.o] Erro 1
-11:02:00 **** Auto Build of configuration Debug for project test ****
-make all 
-'Building file: ../src/helloworld.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:24:28: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
-  int numberOfBlocks = (int)ceil(initial_len/448.0);
-                            ^~~~
-../src/helloworld.c:24:28: warning: incompatible implicit declaration of built-in function 'ceil'
-../src/helloworld.c:24:28: note: include '<math.h>' or provide a declaration of 'ceil'
-../src/helloworld.c:32:18: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
-  block = (char *)calloc(length, sizeof(char));
-                  ^~~~~~
-../src/helloworld.c:32:18: warning: incompatible implicit declaration of built-in function 'calloc'
-../src/helloworld.c:32:18: note: include '<stdlib.h>' or provide a declaration of 'calloc'
-../src/helloworld.c:41:6: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
-      exit(1);
-      ^~~~
-../src/helloworld.c:41:6: warning: incompatible implicit declaration of built-in function 'exit'
-../src/helloworld.c:41:6: note: include '<stdlib.h>' or provide a declaration of 'exit'
-../src/helloworld.c:68:18: error: expected expression before ';' token
-           memcpy(;)
-                  ^
-../src/helloworld.c:68:11: error: too few arguments to function 'memcpy'
-           memcpy(;)
-           ^~~~~~
-In file included from c:\xilinx\sdk\2017.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
-                 from ../src/helloworld.c:1:
-c:\xilinx\sdk\2017.4\gnu\microblaze\nt\microblaze-xilinx-elf\include\string.h:23:8: note: declared here
- _PTR   _EXFUN(memcpy,(_PTR __restrict, const _PTR __restrict, size_t));
-        ^
-../src/helloworld.c:70:9: error: expected ';' before '}' token
-         }
-         ^
-../src/helloworld.c:86:15: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-     blockTemp = 'a';
-               ^
-../src/helloworld.c:21:9: warning: unused variable 'initial_len_double' [-Wunused-variable]
-  double initial_len_double = (double) sizeof(message);
-         ^~~~~~~~~~~~~~~~~~
-../src/helloworld.c:18:15: warning: unused variable 'ch' [-Wunused-variable]
-  unsigned int ch;
-               ^~
-../src/helloworld.c:17:10: warning: unused variable 'array' [-Wunused-variable]
-     char array[5];
-          ^~~~~
-make: ** [src/helloworld.o] Erro 1
-11:02:06 **** Auto Build of configuration Debug for project test ****
-make all 
-'Building file: ../src/helloworld.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../test_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:24:28: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
-  int numberOfBlocks = (int)ceil(initial_len/448.0);
-                            ^~~~
-../src/helloworld.c:24:28: warning: incompatible implicit declaration of built-in function 'ceil'
-../src/helloworld.c:24:28: note: include '<math.h>' or provide a declaration of 'ceil'
-../src/helloworld.c:32:18: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
-  block = (char *)calloc(length, sizeof(char));
-                  ^~~~~~
-../src/helloworld.c:32:18: warning: incompatible implicit declaration of built-in function 'calloc'
-../src/helloworld.c:32:18: note: include '<stdlib.h>' or provide a declaration of 'calloc'
-../src/helloworld.c:41:6: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
-      exit(1);
-      ^~~~
-../src/helloworld.c:41:6: warning: incompatible implicit declaration of built-in function 'exit'
-../src/helloworld.c:41:6: note: include '<stdlib.h>' or provide a declaration of 'exit'
-../src/helloworld.c:86:15: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
-     blockTemp = 'a';
-               ^
-../src/helloworld.c:21:9: warning: unused variable 'initial_len_double' [-Wunused-variable]
-  double initial_len_double = (double) sizeof(message);
-         ^~~~~~~~~~~~~~~~~~
-../src/helloworld.c:18:15: warning: unused variable 'ch' [-Wunused-variable]
-  unsigned int ch;
-               ^~
-../src/helloworld.c:17:10: warning: unused variable 'array' [-Wunused-variable]
-     char array[5];
-          ^~~~~
+../src/helloworld.c:31:1: warning: "/*" within comment [-Wcomment]
+ /*
+  
+../src/helloworld.c:34:2: warning: "/*" within comment [-Wcomment]
+  /* Check to see if we were successful */
+   
+../src/helloworld.c:38:6: warning: "/*" within comment [-Wcomment]
+      /* We were not so display a message */
+       
+../src/helloworld.c:41:6: warning: "/*" within comment [-Wcomment]
+      /* And exit */
+       
+../src/helloworld.c:45:3: warning: "/*" within comment [-Wcomment]
+   /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+    
+../src/helloworld.c:78:27: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+    subBlockTemp = (char *)calloc(4, sizeof(char));
+                           ^~~~~~
+../src/helloworld.c:78:27: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:78:27: note: include '<stdlib.h>' or provide a declaration of 'calloc'
 'Finished building: ../src/helloworld.c'
 ' '
-'Building target: test.elf'
+'Building target: MD5.elf'
 'Invoking: MicroBlaze gcc linker'
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../test_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: test.elf'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
-mb-size test.elf  |tee "test.elf.size"
+mb-size MD5.elf  |tee "MD5.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  40224	   1312	   3168	  44704	   aea0	test.elf
-'Finished building: test.elf.size'
+  16320	   1312	   3168	  20800	   5140	MD5.elf
+'Finished building: MD5.elf.size'
 ' '
-11:02:52 **** Incremental Build of configuration Debug for project test ****
-make all 
-make: Nada a ser feito para `all'.

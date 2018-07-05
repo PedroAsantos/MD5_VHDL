@@ -25,29 +25,29 @@ endif
 
 # Add inputs and outputs from these tool invocations to the build variables 
 ELFSIZE += \
-md5.elf.size \
+MD5.elf.size \
 
 
 # All Target
-all: md5.elf secondary-outputs
+all: MD5.elf secondary-outputs
 
 # Tool invocations
-md5.elf: $(OBJS) ../src/lscript.ld $(USER_OBJS)
+MD5.elf: $(OBJS) ../src/lscript.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MicroBlaze gcc linker'
-	mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../md5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "md5.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
-md5.elf.size: md5.elf
+MD5.elf.size: MD5.elf
 	@echo 'Invoking: MicroBlaze Print Size'
-	mb-size md5.elf  |tee "md5.elf.size"
+	mb-size MD5.elf  |tee "MD5.elf.size"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(S_UPPER_DEPS)$(C_DEPS)$(ELFSIZE) md5.elf
+	-$(RM) $(EXECUTABLES)$(OBJS)$(S_UPPER_DEPS)$(C_DEPS)$(ELFSIZE) MD5.elf
 	-@echo ' '
 
 secondary-outputs: $(ELFSIZE)

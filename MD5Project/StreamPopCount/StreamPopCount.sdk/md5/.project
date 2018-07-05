@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>md5</name>
-	<comment>Created by SDK v2017.4. md5_bsp - microblaze_0</comment>
+	<name>MD5</name>
+	<comment>Created by SDK v2017.4. MD5_bsp - microblaze_0</comment>
 	<projects>
-		<project>md5_bsp</project>
+		<project>MD5_bsp</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

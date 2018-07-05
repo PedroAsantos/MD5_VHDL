@@ -41,7 +41,7 @@
 #include "xparameters.h"
 
 
-extern void XIntc_DeviceInterruptHandler (void *);
+extern void XNullHandler (void *);
 
 /*
 * The interrupt handler table for microblaze processor
@@ -49,7 +49,7 @@ extern void XIntc_DeviceInterruptHandler (void *);
 
 MB_InterruptVectorTableEntry MB_InterruptVectorTable[] =
 {
-{	XIntc_DeviceInterruptHandler,
-	(void*) XPAR_MICROBLAZE_0_AXI_INTC_DEVICE_ID}
+{	XNullHandler,
+	(void*) XNULL}
 };
 
