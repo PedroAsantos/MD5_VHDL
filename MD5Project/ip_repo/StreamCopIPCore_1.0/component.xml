@@ -224,7 +224,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>6bde30a0</spirit:value>
+            <spirit:value>9152cd11</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -240,7 +240,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>6bde30a0</spirit:value>
+            <spirit:value>9152cd11</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -605,16 +605,16 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>StreamCopIPCore_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>38</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2018-07-05T20:32:15Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>44</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2018-07-06T10:38:15Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
-        <xilinx:tag xilinx:name="xilinx.com:user:StreamCopIPCore:1.0_ARCHIVE_LOCATION">c:/Users/Miguel/Desktop/md5/MD5Project/ip_repo/StreamCopIPCore_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="xilinx.com:user:StreamCopIPCore:1.0_ARCHIVE_LOCATION">c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/ip_repo/StreamCopIPCore_1.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2017.4</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="3487fdc7"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b56fbce2"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="d1fdbfe6"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="5fae8ad3"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="221a62e8"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="a368dd66"/>

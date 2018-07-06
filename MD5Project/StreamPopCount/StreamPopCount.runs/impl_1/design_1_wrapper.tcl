@@ -69,16 +69,16 @@ set rc [catch {
   set_property board_part digilentinc.com:nexys4:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.xpr [current_project]
-  set_property ip_repo_paths C:/Users/Miguel/Desktop/md5/MD5Project/ip_repo/StreamCopIPCore_1.0 [current_project]
-  set_property ip_output_repo C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.xpr [current_project]
+  set_property ip_repo_paths C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/ip_repo/StreamCopIPCore_1.0 [current_project]
+  set_property ip_output_repo C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.runs/synth_1/design_1_wrapper.dcp
+  add_files -quiet C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd
+  add_files C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
   set_param project.isImplRun true
   link_design -top design_1_wrapper -part xc7a100tcsg324-1

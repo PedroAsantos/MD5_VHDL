@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Thu Jul  5 21:36:58 2018
+| Date         : Fri Jul  6 11:44:41 2018
 | Host         : Miguel running 64-bit major release  (build 9200)
 | Command      : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -23,11 +23,12 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 8
+             Violations found: 40
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
 | TIMING-9  | Warning  | Unknown CDC Logic             | 1          |
+| TIMING-16 | Warning  | Large setup violation         | 32         |
 | TIMING-18 | Warning  | Missing input or output delay | 3          |
 | TIMING-20 | Warning  | Non-clocked latch             | 4          |
 +-----------+----------+-------------------------------+------------+
@@ -37,6 +38,166 @@ Table of Contents
 TIMING-9#1 Warning
 Unknown CDC Logic  
 One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
+Related violations: <none>
+
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -2.458 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[0]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -2.635 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[1]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -2.795 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[2]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -2.855 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[3]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -2.989 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[4]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -3.005 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[6]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -3.079 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[7]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -3.100 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[5]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -3.111 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[8]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -3.127 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[10]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -3.201 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[11]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -3.222 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[9]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -3.225 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[12]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -3.241 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[14]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -3.315 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[15]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -3.336 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[13]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -3.340 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[16]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -3.356 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[18]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -3.430 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[19]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -3.451 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[17]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -3.455 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[20]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -3.471 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[22]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -3.545 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[23]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -3.566 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[21]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -3.570 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[24]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -3.586 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[26]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -3.660 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[27]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -3.681 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[25]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -3.686 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[28]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -3.702 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[30]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -3.776 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[31]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -3.797 ns between design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[5]/C (clocked by clk_out1_design_1_clk_wiz_1_0) and design_1_i/StreamCopIPCore_0/U0/StreamCopIPCore_v1_0_S00_AXIS_inst/b_reg[29]/D (clocked by clk_out1_design_1_clk_wiz_1_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
 Related violations: <none>
 
 TIMING-18#1 Warning

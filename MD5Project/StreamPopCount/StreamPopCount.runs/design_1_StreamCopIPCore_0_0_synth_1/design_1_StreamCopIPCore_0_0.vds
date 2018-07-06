@@ -2,12 +2,12 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Thu Jul  5 21:32:42 2018
-# Process ID: 5560
-# Current directory: C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1
+# Start of session at: Fri Jul  6 11:38:38 2018
+# Process ID: 6356
+# Current directory: C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1
 # Command line: vivado.exe -log design_1_StreamCopIPCore_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_StreamCopIPCore_0_0.tcl
-# Log file: C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1/design_1_StreamCopIPCore_0_0.vds
-# Journal file: C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1\vivado.jou
+# Log file: C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1/design_1_StreamCopIPCore_0_0.vds
+# Journal file: C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source design_1_StreamCopIPCore_0_0.tcl -notrace
 Command: synth_design -top design_1_StreamCopIPCore_0_0 -part xc7a100tcsg324-1 -mode out_of_context
@@ -15,47 +15,35 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 16444 
+INFO: Helper process launched with PID 14944 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 352.426 ; gain = 100.340
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 352.945 ; gain = 101.188
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_StreamCopIPCore_0_0' [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/synth/design_1_StreamCopIPCore_0_0.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'design_1_StreamCopIPCore_0_0' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/synth/design_1_StreamCopIPCore_0_0.vhd:75]
 	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 512 - type: integer 
 	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 128 - type: integer 
 	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'StreamCopIPCore_v1_0' declared at 'c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0.vhd:5' bound to instance 'U0' of component 'StreamCopIPCore_v1_0' [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/synth/design_1_StreamCopIPCore_0_0.vhd:130]
-INFO: [Synth 8-638] synthesizing module 'StreamCopIPCore_v1_0' [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0.vhd:43]
+INFO: [Synth 8-3491] module 'StreamCopIPCore_v1_0' declared at 'c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0.vhd:5' bound to instance 'U0' of component 'StreamCopIPCore_v1_0' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/synth/design_1_StreamCopIPCore_0_0.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'StreamCopIPCore_v1_0' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0.vhd:43]
 	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 128 - type: integer 
 	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
 	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 512 - type: integer 
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 512 - type: integer 
 	Parameter C_S_AXIS_TDATA_WIDTH_OUT bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'StreamCopIPCore_v1_0_S00_AXIS' declared at 'c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:7' bound to instance 'StreamCopIPCore_v1_0_S00_AXIS_inst' of component 'StreamCopIPCore_v1_0_S00_AXIS' [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0.vhd:89]
-INFO: [Synth 8-638] synthesizing module 'StreamCopIPCore_v1_0_S00_AXIS' [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:42]
+INFO: [Synth 8-3491] module 'StreamCopIPCore_v1_0_S00_AXIS' declared at 'c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:7' bound to instance 'StreamCopIPCore_v1_0_S00_AXIS_inst' of component 'StreamCopIPCore_v1_0_S00_AXIS' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'StreamCopIPCore_v1_0_S00_AXIS' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:42]
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 512 - type: integer 
-	Parameter C_S_AXIS_OUT_WIDTH bound to: 128 - type: integer 
-WARNING: [Synth 8-3819] Generic 'c_s_axis_tdata_width_out' not present in instantiated entity will be ignored [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0.vhd:89]
-WARNING: [Synth 8-6014] Unused sequential element f_reg was removed.  [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:236]
-WARNING: [Synth 8-6014] Unused sequential element g_reg was removed.  [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:237]
-WARNING: [Synth 8-6014] Unused sequential element temp_reg was removed.  [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:239]
-WARNING: [Synth 8-6014] Unused sequential element d_reg was removed.  [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:236]
-WARNING: [Synth 8-6014] Unused sequential element c_reg was removed.  [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:236]
-WARNING: [Synth 8-6014] Unused sequential element b_reg was removed.  [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:236]
-WARNING: [Synth 8-6014] Unused sequential element a_reg was removed.  [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:242]
-WARNING: [Synth 8-6014] Unused sequential element H0_s_reg was removed.  [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:297]
-WARNING: [Synth 8-6014] Unused sequential element H1_s_reg was removed.  [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:298]
-WARNING: [Synth 8-6014] Unused sequential element H2_s_reg was removed.  [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:299]
-WARNING: [Synth 8-6014] Unused sequential element H3_s_reg was removed.  [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:300]
-INFO: [Synth 8-256] done synthesizing module 'StreamCopIPCore_v1_0_S00_AXIS' (1#1) [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:42]
+	Parameter C_S_AXIS_TDATA_WIDTH_OUT bound to: 128 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'StreamCopIPCore_v1_0_S00_AXIS' (1#1) [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:42]
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 128 - type: integer 
 	Parameter C_M_START_COUNT bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'StreamCopIPCore_v1_0_M00_AXIS' declared at 'c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd:5' bound to instance 'StreamCopIPCore_v1_0_M00_AXIS_inst' of component 'StreamCopIPCore_v1_0_M00_AXIS' [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'StreamCopIPCore_v1_0_M00_AXIS' [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd:42]
+INFO: [Synth 8-3491] module 'StreamCopIPCore_v1_0_M00_AXIS' declared at 'c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd:5' bound to instance 'StreamCopIPCore_v1_0_M00_AXIS_inst' of component 'StreamCopIPCore_v1_0_M00_AXIS' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'StreamCopIPCore_v1_0_M00_AXIS' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd:42]
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 128 - type: integer 
 	Parameter C_M_START_COUNT bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'StreamCopIPCore_v1_0_M00_AXIS' (2#1) [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'StreamCopIPCore_v1_0' (3#1) [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'design_1_StreamCopIPCore_0_0' (4#1) [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/synth/design_1_StreamCopIPCore_0_0.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'StreamCopIPCore_v1_0_M00_AXIS' (2#1) [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'StreamCopIPCore_v1_0' (3#1) [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'design_1_StreamCopIPCore_0_0' (4#1) [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/synth/design_1_StreamCopIPCore_0_0.vhd:75]
 WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_M00_AXIS has unconnected port M_AXIS_ACLK
 WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_M00_AXIS has unconnected port M_AXIS_ARESETN
 WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[63]
@@ -124,7 +112,7 @@ WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected por
 WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[0]
 WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TLAST
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 404.910 ; gain = 152.824
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 404.836 ; gain = 153.078
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -134,7 +122,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 404.910 ; gain = 152.824
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 404.836 ; gain = 153.078
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -146,32 +134,34 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 738.250 ; gain = 0.012
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 741.402 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 738.250 ; gain = 486.164
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 741.402 ; gain = 489.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 738.250 ; gain = 486.164
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 741.402 ; gain = 489.645
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 738.250 ; gain = 486.164
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 741.402 ; gain = 489.645
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3936] Found unconnected internal register 'M_reg' and it is trimmed from '512' to '32' bits. [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:172]
-INFO: [Synth 8-5544] ROM "startFor2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "i" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "tempFinished" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:237]
-WARNING: [Synth 8-327] inferring latch for variable 'nextState_reg' [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:142]
-WARNING: [Synth 8-327] inferring latch for variable 'startFor2_reg' [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:189]
+INFO: [Synth 8-5546] ROM "nextState" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element b_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:213]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:214]
+WARNING: [Synth 8-6014] Unused sequential element H0_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:258]
+WARNING: [Synth 8-6014] Unused sequential element H1_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:259]
+WARNING: [Synth 8-6014] Unused sequential element H2_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:260]
+WARNING: [Synth 8-6014] Unused sequential element H3_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:261]
+WARNING: [Synth 8-327] inferring latch for variable 'nextState_reg' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:142]
+WARNING: [Synth 8-327] inferring latch for variable 'startFor2_reg' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:178]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 738.250 ; gain = 486.164
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 741.402 ; gain = 489.645
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -184,17 +174,26 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      7 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
+	              512 Bit    Registers := 1     
 	              128 Bit    Registers := 2     
-	               32 Bit    Registers := 1     
-	                7 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
+	               32 Bit    Registers := 6     
+	                7 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 4     
 +---Muxes : 
-	   2 Input      4 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 4     
-	   6 Input      1 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
 	   7 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -206,17 +205,26 @@ Hierarchical RTL Component report
 Module StreamCopIPCore_v1_0_S00_AXIS 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input      7 Bit       Adders := 1     
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 1     
 +---Registers : 
+	              512 Bit    Registers := 1     
 	              128 Bit    Registers := 2     
-	               32 Bit    Registers := 1     
-	                7 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
+	               32 Bit    Registers := 6     
+	                7 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
 	                1 Bit    Registers := 4     
 +---Muxes : 
-	   2 Input      4 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 4     
-	   6 Input      1 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 1     
 	   7 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -233,7 +241,19 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element U0/StreamCopIPCore_v1_0_S00_AXIS_inst/i_reg was removed.  [c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/3ffe/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:237]
+INFO: [Synth 8-4471] merging register 'i_reg[6:0]' into 'i_reg[6:0]' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:214]
+INFO: [Synth 8-4471] merging register 'i_reg[6:0]' into 'i_reg[6:0]' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:214]
+INFO: [Synth 8-4471] merging register 'i_reg[6:0]' into 'i_reg[6:0]' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:214]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:214]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:214]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:214]
+INFO: [Synth 8-5546] ROM "nextState" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:214]
+WARNING: [Synth 8-6014] Unused sequential element b_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:213]
+WARNING: [Synth 8-6014] Unused sequential element H3_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:261]
+WARNING: [Synth 8-6014] Unused sequential element H2_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:260]
+WARNING: [Synth 8-6014] Unused sequential element H1_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:259]
+WARNING: [Synth 8-6014] Unused sequential element H0_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/cc85/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:258]
 INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[15] driven by constant 1
 INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[14] driven by constant 1
 INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[13] driven by constant 1
@@ -251,143 +271,163 @@ INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb
 INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[1] driven by constant 1
 INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[0] driven by constant 1
 INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tlast driven by constant 0
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[511]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[510]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[509]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[508]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[507]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[506]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[505]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[504]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[503]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[502]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[501]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[500]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[499]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[498]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[497]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[496]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[495]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[494]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[493]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[492]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[491]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[490]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[489]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[488]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[487]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[486]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[485]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[484]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[483]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[482]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[481]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[480]
-WARNING: [Synth 8-3331] design design_1_StreamCopIPCore_0_0 has unconnected port s00_axis_tdata[479]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[63]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[62]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[61]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[60]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[59]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[58]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[57]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[56]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[55]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[54]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[53]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[52]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[51]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[50]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[49]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[48]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[47]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[46]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[45]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[44]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[43]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[42]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[41]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[40]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[39]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[38]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[37]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[36]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[35]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[34]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[33]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[32]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[31]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[0]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[32]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[1]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[33]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[2]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[34]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[3]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[35]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[4]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[36]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[5]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[37]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[6]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[38]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[7]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[39]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[8]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[40]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[9]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[41]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[10]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[42]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[11]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[43]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[12]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[44]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[13]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[45]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[14]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[46]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[15]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[47]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[16]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[48]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[17]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[49]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[18]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[50]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[19]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[51]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[20]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[52]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[21]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[53]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[22]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[54]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[23]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[55]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[24]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[56]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[25]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[57]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[26]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[58]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[27]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[59]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[28]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[60]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[29]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[61]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[30]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[62]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[31]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[63]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[32]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[64]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[33]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[65]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[34]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[66]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[35]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[67]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[36]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[68]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[37]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[69]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[38]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[70]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[39]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[71]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[40]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[72]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[41]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[73]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[42]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[74]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[43]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[75]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[44]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[76]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[45]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[77]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[46]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[78]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[47]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[79]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[48]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[80]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[49]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[81]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[50]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[82]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[51]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[83]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[52]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[84]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[53]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[85]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[54]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[86]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[55]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[87]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[56]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[88]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[57]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[89]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[58]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[90]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[59]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[91]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[60]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[92]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[61]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[93]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[62]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[94]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[63]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[95]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[64]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[96]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[65]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[97]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[66]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[98]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[67]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[99]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[68]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[100]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[69]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[101]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[70]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[102]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[71]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[103]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[72]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[104]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[73]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[105]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[74]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[106]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[75]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[107]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[76]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[108]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[77]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[109]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[78]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[110]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[79]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[111]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[80]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[112]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[81]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[113]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[82]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[114]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[83]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[115]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[84]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[116]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[85]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[117]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[86]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[118]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[87]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[119]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[88]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[120]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[89]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[121]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[90]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[122]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[91]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[123]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[92]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[124]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[93]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[125]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[94]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[126]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[95]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/tempOut_reg[127]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_dataOut_reg[0]' (FDRE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_dataOut_reg[32]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_dataOut_reg[1]' (FDRE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_dataOut_reg[33]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_dataOut_reg[2]' (FDRE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_dataOut_reg[34]'
-INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_dataOut_reg[3]' (FDRE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_dataOut_reg[35]'
-INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[8]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[7]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/StreamCopIPCore_v1_0_S00_AXIS_inst /\g_reg[9] )
+WARNING: [Synth 8-3332] Sequential element (g_reg[31]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[30]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[29]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[28]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[27]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[26]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[25]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[24]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[23]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[22]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[21]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[20]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[19]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[18]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[17]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[16]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[15]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[14]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[13]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[12]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[11]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[10]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (g_reg[9]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[511]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[510]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[509]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[508]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[507]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[506]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[505]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[504]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[503]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[502]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[501]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[500]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[499]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[498]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[497]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[496]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[495]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[494]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[493]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[492]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[491]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[490]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[489]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[488]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[487]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[486]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[485]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[484]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[483]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[482]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[481]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[480]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[479]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[478]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[477]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[476]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[475]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[474]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[473]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[472]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[471]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[470]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[469]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[468]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[467]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[466]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[465]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[464]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[463]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[462]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[461]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[460]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[459]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[458]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[457]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[456]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[455]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[454]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[453]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[452]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[451]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[450]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[449]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[448]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[447]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[446]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[445]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[444]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[443]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[442]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[441]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[440]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[439]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[438]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[437]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[436]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (M_reg[435]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 738.250 ; gain = 486.164
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:00:58 . Memory (MB): peak = 741.402 ; gain = 489.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------------------+------------+---------------+----------------+
+|Module Name                   | RTL Object | Depth x Width | Implemented As | 
++------------------------------+------------+---------------+----------------+
+|StreamCopIPCore_v1_0_S00_AXIS | r[0]       | 64x5          | LUT            | 
+|StreamCopIPCore_v1_0_S00_AXIS | K[0]       | 64x32         | LUT            | 
+|StreamCopIPCore_v1_0_S00_AXIS | r[0]       | 64x5          | LUT            | 
+|StreamCopIPCore_v1_0_S00_AXIS | K[0]       | 64x32         | LUT            | 
++------------------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -399,13 +439,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 738.250 ; gain = 486.164
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 762.113 ; gain = 510.355
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 738.250 ; gain = 486.164
+Finished Timing Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 763.234 ; gain = 511.477
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -416,10 +456,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-3332] Sequential element (U0/StreamCopIPCore_v1_0_S00_AXIS_inst/nextState_reg[3]) is unused and will be removed from module design_1_StreamCopIPCore_0_0.
-INFO: [Synth 8-3332] Sequential element (U0/StreamCopIPCore_v1_0_S00_AXIS_inst/currentState_reg[3]) is unused and will be removed from module design_1_StreamCopIPCore_0_0.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 756.012 ; gain = 503.926
+Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 796.867 ; gain = 545.109
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -443,7 +481,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 756.012 ; gain = 503.926
+Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 796.867 ; gain = 545.109
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -456,7 +494,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 756.012 ; gain = 503.926
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 796.867 ; gain = 545.109
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -468,25 +506,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 756.012 ; gain = 503.926
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 796.867 ; gain = 545.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 756.012 ; gain = 503.926
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 796.867 ; gain = 545.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 756.012 ; gain = 503.926
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 796.867 ; gain = 545.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 756.012 ; gain = 503.926
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 796.867 ; gain = 545.109
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -499,36 +537,39 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |LUT1 |     2|
-|2     |LUT2 |     5|
-|3     |LUT3 |     1|
-|4     |LUT4 |     6|
-|5     |LUT5 |     3|
-|6     |LUT6 |     6|
-|7     |FDRE |   110|
-|8     |LD   |     4|
-+------+-----+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    48|
+|2     |LUT1   |     2|
+|3     |LUT2   |   153|
+|4     |LUT3   |    72|
+|5     |LUT4   |    45|
+|6     |LUT5   |    86|
+|7     |LUT6   |   416|
+|8     |MUXF7  |     1|
+|9     |FDRE   |   884|
+|10    |LD     |     4|
++------+-------+------+
 
 Report Instance Areas: 
 +------+---------------------------------------+------------------------------+------+
 |      |Instance                               |Module                        |Cells |
 +------+---------------------------------------+------------------------------+------+
-|1     |top                                    |                              |   137|
-|2     |  U0                                   |StreamCopIPCore_v1_0          |   137|
-|3     |    StreamCopIPCore_v1_0_S00_AXIS_inst |StreamCopIPCore_v1_0_S00_AXIS |   137|
+|1     |top                                    |                              |  1711|
+|2     |  U0                                   |StreamCopIPCore_v1_0          |  1711|
+|3     |    StreamCopIPCore_v1_0_S00_AXIS_inst |StreamCopIPCore_v1_0_S00_AXIS |  1707|
 +------+---------------------------------------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 756.012 ; gain = 503.926
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 796.867 ; gain = 545.109
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 552 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 756.012 ; gain = 170.586
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 756.012 ; gain = 503.926
+Synthesis finished with 0 errors, 0 critical warnings and 332 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:01:03 . Memory (MB): peak = 796.867 ; gain = 208.543
+Synthesis Optimization Complete : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 796.867 ; gain = 545.109
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 53 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_StreamCopIPCore_0_0' is not ideal for floorplanning, since the cellview 'StreamCopIPCore_v1_0_S00_AXIS' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -536,13 +577,13 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LD => LDCE: 4 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-146 Infos, 117 Warnings, 0 Critical Warnings and 0 Errors encountered.
+49 Infos, 218 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 756.656 ; gain = 516.043
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1/design_1_StreamCopIPCore_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/design_1_StreamCopIPCore_0_0.xci
+synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 796.867 ; gain = 556.582
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1/design_1_StreamCopIPCore_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/design_1_StreamCopIPCore_0_0.xci
 INFO: [Coretcl 2-1174] Renamed 2 cell refs.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Miguel/Desktop/md5/MD5Project/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1/design_1_StreamCopIPCore_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1/design_1_StreamCopIPCore_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_StreamCopIPCore_0_0_utilization_synth.rpt -pb design_1_StreamCopIPCore_0_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 756.656 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Jul  5 21:33:28 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 796.867 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  6 11:40:01 2018...

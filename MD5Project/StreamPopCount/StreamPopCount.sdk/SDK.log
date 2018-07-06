@@ -1305,3 +1305,286 @@ con
 21:40:22 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\md5\MD5Project\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_md5.elf_on_local.tcl'
 21:41:05 INFO  : Disconnected from the channel tcfchan#2.
 21:41:06 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:09:23 INFO  : Registering command handlers for SDK TCF services
+22:09:24 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Miguel\Desktop\CR\CR_Project\MD5Project\StreamPopCount\StreamPopCount.sdk\temp_xsdb_launch_script.tcl
+22:09:26 INFO  : XSCT server has started successfully.
+22:09:26 INFO  : Successfully done setting XSCT server connection channel  
+22:09:26 INFO  : Processing command line option -hwspec C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+22:09:26 INFO  : Successfully done setting SDK workspace  
+22:10:48 INFO  : Registering command handlers for SDK TCF services
+22:10:48 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Miguel\Desktop\CR\CR_Project\MD5Project\StreamPopCount\StreamPopCount.sdk\temp_xsdb_launch_script.tcl
+22:10:51 INFO  : XSCT server has started successfully.
+22:10:52 INFO  : Processing command line option -hwspec C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+22:10:52 INFO  : Successfully done setting XSCT server connection channel  
+22:10:52 INFO  : Successfully done setting SDK workspace  
+22:11:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:11:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+22:11:34 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+22:11:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+22:11:43 INFO  : 'fpga -state' command is executed.
+22:11:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:11:43 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+22:11:43 INFO  : 'jtag frequency' command is executed.
+22:11:43 INFO  : Context for processor 'microblaze_0' is selected.
+22:11:43 INFO  : Processor reset is completed for 'microblaze_0'.
+22:11:43 INFO  : Context for processor 'microblaze_0' is selected.
+22:11:43 INFO  : The application 'C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/MD5/Debug/MD5.elf' is downloaded to processor 'microblaze_0'.
+22:11:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/MD5/Debug/MD5.elf
+----------------End of Script----------------
+
+22:11:43 INFO  : Memory regions updated for context MicroBlaze #0
+22:11:43 INFO  : Memory regions updated for context MicroBlaze #0
+22:11:44 INFO  : Context for processor 'microblaze_0' is selected.
+22:11:44 INFO  : 'con' command is executed.
+22:11:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+22:11:44 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\CR\CR_Project\MD5Project\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_md5.elf_on_local.tcl'
+22:12:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:12:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+22:12:15 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+22:12:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:12:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+22:12:48 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+22:12:54 INFO  : Disconnected from the channel tcfchan#1.
+22:12:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+22:12:55 INFO  : 'fpga -state' command is executed.
+22:12:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:12:55 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+22:12:55 INFO  : 'jtag frequency' command is executed.
+22:12:55 INFO  : Context for processor 'microblaze_0' is selected.
+22:12:55 INFO  : Processor reset is completed for 'microblaze_0'.
+22:12:55 INFO  : Context for processor 'microblaze_0' is selected.
+22:12:56 INFO  : The application 'C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/MD5/Debug/MD5.elf' is downloaded to processor 'microblaze_0'.
+22:12:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/MD5/Debug/MD5.elf
+----------------End of Script----------------
+
+22:12:56 INFO  : Memory regions updated for context MicroBlaze #0
+22:12:56 INFO  : Memory regions updated for context MicroBlaze #0
+22:12:56 INFO  : Context for processor 'microblaze_0' is selected.
+22:12:56 INFO  : 'con' command is executed.
+22:12:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+22:12:56 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\CR\CR_Project\MD5Project\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_md5.elf_on_local.tcl'
+22:56:49 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1530827768496,  Project:1530824902929
+22:56:49 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+22:56:50 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification location will not be monitored anymore.
+22:56:51 INFO  : Disconnected from the channel tcfchan#2.
+22:57:04 INFO  : Registering command handlers for SDK TCF services
+22:57:05 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Miguel\Desktop\CR\CR_Project\MD5Project\StreamPopCount\StreamPopCount.sdk\temp_xsdb_launch_script.tcl
+22:57:09 INFO  : XSCT server has started successfully.
+22:57:09 INFO  : Successfully done setting XSCT server connection channel  
+22:57:10 INFO  : Successfully done setting SDK workspace  
+22:57:10 INFO  : Processing command line option -hwspec C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+22:59:25 INFO  : Registering command handlers for SDK TCF services
+22:59:26 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Miguel\Desktop\CR\CR_Project\MD5Project\StreamPopCount\StreamPopCount.sdk\temp_xsdb_launch_script.tcl
+22:59:30 INFO  : XSCT server has started successfully.
+22:59:33 INFO  : Processing command line option -hwspec C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+22:59:33 INFO  : Successfully done setting XSCT server connection channel  
+22:59:33 INFO  : Successfully done setting SDK workspace  
+23:00:18 INFO  : Registering command handlers for SDK TCF services
+23:00:19 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Miguel\Desktop\CR\CR_Project\MD5Project\StreamPopCount\StreamPopCount.sdk\temp_xsdb_launch_script.tcl
+23:00:22 INFO  : XSCT server has started successfully.
+23:00:22 INFO  : Processing command line option -hwspec C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+23:00:22 INFO  : Successfully done setting XSCT server connection channel  
+23:00:23 INFO  : Successfully done setting SDK workspace  
+23:00:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:00:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+23:00:57 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:02:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:02:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+23:02:07 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+23:02:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+23:02:25 INFO  : 'fpga -state' command is executed.
+23:02:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+23:02:26 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+23:02:26 INFO  : 'jtag frequency' command is executed.
+23:02:26 INFO  : Context for processor 'microblaze_0' is selected.
+23:02:26 INFO  : Processor reset is completed for 'microblaze_0'.
+23:02:26 INFO  : Context for processor 'microblaze_0' is selected.
+23:02:26 INFO  : The application 'C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/MD5/Debug/MD5.elf' is downloaded to processor 'microblaze_0'.
+23:02:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/MD5/Debug/MD5.elf
+----------------End of Script----------------
+
+23:02:26 INFO  : Memory regions updated for context MicroBlaze #0
+23:02:26 INFO  : Memory regions updated for context MicroBlaze #0
+23:02:26 INFO  : Context for processor 'microblaze_0' is selected.
+23:02:26 INFO  : 'con' command is executed.
+23:02:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+23:02:26 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\CR\CR_Project\MD5Project\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_md5.elf_on_local.tcl'
+23:02:53 INFO  : Disconnected from the channel tcfchan#1.
+11:07:14 INFO  : Registering command handlers for SDK TCF services
+11:07:16 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Miguel\Desktop\CR\CR_Project\MD5Project\StreamPopCount\StreamPopCount.sdk\temp_xsdb_launch_script.tcl
+11:07:28 INFO  : XSCT server has started successfully.
+11:07:32 INFO  : Processing command line option -hwspec C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+11:07:34 INFO  : Successfully done setting XSCT server connection channel  
+11:07:34 INFO  : Successfully done setting SDK workspace  
+11:07:35 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+11:07:35 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1530871573101,  Project:1530827768496
+11:07:35 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+11:07:35 INFO  : Copied contents of C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+11:07:35 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:07:50 INFO  : 
+11:07:51 INFO  : Updating hardware inferred compiler options for MD5.
+11:07:51 INFO  : Clearing existing target manager status.
+11:07:52 WARN  : Given IPC port value is invalid. Using default port 2350
+11:07:52 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+11:07:54 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+11:07:55 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+11:07:56 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+11:08:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:08:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+11:08:30 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+11:08:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+11:08:47 INFO  : 'fpga -state' command is executed.
+11:08:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:08:47 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+11:08:47 INFO  : 'jtag frequency' command is executed.
+11:08:48 INFO  : Context for processor 'microblaze_0' is selected.
+11:08:48 INFO  : Processor reset is completed for 'microblaze_0'.
+11:08:48 INFO  : Context for processor 'microblaze_0' is selected.
+11:08:48 INFO  : The application 'C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/MD5/Debug/MD5.elf' is downloaded to processor 'microblaze_0'.
+11:08:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/MD5/Debug/MD5.elf
+----------------End of Script----------------
+
+11:08:48 INFO  : Memory regions updated for context MicroBlaze #0
+11:08:48 INFO  : Memory regions updated for context MicroBlaze #0
+11:08:48 INFO  : Context for processor 'microblaze_0' is selected.
+11:08:48 INFO  : 'con' command is executed.
+11:08:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+11:08:48 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\CR\CR_Project\MD5Project\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_md5.elf_on_local.tcl'
+11:17:42 INFO  : Disconnected from the channel tcfchan#1.
+11:17:43 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:25:27 INFO  : Registering command handlers for SDK TCF services
+11:25:28 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Miguel\Desktop\CR\CR_Project\MD5Project\StreamPopCount\StreamPopCount.sdk\temp_xsdb_launch_script.tcl
+11:25:31 INFO  : XSCT server has started successfully.
+11:25:32 INFO  : Processing command line option -hwspec C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+11:25:32 INFO  : Successfully done setting XSCT server connection channel  
+11:25:33 INFO  : Successfully done setting SDK workspace  
+11:25:33 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+11:25:33 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1530872696740,  Project:1530871573101
+11:25:33 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+11:25:33 INFO  : Copied contents of C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+11:25:34 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:25:36 INFO  : 
+11:25:37 INFO  : Updating hardware inferred compiler options for MD5.
+11:25:37 INFO  : Clearing existing target manager status.
+11:25:37 WARN  : Given IPC port value is invalid. Using default port 2350
+11:25:37 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+11:25:39 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+11:25:39 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+11:25:40 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+11:26:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:26:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+11:26:07 INFO  : FPGA configured successfully with bitstream "C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit"
+11:26:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+11:26:20 INFO  : 'fpga -state' command is executed.
+11:26:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:26:20 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+11:26:20 INFO  : 'jtag frequency' command is executed.
+11:26:20 INFO  : Context for processor 'microblaze_0' is selected.
+11:26:20 INFO  : Processor reset is completed for 'microblaze_0'.
+11:26:20 INFO  : Context for processor 'microblaze_0' is selected.
+11:26:21 INFO  : The application 'C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/MD5/Debug/MD5.elf' is downloaded to processor 'microblaze_0'.
+11:26:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/MD5/Debug/MD5.elf
+----------------End of Script----------------
+
+11:26:21 INFO  : Memory regions updated for context MicroBlaze #0
+11:26:21 INFO  : Memory regions updated for context MicroBlaze #0
+11:26:21 INFO  : Context for processor 'microblaze_0' is selected.
+11:26:21 INFO  : 'con' command is executed.
+11:26:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+11:26:21 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\CR\CR_Project\MD5Project\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_md5.elf_on_local.tcl'
+11:38:05 INFO  : Disconnected from the channel tcfchan#1.
+11:38:06 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+11:45:45 INFO  : Registering command handlers for SDK TCF services
+11:45:46 INFO  : Launching XSCT server: xsct.bat -interactive C:\Users\Miguel\Desktop\CR\CR_Project\MD5Project\StreamPopCount\StreamPopCount.sdk\temp_xsdb_launch_script.tcl
+11:45:49 INFO  : XSCT server has started successfully.
+11:45:49 INFO  : Successfully done setting XSCT server connection channel  
+11:45:49 INFO  : Processing command line option -hwspec C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+11:45:49 INFO  : Checking for hwspec changes in the project design_1_wrapper_hw_platform_0.
+11:45:49 INFO  : Successfully done setting SDK workspace  
+11:45:51 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1530873914214,  Project:1530872696740
+11:45:51 INFO  : The hardware specification for project 'design_1_wrapper_hw_platform_0' is different from C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf.
+11:45:51 INFO  : Copied contents of C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf into \design_1_wrapper_hw_platform_0\system.hdf.
+11:45:51 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+11:45:54 INFO  : 
+11:45:55 INFO  : Updating hardware inferred compiler options for MD5.
+11:45:55 INFO  : Clearing existing target manager status.
+11:45:55 WARN  : Given IPC port value is invalid. Using default port 2350
+11:45:55 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+11:45:57 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+11:45:57 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+11:45:58 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+11:46:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys4 210274504946A" && level==0} -index 0' command is executed.
+11:46:22 INFO  : 'fpga -state' command is executed.
+11:46:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:46:22 INFO  : Jtag cable 'Digilent Nexys4 210274504946A' is selected.
+11:46:22 INFO  : 'jtag frequency' command is executed.
+11:46:22 INFO  : Context for processor 'microblaze_0' is selected.
+11:46:22 INFO  : Processor reset is completed for 'microblaze_0'.
+11:46:22 INFO  : Context for processor 'microblaze_0' is selected.
+11:46:22 INFO  : The application 'C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/MD5/Debug/MD5.elf' is downloaded to processor 'microblaze_0'.
+11:46:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+dow C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/MD5/Debug/MD5.elf
+----------------End of Script----------------
+
+11:46:22 INFO  : Memory regions updated for context MicroBlaze #0
+11:46:22 INFO  : Memory regions updated for context MicroBlaze #0
+11:46:22 INFO  : Context for processor 'microblaze_0' is selected.
+11:46:22 INFO  : 'con' command is executed.
+11:46:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent Nexys4 210274504946A"} -index 0
+con
+----------------End of Script----------------
+
+11:46:23 INFO  : Launch script is exported to file 'C:\Users\Miguel\Desktop\CR\CR_Project\MD5Project\StreamPopCount\StreamPopCount.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_md5.elf_on_local.tcl'
+11:48:17 INFO  : Disconnected from the channel tcfchan#1.
+11:48:18 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
