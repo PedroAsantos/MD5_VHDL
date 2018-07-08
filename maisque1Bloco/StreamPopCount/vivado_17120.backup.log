@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Jul  8 11:01:35 2018
+# Process ID: 17120
+# Current directory: C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12708 C:\Users\Miguel\Desktop\CR\CR_Project\MD5Project\StreamPopCount\StreamPopCount.xpr
+# Log file: C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/vivado.log
+# Journal file: C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/ip_repo/StreamCopIPCore_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 825.539 ; gain = 120.594
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jul  8 11:04:49 2018...
