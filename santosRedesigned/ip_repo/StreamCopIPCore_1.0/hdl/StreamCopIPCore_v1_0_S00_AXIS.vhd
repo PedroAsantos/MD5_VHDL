@@ -19,7 +19,6 @@ entity StreamCopIPCore_v1_0_S00_AXIS is
         validData   : out std_logic;
         swappedData : out std_logic_vector(C_S_AXIS_OUT_WIDTH-1 downto 0);
         readEnable  : in  std_logic;
-        --leds: out std_logic_vector(15 downto 0);
         
         ledsOut: out std_logic_vector(15 downto 0);
 		-- User ports ends

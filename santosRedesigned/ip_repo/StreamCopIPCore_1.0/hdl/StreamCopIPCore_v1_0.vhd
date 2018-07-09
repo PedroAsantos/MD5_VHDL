@@ -19,7 +19,7 @@ entity StreamCopIPCore_v1_0 is
 	);
 	port (
 		-- Users to add ports here
-
+        ledsOut          : out std_logic_vector(15 downto 0);
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -61,7 +61,7 @@ architecture Structural of StreamCopIPCore_v1_0 is
 		S_AXIS_TVALID	: in  std_logic;
 		validData       : out std_logic;
         swappedData     : out std_logic_vector(C_S_AXIS_TDATA_WIDTH_OUT-1 downto 0);
-        leds            : out std_logic_vector(15 downto 0);
+        ledsOut         : out std_logic_vector(15 downto 0);
         readEnable      : in  std_logic
 		);
 	end component StreamCopIPCore_v1_0_S00_AXIS;
@@ -105,7 +105,7 @@ begin
             S_AXIS_TVALID	=> s00_axis_tvalid,
             validData       => s_validData,
             swappedData     => s_swappedData,
-            
+            ledsOut         => ledsOut,
             readEnable      => s_readEnable
         );
 
