@@ -2,11 +2,11 @@
 # updatemem v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # 
-# Start of session at: Sun Jul  8 21:03:56 2018
-# Process ID: 11288
-# Current directory: C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount
-# Command line: updatemem.exe -mode batch -source C:/Xilinx/SDK/2017.4/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.mmi -data C:/Xilinx/SDK/2017.4/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc design_1_i/microblaze_0 -bit C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit -out C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit -force
-# Log file: C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/updatemem.log
-# Journal file: C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount\updatemem.jou
+# Start of session at: Mon Jul  9 11:40:38 2018
+# Process ID: 13336
+# Current directory: C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/SDK/2017.4/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.mmi -data C:/Xilinx/SDK/2017.4/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc design_1_i/microblaze_0 -bit C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit -out C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.sdk/design_1_wrapper_hw_platform_0/download.bit -force
+# Log file: C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/updatemem.log
+# Journal file: C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount\updatemem.jou
 #-----------------------------------------------------------
 source C:/Xilinx/SDK/2017.4/scripts/updatemem/main.tcl -notrace

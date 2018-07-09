@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:StreamCopIPCore:1.0
--- IP Revision: 57
+-- IP Revision: 65
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;

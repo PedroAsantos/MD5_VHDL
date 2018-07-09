@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Sun Jul  8 20:49:55 2018
+| Date             : Mon Jul  9 11:33:50 2018
 | Host             : Miguel running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.245        |
+| Total On-Chip Power (W)  | 0.244        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.146        |
+| Dynamic (W)              | 0.145        |
 | Device Static (W)        | 0.099        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 83.9         |
@@ -52,21 +52,21 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.011 |        7 |       --- |             --- |
-| Slice Logic              |     0.004 |     4833 |       --- |             --- |
-|   LUT as Logic           |     0.003 |     1650 |     63400 |            2.60 |
-|   LUT as Distributed RAM |     0.001 |       96 |     19000 |            0.51 |
-|   Register               |    <0.001 |     1934 |    126800 |            1.53 |
-|   CARRY4                 |    <0.001 |       38 |     15850 |            0.24 |
+| Clocks                   |     0.012 |        7 |       --- |             --- |
+| Slice Logic              |     0.004 |     5108 |       --- |             --- |
+|   LUT as Logic           |     0.003 |     1679 |     63400 |            2.65 |
+|   LUT as Distributed RAM |    <0.001 |       96 |     19000 |            0.51 |
+|   Register               |    <0.001 |     2157 |    126800 |            1.70 |
+|   CARRY4                 |    <0.001 |       46 |     15850 |            0.29 |
 |   F7/F8 Muxes            |    <0.001 |      108 |     63400 |            0.17 |
 |   LUT as Shift Register  |    <0.001 |       75 |     19000 |            0.39 |
 |   Others                 |    <0.001 |      540 |       --- |             --- |
-| Signals                  |     0.009 |     3466 |       --- |             --- |
-| Block RAM                |     0.016 |       32 |       135 |           23.70 |
+| Signals                  |     0.009 |     3739 |       --- |             --- |
+| Block RAM                |     0.014 |       32 |       135 |           23.70 |
 | MMCM                     |     0.106 |        1 |         6 |           16.67 |
 | I/O                      |    <0.001 |        4 |       210 |            1.90 |
 | Static Power             |     0.099 |          |           |                 |
-| Total                    |     0.245 |          |           |                 |
+| Total                    |     0.244 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -149,11 +149,11 @@ Table of Contents
 +------------------------------------------------------------------------------------+-----------+
 | Name                                                                               | Power (W) |
 +------------------------------------------------------------------------------------+-----------+
-| design_1_wrapper                                                                   |     0.146 |
-|   design_1_i                                                                       |     0.146 |
-|     StreamCopIPCore_0                                                              |    <0.001 |
-|       U0                                                                           |    <0.001 |
-|         StreamCopIPCore_v1_0_S00_AXIS_inst                                         |    <0.001 |
+| design_1_wrapper                                                                   |     0.145 |
+|   design_1_i                                                                       |     0.145 |
+|     StreamCopIPCore_0                                                              |     0.002 |
+|       U0                                                                           |     0.002 |
+|         StreamCopIPCore_v1_0_S00_AXIS_inst                                         |     0.002 |
 |     axi_uartlite_0                                                                 |    <0.001 |
 |       U0                                                                           |    <0.001 |
 |         AXI_LITE_IPIF_I                                                            |    <0.001 |
@@ -179,9 +179,9 @@ Table of Contents
 |     axis_dwidth_converter_0                                                        |     0.002 |
 |       inst                                                                         |     0.002 |
 |         gen_downsizer_conversion.axisc_downsizer_0                                 |     0.002 |
-|     axis_dwidth_converter_1                                                        |    <0.001 |
-|       inst                                                                         |    <0.001 |
-|         gen_upsizer_conversion.axisc_upsizer_0                                     |    <0.001 |
+|     axis_dwidth_converter_1                                                        |     0.001 |
+|       inst                                                                         |     0.001 |
+|         gen_upsizer_conversion.axisc_upsizer_0                                     |     0.001 |
 |     clk_wiz_1                                                                      |     0.106 |
 |       inst                                                                         |     0.106 |
 |     mdm_1                                                                          |    <0.001 |
@@ -199,7 +199,7 @@ Table of Contents
 |     microblaze_0                                                                   |     0.016 |
 |       U0                                                                           |     0.016 |
 |         MicroBlaze_Core_I                                                          |     0.016 |
-|           Performance.Core                                                         |     0.016 |
+|           Performance.Core                                                         |     0.015 |
 |             Data_Flow_I                                                            |     0.007 |
 |               ALU_I                                                                |     0.002 |
 |                 Using_FPGA.ALL_Bits[0].ALU_Bit_I1                                  |    <0.001 |
@@ -918,8 +918,8 @@ Table of Contents
 |                   Using_FPGA.Native                                                |    <0.001 |
 |                 Mux_Loop[9].I_MUX_LUT6                                             |    <0.001 |
 |                   Using_FPGA.Native                                                |    <0.001 |
-|             mem_databus_ready_sel_carry_or                                         |    <0.001 |
-|               MUXCY_I                                                              |    <0.001 |
+|             mem_databus_ready_sel_carry_or                                         |     0.000 |
+|               MUXCY_I                                                              |     0.000 |
 |           Reset_DFF                                                                |    <0.001 |
 |           Using_Async_Wakeup_0.Wakeup_DFF                                          |    <0.001 |
 |           Using_Async_Wakeup_1.Wakeup_DFF                                          |    <0.001 |
@@ -1004,7 +1004,7 @@ Table of Contents
 |             reg_slice_r                                                            |    <0.001 |
 |             splitter_ar                                                            |    <0.001 |
 |             splitter_aw                                                            |    <0.001 |
-|     microblaze_0_local_memory                                                      |     0.017 |
+|     microblaze_0_local_memory                                                      |     0.015 |
 |       dlmb_bram_if_cntlr                                                           |    <0.001 |
 |         U0                                                                         |    <0.001 |
 |       dlmb_v10                                                                     |     0.000 |
@@ -1013,11 +1013,11 @@ Table of Contents
 |         U0                                                                         |    <0.001 |
 |       ilmb_v10                                                                     |     0.000 |
 |         U0                                                                         |     0.000 |
-|       lmb_bram                                                                     |     0.016 |
-|         U0                                                                         |     0.016 |
-|           inst_blk_mem_gen                                                         |     0.016 |
-|             gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen                  |     0.016 |
-|               valid.cstr                                                           |     0.016 |
+|       lmb_bram                                                                     |     0.015 |
+|         U0                                                                         |     0.015 |
+|           inst_blk_mem_gen                                                         |     0.015 |
+|             gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen                  |     0.015 |
+|               valid.cstr                                                           |     0.015 |
 |                 ramloop[0].ram.r                                                   |    <0.001 |
 |                   prim_noinit.ram                                                  |    <0.001 |
 |                 ramloop[10].ram.r                                                  |    <0.001 |

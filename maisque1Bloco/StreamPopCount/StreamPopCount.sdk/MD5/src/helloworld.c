@@ -78,40 +78,35 @@ int main(){
 	  subBlockTemp = (char *)calloc(4, sizeof(char));
 
 	  char *blockTemp;
-	  	/* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
+	  /* Define the amount of memory required, 64 * 8=512 -> it will reserve 512 bits */
 	  size_t lengthTemp = 64;
 	  xil_printf("\nsubBlock______asd______________>__>_%s", subBlockTemp);
 
 
 	  blockTemp = (char *)calloc(lengthTemp, sizeof(char));
-	  //char *basePtr=blockTemp;
-	 // for(i=0;i<64;i++){
 	  int i;
 	  for(i=0;i<lengthTemp;i++){
-		  //blockTemp = 'a';
-		 //blockTemp=blockTemp+8;
 		  blockTemp[i]='a';
-
 	  }
 	  xil_printf("\nbasePtr_%s", blockTemp);
 	  xil_printf("\nsubBlock____________________>__>_%s", subBlockTemp);
 	  int c;
-	/*  for(c=0;c<16;c=c+1){
+
+	  /*  for(c=0;c<16;c=c+1){
 	     memcpy(subBlockTemp,blockTemp+(c*4),4);
 	     xil_printf("\nsubBlock size -> %d", (int) (sizeof(subBlockTemp)));
 	     putfsl(*subBlockTemp, 0);
 	     xil_printf("\nsubBlock_%s", *subBlockTemp);
 	  }*/
+
 	  for(c=0;c<lengthTemp;c=c+4){
-	          xil_printf("\nDecode-> %x", *((unsigned int*)(blockTemp+c)));
-	          putfsl(*((unsigned int*)(blockTemp+c)), 0);
+		  xil_printf("\nDecode-> %x", *((unsigned int*)(blockTemp+c)));
+		  putfsl(*((unsigned int*)(blockTemp+c)), 0);
 	  }
 
 	  int u;
 	  for(u = 0;u < lengthTemp; u++){
-	  		 //blockTemp = 'a';
-	  		 //blockTemp=blockTemp+8;
-	  		  blockTemp[u]='b';
+		  blockTemp[u]='b';
 	  }
 
 	  for(c=0;c<lengthTemp;c=c+4){
@@ -119,7 +114,6 @@ int main(){
 		  putfsl(*((unsigned int*)(blockTemp+c)), 0);
 	  }
 
-	//putfsl("", 0);
 	  int j;
 	  for(j=0; j < 4; j++){
 		  getfsl(r, 0);
