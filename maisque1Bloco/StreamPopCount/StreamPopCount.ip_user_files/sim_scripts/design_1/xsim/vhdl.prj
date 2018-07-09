@@ -1,7 +1,7 @@
 vhdl xil_defaultlib  \
-"../../../bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd" \
-"../../../bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd" \
-"../../../bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0.vhd" \
+"../../../bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd" \
+"../../../bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd" \
+"../../../bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0.vhd" \
 "../../../bd/design_1/ip/design_1_StreamCopIPCore_0_0/sim/design_1_StreamCopIPCore_0_0.vhd" \
 "../../../bd/design_1/ip/design_1_microblaze_0_axi_intc_0/sim/design_1_microblaze_0_axi_intc_0.vhd" \
 "../../../bd/design_1/ip/design_1_microblaze_0_xlconcat_0/design_1_microblaze_0_xlconcat_0_sim_netlist.vhdl" \

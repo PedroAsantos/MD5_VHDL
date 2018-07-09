@@ -1,6 +1,164 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Jul  9 14:19:30 2018
+| Host         : Miguel running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_StreamCopIPCore_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_StreamCopIPCore_0_0 (xilinx.com:user:StreamCopIPCore:1.0) from (Rev. 71) to (Rev. 72)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Jul  9 14:00:42 2018
+| Host         : Miguel running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_StreamCopIPCore_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_StreamCopIPCore_0_0 (xilinx.com:user:StreamCopIPCore:1.0) from (Rev. 70) to (Rev. 71)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Jul  9 13:19:18 2018
+| Host         : Miguel running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_StreamCopIPCore_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_StreamCopIPCore_0_0 (xilinx.com:user:StreamCopIPCore:1.0) from (Rev. 69) to (Rev. 70)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Jul  9 12:55:44 2018
+| Host         : Miguel running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_StreamCopIPCore_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_StreamCopIPCore_0_0 (xilinx.com:user:StreamCopIPCore:1.0) from (Rev. 68) to (Rev. 69)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Jul  9 12:35:18 2018
+| Host         : Miguel running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_StreamCopIPCore_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_StreamCopIPCore_0_0 (xilinx.com:user:StreamCopIPCore:1.0) from (Rev. 67) to (Rev. 68)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_StreamCopIPCore_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'ledsOut'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Jul  9 12:18:10 2018
+| Host         : Miguel running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_StreamCopIPCore_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_StreamCopIPCore_0_0 (xilinx.com:user:StreamCopIPCore:1.0) from (Rev. 66) to (Rev. 67)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Mon Jul  9 11:49:42 2018
+| Host         : Miguel running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a100tcsg324-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_StreamCopIPCore_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_StreamCopIPCore_0_0 (xilinx.com:user:StreamCopIPCore:1.0) from (Rev. 65) to (Rev. 66)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
 | Date         : Mon Jul  9 11:28:43 2018
 | Host         : Miguel running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

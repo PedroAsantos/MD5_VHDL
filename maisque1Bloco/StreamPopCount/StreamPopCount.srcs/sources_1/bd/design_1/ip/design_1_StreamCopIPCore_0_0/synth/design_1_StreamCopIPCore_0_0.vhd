@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:StreamCopIPCore:1.0
--- IP Revision: 65
+-- IP Revision: 72
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -58,6 +58,7 @@ ENTITY design_1_StreamCopIPCore_0_0 IS
     s00_axis_tdata : IN STD_LOGIC_VECTOR(511 DOWNTO 0);
     s00_axis_tstrb : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
     s00_axis_tlast : IN STD_LOGIC;
+    ledsOut : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     s00_axis_tvalid : IN STD_LOGIC;
     s00_axis_tready : OUT STD_LOGIC;
     s00_axis_aclk : IN STD_LOGIC;
@@ -85,6 +86,7 @@ ARCHITECTURE design_1_StreamCopIPCore_0_0_arch OF design_1_StreamCopIPCore_0_0 I
       s00_axis_tdata : IN STD_LOGIC_VECTOR(511 DOWNTO 0);
       s00_axis_tstrb : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
       s00_axis_tlast : IN STD_LOGIC;
+      ledsOut : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       s00_axis_tvalid : IN STD_LOGIC;
       s00_axis_tready : OUT STD_LOGIC;
       s00_axis_aclk : IN STD_LOGIC;
@@ -103,7 +105,7 @@ ARCHITECTURE design_1_StreamCopIPCore_0_0_arch OF design_1_StreamCopIPCore_0_0 I
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_StreamCopIPCore_0_0_arch : ARCHITECTURE IS "design_1_StreamCopIPCore_0_0,StreamCopIPCore_v1_0,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_StreamCopIPCore_0_0_arch: ARCHITECTURE IS "design_1_StreamCopIPCore_0_0,StreamCopIPCore_v1_0,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=StreamCopIPCore,x_ipVersion=1.0,x_ipCoreRevision=65,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,C_S00_AXIS_TDATA_WIDTH=512,C_M00_AXIS_TDATA_WIDTH=128,C_M00_AXIS_START_COUNT=32}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_StreamCopIPCore_0_0_arch: ARCHITECTURE IS "design_1_StreamCopIPCore_0_0,StreamCopIPCore_v1_0,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=StreamCopIPCore,x_ipVersion=1.0,x_ipCoreRevision=72,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,C_S00_AXIS_TDATA_WIDTH=512,C_M00_AXIS_TDATA_WIDTH=128,C_M00_AXIS_START_COUNT=32}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF m00_axis_aresetn: SIGNAL IS "XIL_INTERFACENAME M00_AXIS_RST, POLARITY ACTIVE_LOW";
@@ -137,6 +139,7 @@ BEGIN
       s00_axis_tdata => s00_axis_tdata,
       s00_axis_tstrb => s00_axis_tstrb,
       s00_axis_tlast => s00_axis_tlast,
+      ledsOut => ledsOut,
       s00_axis_tvalid => s00_axis_tvalid,
       s00_axis_tready => s00_axis_tready,
       s00_axis_aclk => s00_axis_aclk,

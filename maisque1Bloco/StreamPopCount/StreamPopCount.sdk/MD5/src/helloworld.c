@@ -17,7 +17,7 @@ int main(){
     char array[5];
 	unsigned int ch;
 
-	char message[] = "Ol� eu sou o Pedro";
+	char message[] = "Ola eu sou o Pedro";
 	double initial_len_double = (double) sizeof(message);
 	int initial_len = sizeof(message);
 
@@ -86,7 +86,7 @@ int main(){
 	  blockTemp = (char *)calloc(lengthTemp, sizeof(char));
 	  int i;
 	  for(i=0;i<lengthTemp;i++){
-		  blockTemp[i]='a';
+		  blockTemp[i]= 'b';
 	  }
 	  xil_printf("\nbasePtr_%s", blockTemp);
 	  xil_printf("\nsubBlock____________________>__>_%s", subBlockTemp);
@@ -104,9 +104,15 @@ int main(){
 		  putfsl(*((unsigned int*)(blockTemp+c)), 0);
 	  }
 
+	  xil_printf("\n\r2 block!");
+
 	  int u;
 	  for(u = 0;u < lengthTemp; u++){
-		  blockTemp[u]='b';
+		  if (u < 4){
+			  blockTemp[u] = 'g';
+		  }else{
+			  blockTemp[u] = 'a';
+		  }
 	  }
 
 	  for(c=0;c<lengthTemp;c=c+4){

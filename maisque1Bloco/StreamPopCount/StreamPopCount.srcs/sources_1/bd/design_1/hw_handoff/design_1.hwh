@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jul  9 11:28:54 2018" VIVADOVERSION="2017.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Jul  9 14:19:40 2018" VIVADOVERSION="2017.4">
 
   <SYSTEMINFO ARCH="artix7" BOARD="digilentinc.com:nexys4:part0:1.1" DEVICE="7a100t" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-1"/>
 
@@ -15,6 +15,11 @@
       <CONNECTIONS>
         <CONNECTION INSTANCE="clk_wiz_1" PORT="resetn"/>
         <CONNECTION INSTANCE="rst_clk_wiz_1_100M" PORT="ext_reset_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="led" RIGHT="0" SIGIS="undef" SIGNAME="StreamCopIPCore_0_ledsOut">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="StreamCopIPCore_0" PORT="ledsOut"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -48,6 +53,11 @@
         <PORT DIR="I" NAME="s00_axis_tlast" SIGIS="undef" SIGNAME="StreamCopIPCore_0_s00_axis_tlast">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axis_dwidth_converter_1" PORT="m_axis_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="ledsOut" RIGHT="0" SIGIS="undef" SIGNAME="StreamCopIPCore_0_ledsOut">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="led"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="s00_axis_tvalid" SIGIS="undef" SIGNAME="StreamCopIPCore_0_s00_axis_tvalid">

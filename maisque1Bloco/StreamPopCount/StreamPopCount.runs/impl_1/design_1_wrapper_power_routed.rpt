@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Mon Jul  9 11:33:50 2018
+| Date             : Mon Jul  9 14:24:23 2018
 | Host             : Miguel running 64-bit major release  (build 9200)
 | Command          : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
 | Design           : design_1_wrapper
@@ -52,19 +52,19 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.012 |        7 |       --- |             --- |
-| Slice Logic              |     0.004 |     5108 |       --- |             --- |
-|   LUT as Logic           |     0.003 |     1679 |     63400 |            2.65 |
+| Clocks                   |     0.011 |        7 |       --- |             --- |
+| Slice Logic              |     0.004 |     5166 |       --- |             --- |
+|   LUT as Logic           |     0.003 |     1694 |     63400 |            2.67 |
 |   LUT as Distributed RAM |    <0.001 |       96 |     19000 |            0.51 |
-|   Register               |    <0.001 |     2157 |    126800 |            1.70 |
+|   Register               |    <0.001 |     2194 |    126800 |            1.73 |
 |   CARRY4                 |    <0.001 |       46 |     15850 |            0.29 |
 |   F7/F8 Muxes            |    <0.001 |      108 |     63400 |            0.17 |
 |   LUT as Shift Register  |    <0.001 |       75 |     19000 |            0.39 |
-|   Others                 |    <0.001 |      540 |       --- |             --- |
-| Signals                  |     0.009 |     3739 |       --- |             --- |
+|   Others                 |    <0.001 |      542 |       --- |             --- |
+| Signals                  |     0.009 |     3794 |       --- |             --- |
 | Block RAM                |     0.014 |       32 |       135 |           23.70 |
 | MMCM                     |     0.106 |        1 |         6 |           16.67 |
-| I/O                      |    <0.001 |        4 |       210 |            1.90 |
+| I/O                      |    <0.001 |       20 |       210 |            9.52 |
 | Static Power             |     0.099 |          |           |                 |
 | Total                    |     0.244 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.055 |       0.039 |      0.016 |
+| Vccint    |       1.000 |     0.054 |       0.038 |      0.016 |
 | Vccaux    |       1.800 |     0.077 |       0.059 |      0.018 |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -196,9 +196,9 @@ Table of Contents
 |             Use_ID_SRL16E.SRL16E_ID_2                                              |    <0.001 |
 |         No_Dbg_Reg_Access.BUFG_DRCK                                                |    <0.001 |
 |         Use_E2.BSCAN_I                                                             |    <0.001 |
-|     microblaze_0                                                                   |     0.016 |
-|       U0                                                                           |     0.016 |
-|         MicroBlaze_Core_I                                                          |     0.016 |
+|     microblaze_0                                                                   |     0.015 |
+|       U0                                                                           |     0.015 |
+|         MicroBlaze_Core_I                                                          |     0.015 |
 |           Performance.Core                                                         |     0.015 |
 |             Data_Flow_I                                                            |     0.007 |
 |               ALU_I                                                                |     0.002 |

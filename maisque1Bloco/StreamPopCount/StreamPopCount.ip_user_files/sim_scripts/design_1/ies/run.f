@@ -7,9 +7,9 @@
   "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd" \
-  "../../../bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd" \
-  "../../../bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0.vhd" \
+  "../../../bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd" \
+  "../../../bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd" \
+  "../../../bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0.vhd" \
   "../../../bd/design_1/ip/design_1_StreamCopIPCore_0_0/sim/design_1_StreamCopIPCore_0_0.vhd" \
 -endlib
 -makelib ies_lib/axi_lite_ipif_v3_0_4 \

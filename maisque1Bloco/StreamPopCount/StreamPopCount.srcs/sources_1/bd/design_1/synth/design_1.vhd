@@ -1,7 +1,7 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
---Date        : Mon Jul  9 11:28:53 2018
+--Date        : Mon Jul  9 14:19:39 2018
 --Host        : Miguel running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1365,6 +1365,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity design_1 is
   port (
+    led : out STD_LOGIC_VECTOR ( 15 downto 0 );
     reset : in STD_LOGIC;
     sys_clock_0 : in STD_LOGIC;
     usb_uart_rxd : in STD_LOGIC;
@@ -1580,6 +1581,7 @@ architecture STRUCTURE of design_1 is
     s00_axis_tdata : in STD_LOGIC_VECTOR ( 511 downto 0 );
     s00_axis_tstrb : in STD_LOGIC_VECTOR ( 63 downto 0 );
     s00_axis_tlast : in STD_LOGIC;
+    ledsOut : out STD_LOGIC_VECTOR ( 15 downto 0 );
     s00_axis_tvalid : in STD_LOGIC;
     s00_axis_tready : out STD_LOGIC;
     s00_axis_aclk : in STD_LOGIC;
@@ -1598,6 +1600,7 @@ architecture STRUCTURE of design_1 is
   signal StreamCopIPCore_0_M00_AXIS_TREADY : STD_LOGIC;
   signal StreamCopIPCore_0_M00_AXIS_TSTRB : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal StreamCopIPCore_0_M00_AXIS_TVALID : STD_LOGIC;
+  signal StreamCopIPCore_0_ledsOut : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal axi_uartlite_0_UART_RxD : STD_LOGIC;
   signal axi_uartlite_0_UART_TxD : STD_LOGIC;
   signal axis_dwidth_converter_0_M_AXIS_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -1725,11 +1728,13 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_INFO of usb_uart_txd : signal is "xilinx.com:interface:uart:1.0 usb_uart TxD";
 begin
   axi_uartlite_0_UART_RxD <= usb_uart_rxd;
+  led(15 downto 0) <= StreamCopIPCore_0_ledsOut(15 downto 0);
   reset_0_1 <= reset;
   sys_clock_0_1 <= sys_clock_0;
   usb_uart_txd <= axi_uartlite_0_UART_TxD;
 StreamCopIPCore_0: component design_1_StreamCopIPCore_0_0
      port map (
+      ledsOut(15 downto 0) => StreamCopIPCore_0_ledsOut(15 downto 0),
       m00_axis_aclk => microblaze_0_Clk,
       m00_axis_aresetn => rst_clk_wiz_1_100M_interconnect_aresetn(0),
       m00_axis_tdata(127 downto 0) => StreamCopIPCore_0_M00_AXIS_TDATA(127 downto 0),

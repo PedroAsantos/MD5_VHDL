@@ -70,6 +70,9 @@ set_property used_in_implementation false [get_files -all C:/Users/Miguel/Deskto
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc
+set_property used_in_implementation false [get_files C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc]
+
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 

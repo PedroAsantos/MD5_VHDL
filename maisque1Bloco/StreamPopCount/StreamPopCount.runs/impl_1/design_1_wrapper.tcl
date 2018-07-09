@@ -80,6 +80,7 @@ set rc [catch {
   set_param project.isImplRun true
   add_files C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
+  read_xdc C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc
   set_param project.isImplRun true
   link_design -top design_1_wrapper -part xc7a100tcsg324-1
   set_param project.isImplRun false

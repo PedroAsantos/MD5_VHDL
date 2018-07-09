@@ -2,8 +2,8 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Mon Jul  9 11:29:30 2018
-# Process ID: 4976
+# Start of session at: Mon Jul  9 14:20:08 2018
+# Process ID: 4872
 # Current directory: C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1
 # Command line: vivado.exe -log design_1_StreamCopIPCore_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_StreamCopIPCore_0_0.tcl
 # Log file: C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1/design_1_StreamCopIPCore_0_0.vds
@@ -15,46 +15,46 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17232 
+INFO: Helper process launched with PID 14244 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 352.879 ; gain = 102.688
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 352.727 ; gain = 100.566
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'design_1_StreamCopIPCore_0_0' [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/synth/design_1_StreamCopIPCore_0_0.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'design_1_StreamCopIPCore_0_0' [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/synth/design_1_StreamCopIPCore_0_0.vhd:76]
 	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 512 - type: integer 
 	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 128 - type: integer 
 	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'StreamCopIPCore_v1_0' declared at 'c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0.vhd:5' bound to instance 'U0' of component 'StreamCopIPCore_v1_0' [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/synth/design_1_StreamCopIPCore_0_0.vhd:130]
-INFO: [Synth 8-638] synthesizing module 'StreamCopIPCore_v1_0' [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0.vhd:43]
+INFO: [Synth 8-3491] module 'StreamCopIPCore_v1_0' declared at 'c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0.vhd:5' bound to instance 'U0' of component 'StreamCopIPCore_v1_0' [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/synth/design_1_StreamCopIPCore_0_0.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'StreamCopIPCore_v1_0' [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0.vhd:44]
 	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 128 - type: integer 
 	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
 	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 512 - type: integer 
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 512 - type: integer 
 	Parameter C_S_AXIS_TDATA_WIDTH_OUT bound to: 128 - type: integer 
-INFO: [Synth 8-3491] module 'StreamCopIPCore_v1_0_S00_AXIS' declared at 'c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:7' bound to instance 'StreamCopIPCore_v1_0_S00_AXIS_inst' of component 'StreamCopIPCore_v1_0_S00_AXIS' [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0.vhd:89]
-INFO: [Synth 8-638] synthesizing module 'StreamCopIPCore_v1_0_S00_AXIS' [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:42]
+INFO: [Synth 8-3491] module 'StreamCopIPCore_v1_0_S00_AXIS' declared at 'c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:7' bound to instance 'StreamCopIPCore_v1_0_S00_AXIS_inst' of component 'StreamCopIPCore_v1_0_S00_AXIS' [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'StreamCopIPCore_v1_0_S00_AXIS' [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:44]
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 512 - type: integer 
 	Parameter C_S_AXIS_OUT_WIDTH bound to: 128 - type: integer 
-WARNING: [Synth 8-3819] Generic 'c_s_axis_tdata_width_out' not present in instantiated entity will be ignored [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0.vhd:89]
-WARNING: [Synth 8-614] signal 'currentState' is read in the process but is not in the sensitivity list [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:189]
-WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:147]
-WARNING: [Synth 8-6014] Unused sequential element f_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:247]
-WARNING: [Synth 8-6014] Unused sequential element g_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:248]
-WARNING: [Synth 8-6014] Unused sequential element H0_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:250]
-WARNING: [Synth 8-6014] Unused sequential element H1_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:247]
-WARNING: [Synth 8-6014] Unused sequential element H2_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:247]
-WARNING: [Synth 8-6014] Unused sequential element H3_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:247]
-WARNING: [Synth 8-6014] Unused sequential element i_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:248]
-WARNING: [Synth 8-6014] Unused sequential element currentState_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:148]
-INFO: [Synth 8-256] done synthesizing module 'StreamCopIPCore_v1_0_S00_AXIS' (1#1) [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:42]
+WARNING: [Synth 8-3819] Generic 'c_s_axis_tdata_width_out' not present in instantiated entity will be ignored [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0.vhd:91]
+WARNING: [Synth 8-6014] Unused sequential element a_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:139]
+WARNING: [Synth 8-6014] Unused sequential element b_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:140]
+WARNING: [Synth 8-6014] Unused sequential element c_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:141]
+WARNING: [Synth 8-6014] Unused sequential element d_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:142]
+WARNING: [Synth 8-6014] Unused sequential element f_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:240]
+WARNING: [Synth 8-6014] Unused sequential element g_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:241]
+WARNING: [Synth 8-6014] Unused sequential element H0_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:139]
+WARNING: [Synth 8-6014] Unused sequential element H1_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:140]
+WARNING: [Synth 8-6014] Unused sequential element H2_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:141]
+WARNING: [Synth 8-6014] Unused sequential element H3_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:142]
+INFO: [Synth 8-256] done synthesizing module 'StreamCopIPCore_v1_0_S00_AXIS' (1#1) [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:44]
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 128 - type: integer 
 	Parameter C_M_START_COUNT bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'StreamCopIPCore_v1_0_M00_AXIS' declared at 'c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd:5' bound to instance 'StreamCopIPCore_v1_0_M00_AXIS_inst' of component 'StreamCopIPCore_v1_0_M00_AXIS' [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'StreamCopIPCore_v1_0_M00_AXIS' [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd:42]
+INFO: [Synth 8-3491] module 'StreamCopIPCore_v1_0_M00_AXIS' declared at 'c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd:5' bound to instance 'StreamCopIPCore_v1_0_M00_AXIS_inst' of component 'StreamCopIPCore_v1_0_M00_AXIS' [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'StreamCopIPCore_v1_0_M00_AXIS' [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd:42]
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 128 - type: integer 
 	Parameter C_M_START_COUNT bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'StreamCopIPCore_v1_0_M00_AXIS' (2#1) [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'StreamCopIPCore_v1_0' (3#1) [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0.vhd:43]
-INFO: [Synth 8-256] done synthesizing module 'design_1_StreamCopIPCore_0_0' (4#1) [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/synth/design_1_StreamCopIPCore_0_0.vhd:75]
+INFO: [Synth 8-256] done synthesizing module 'StreamCopIPCore_v1_0_M00_AXIS' (2#1) [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'StreamCopIPCore_v1_0' (3#1) [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'design_1_StreamCopIPCore_0_0' (4#1) [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/synth/design_1_StreamCopIPCore_0_0.vhd:76]
 WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_M00_AXIS has unconnected port M_AXIS_ACLK
 WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_M00_AXIS has unconnected port M_AXIS_ARESETN
 WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port readEnable
@@ -124,7 +124,7 @@ WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected por
 WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[0]
 WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TLAST
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 405.168 ; gain = 154.977
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 405.016 ; gain = 152.855
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -134,7 +134,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 405.168 ; gain = 154.977
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 405.016 ; gain = 152.855
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -146,27 +146,33 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.089 . Memory (MB): peak = 744.367 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 745.516 ; gain = 0.262
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 744.461 ; gain = 494.270
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 745.559 ; gain = 493.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 744.461 ; gain = 494.270
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 745.559 ; gain = 493.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 744.461 ; gain = 494.270
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 745.559 ; gain = 493.398
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "s_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "s_enable" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "nextState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "startFor2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "i_s" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tempFinished" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'nextState_reg' [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:137]
+WARNING: [Synth 8-327] inferring latch for variable 'startFor2_reg' [c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:198]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 744.461 ; gain = 494.270
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 745.559 ; gain = 493.398
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -180,15 +186,23 @@ Start RTL Component Statistics
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
 +---Registers : 
 	             1024 Bit    Registers := 1     
 	              128 Bit    Registers := 1     
 	               32 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
 +---Muxes : 
 	   2 Input   1024 Bit        Muxes := 2     
 	   2 Input     32 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -200,15 +214,23 @@ Module StreamCopIPCore_v1_0_S00_AXIS
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
 +---Registers : 
 	             1024 Bit    Registers := 1     
 	              128 Bit    Registers := 1     
 	               32 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
 +---Muxes : 
 	   2 Input   1024 Bit        Muxes := 2     
 	   2 Input     32 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   6 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -226,6 +248,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "s_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "s_enable" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "nextState" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[15] driven by constant 1
 INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[14] driven by constant 1
 INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[13] driven by constant 1
@@ -378,7 +401,7 @@ WARNING: [Synth 8-3332] Sequential element (M_reg[861]) is unused and will be re
 WARNING: [Synth 8-3332] Sequential element (M_reg[860]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 744.461 ; gain = 494.270
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 745.559 ; gain = 493.398
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -390,13 +413,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 744.461 ; gain = 494.270
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 745.559 ; gain = 493.398
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 744.461 ; gain = 494.270
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 745.559 ; gain = 493.398
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -408,7 +431,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 762.828 ; gain = 512.637
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 763.902 ; gain = 511.742
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -432,7 +455,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 762.828 ; gain = 512.637
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 763.902 ; gain = 511.742
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -445,7 +468,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 762.828 ; gain = 512.637
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 763.902 ; gain = 511.742
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -457,25 +480,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 762.828 ; gain = 512.637
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 763.902 ; gain = 511.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 762.828 ; gain = 512.637
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 763.902 ; gain = 511.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 762.828 ; gain = 512.637
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 763.902 ; gain = 511.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 762.828 ; gain = 512.637
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 763.902 ; gain = 511.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -492,45 +515,47 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |CARRY4 |     8|
-|2     |LUT1   |     3|
-|3     |LUT2   |     2|
-|4     |LUT3   |    33|
-|5     |LUT4   |     4|
-|6     |LUT5   |     2|
-|7     |LUT6   |     5|
-|8     |FDRE   |   291|
+|2     |LUT1   |     4|
+|3     |LUT2   |     4|
+|4     |LUT3   |    34|
+|5     |LUT4   |    11|
+|6     |LUT5   |     7|
+|7     |LUT6   |     8|
+|8     |FDRE   |   324|
+|9     |LD     |     4|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+---------------------------------------+------------------------------+------+
 |      |Instance                               |Module                        |Cells |
 +------+---------------------------------------+------------------------------+------+
-|1     |top                                    |                              |   348|
-|2     |  U0                                   |StreamCopIPCore_v1_0          |   348|
-|3     |    StreamCopIPCore_v1_0_S00_AXIS_inst |StreamCopIPCore_v1_0_S00_AXIS |   347|
+|1     |top                                    |                              |   404|
+|2     |  U0                                   |StreamCopIPCore_v1_0          |   404|
+|3     |    StreamCopIPCore_v1_0_S00_AXIS_inst |StreamCopIPCore_v1_0_S00_AXIS |   403|
 +------+---------------------------------------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 762.828 ; gain = 512.637
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 763.902 ; gain = 511.742
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 964 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:32 . Memory (MB): peak = 762.828 ; gain = 173.344
-Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 762.828 ; gain = 512.637
+Synthesis finished with 0 errors, 0 critical warnings and 966 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 763.902 ; gain = 171.199
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 763.902 ; gain = 511.742
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 4 instances were transformed.
+  LD => LDCE: 4 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-45 Infos, 211 Warnings, 0 Critical Warnings and 0 Errors encountered.
+50 Infos, 213 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 765.316 ; gain = 524.320
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 763.902 ; gain = 523.211
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1/design_1_StreamCopIPCore_0_0.dcp' has been generated.
 INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/design_1_StreamCopIPCore_0_0.xci
 INFO: [Coretcl 2-1174] Renamed 2 cell refs.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1/design_1_StreamCopIPCore_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_StreamCopIPCore_0_0_utilization_synth.rpt -pb design_1_StreamCopIPCore_0_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 765.316 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Jul  9 11:30:23 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 763.902 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  9 14:20:56 2018...

@@ -38,9 +38,9 @@ vcom -work xpm -64 -93 \
 "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vcom -work xil_defaultlib -64 -93 \
-"../../../bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd" \
-"../../../bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd" \
-"../../../bd/design_1/ipshared/b724/hdl/StreamCopIPCore_v1_0.vhd" \
+"../../../bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd" \
+"../../../bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd" \
+"../../../bd/design_1/ipshared/1f38/hdl/StreamCopIPCore_v1_0.vhd" \
 "../../../bd/design_1/ip/design_1_StreamCopIPCore_0_0/sim/design_1_StreamCopIPCore_0_0.vhd" \
 
 vcom -work axi_lite_ipif_v3_0_4 -64 -93 \

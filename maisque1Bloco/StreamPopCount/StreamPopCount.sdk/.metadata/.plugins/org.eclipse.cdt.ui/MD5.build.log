@@ -1,6 +1,6 @@
-11:41:03 **** Incremental Build of configuration Debug for project MD5 ****
+14:35:46 **** Incremental Build of configuration Debug for project md5 ****
 make all 
 make: Nada a ser feito para `all'.
 
-11:41:03 Build Finished (took 168ms)
+14:35:46 Build Finished (took 151ms)
 
