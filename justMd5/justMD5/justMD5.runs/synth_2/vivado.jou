@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jul 10 20:32:01 2018
+# Process ID: 12004
+# Current directory: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2
+# Command line: vivado.exe -log topLevel.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source topLevel.tcl
+# Log file: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/topLevel.vds
+# Journal file: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source topLevel.tcl -notrace

@@ -1,0 +1,590 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jul 10 10:45:51 2018
+# Process ID: 14316
+# Current directory: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10284 C:\Users\Miguel\Desktop\CR\CR_Project\justMd5\justMD5\justMD5.xpr
+# Log file: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/vivado.log
+# Journal file: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5\vivado.jou
+#-----------------------------------------------------------
+start_guERopen_project C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/dataexit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 10 10:48:22 2018...
+y (MB): peak = 687.406 ; gain = 53.063
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Jul 10 10:48:48 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Jul 10 10:51:44 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_1/runme.log
+[Tue Jul 10 10:51:44 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Jul 10 10:55:14 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_1/runme.log
+[Tue Jul 10 10:55:14 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Jul 10 10:56:40 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_1/runme.log
+[Tue Jul 10 10:56:40 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Jul 10 10:57:07 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_1/runme.log
+[Tue Jul 10 10:57:07 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Jul 10 11:00:26 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_1/runme.log
+[Tue Jul 10 11:00:26 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Jul 10 11:09:32 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_1/runme.log
+[Tue Jul 10 11:09:32 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Jul 10 11:10:18 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_1/runme.log
+[Tue Jul 10 11:10:18 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_1/runme.log
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.srcs/sources_1/new/topLevel.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.srcs/sources_1/new/md5.vhd:]
+create_run synth_2 -flow {Vivado Synthesis 2017} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+Run is defaulting to srcset: sources_1
+Run is defaulting to constrset: constrs_1
+Run is defaulting to part: xc7a35tcpg236-1
+current_run [get_runs synth_2]
+set_property part xc7a100tcsg324-1 [current_project]
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 11:16:29 2018] Launched synth_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/runme.log
+[Tue Jul 10 11:16:29 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 11:20:54 2018] Launched synth_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/runme.log
+[Tue Jul 10 11:20:54 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274504946A
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 11:28:47 2018] Launched synth_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/runme.log
+[Tue Jul 10 11:28:47 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 11:29:46 2018] Launched synth_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/runme.log
+[Tue Jul 10 11:29:46 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_hw
+update_compile_order -fileset sources_1
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 11:41:39 2018] Launched synth_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/runme.log
+[Tue Jul 10 11:41:39 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274504946A
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 11:48:24 2018] Launched synth_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/runme.log
+[Tue Jul 10 11:48:24 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 12:07:40 2018] Launched synth_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/runme.log
+[Tue Jul 10 12:07:40 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 12:11:51 2018] Launched synth_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/runme.log
+[Tue Jul 10 12:11:51 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 12:18:31 2018] Launched synth_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/runme.log
+[Tue Jul 10 12:18:31 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 12:25:54 2018] Launched synth_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/runme.log
+[Tue Jul 10 12:25:54 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 12:27:32 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 12:31:10 2018] Launched synth_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/runme.log
+[Tue Jul 10 12:31:10 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+open_run impl_2
+INFO: [Netlist 29-17] Analyzing 106 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'topLevel' is not ideal for floorplanning, since the cellview 'md5' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/.Xil/Vivado-20248-Miguel/dcp4/topLevel.xdc]
+Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/.Xil/Vivado-20248-Miguel/dcp4/topLevel.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.353 . Memory (MB): peak = 1751.578 ; gain = 1.113
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.354 . Memory (MB): peak = 1751.578 ; gain = 1.113
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:28 . Memory (MB): peak = 1852.508 ; gain = 429.141
+close_design
+close_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 2309.930 ; gain = 400.105
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 12:38:14 2018] Launched synth_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/runme.log
+[Tue Jul 10 12:38:14 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 12:43:38 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 12:45:39 2018] Launched synth_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/runme.log
+[Tue Jul 10 12:45:39 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 12:53:20 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 12:55:21 2018] Launched synth_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/runme.log
+[Tue Jul 10 12:55:21 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 13:03:51 2018] Launched synth_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/runme.log
+[Tue Jul 10 13:03:51 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+close_hw
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 13:05:29 2018] Launched synth_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/runme.log
+[Tue Jul 10 13:05:29 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 13:09:19 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+reset_run impl_2 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run impl_2 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274504946A
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 13:09:57 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 13:12:52 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 13:14:09 2018] Launched synth_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/runme.log
+[Tue Jul 10 13:14:09 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/topLevel.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 13:24:20 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+reset_run impl_2 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+reset_run synth_2
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2
+
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 13:24:36 2018] Launched synth_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/synth_2/runme.log
+[Tue Jul 10 13:24:36 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+reset_run impl_2 -prev_step 
+launch_runs impl_2 -to_step write_bitstream -jobs 2
+[Tue Jul 10 13:25:54 2018] Launched impl_2...
+Run output will be captured here: C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5/justMD5.runs/impl_2/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 10 13:27:06 2018...
