@@ -1,7 +1,7 @@
 --Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
---Date        : Mon Jul  9 14:19:39 2018
+--Date        : Wed Jul 11 04:26:49 2018
 --Host        : Miguel running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -1578,10 +1578,10 @@ architecture STRUCTURE of design_1 is
   end component design_1_microblaze_0_1;
   component design_1_StreamCopIPCore_0_0 is
   port (
+    ledsOut : out STD_LOGIC_VECTOR ( 15 downto 0 );
     s00_axis_tdata : in STD_LOGIC_VECTOR ( 511 downto 0 );
     s00_axis_tstrb : in STD_LOGIC_VECTOR ( 63 downto 0 );
     s00_axis_tlast : in STD_LOGIC;
-    ledsOut : out STD_LOGIC_VECTOR ( 15 downto 0 );
     s00_axis_tvalid : in STD_LOGIC;
     s00_axis_tready : out STD_LOGIC;
     s00_axis_aclk : in STD_LOGIC;

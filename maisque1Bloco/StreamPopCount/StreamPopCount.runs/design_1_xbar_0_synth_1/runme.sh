@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/CR_Projects/StreamPopCount/StreamPopCount.runs/design_1_xbar_0_synth_1'
+HD_PWD='C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/design_1_xbar_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

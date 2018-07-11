@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:StreamCopIPCore:1.0
--- IP Revision: 72
+-- IP Revision: 81
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -55,10 +55,10 @@ USE ieee.numeric_std.ALL;
 
 ENTITY design_1_StreamCopIPCore_0_0 IS
   PORT (
+    ledsOut : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     s00_axis_tdata : IN STD_LOGIC_VECTOR(511 DOWNTO 0);
     s00_axis_tstrb : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
     s00_axis_tlast : IN STD_LOGIC;
-    ledsOut : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     s00_axis_tvalid : IN STD_LOGIC;
     s00_axis_tready : OUT STD_LOGIC;
     s00_axis_aclk : IN STD_LOGIC;
@@ -83,10 +83,10 @@ ARCHITECTURE design_1_StreamCopIPCore_0_0_arch OF design_1_StreamCopIPCore_0_0 I
       C_M00_AXIS_START_COUNT : INTEGER -- Start count is the number of clock cycles the master will wait before initiating/issuing any transaction.
     );
     PORT (
+      ledsOut : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       s00_axis_tdata : IN STD_LOGIC_VECTOR(511 DOWNTO 0);
       s00_axis_tstrb : IN STD_LOGIC_VECTOR(63 DOWNTO 0);
       s00_axis_tlast : IN STD_LOGIC;
-      ledsOut : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       s00_axis_tvalid : IN STD_LOGIC;
       s00_axis_tready : OUT STD_LOGIC;
       s00_axis_aclk : IN STD_LOGIC;
@@ -130,10 +130,10 @@ BEGIN
       C_M00_AXIS_START_COUNT => 32
     )
     PORT MAP (
+      ledsOut => ledsOut,
       s00_axis_tdata => s00_axis_tdata,
       s00_axis_tstrb => s00_axis_tstrb,
       s00_axis_tlast => s00_axis_tlast,
-      ledsOut => ledsOut,
       s00_axis_tvalid => s00_axis_tvalid,
       s00_axis_tready => s00_axis_tready,
       s00_axis_aclk => s00_axis_aclk,

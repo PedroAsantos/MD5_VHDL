@@ -12,35 +12,35 @@ source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/ip_repo/StreamCopIPCore_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
-add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 275.145 ; gain = 48.527
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 275.195 ; gain = 48.176
 Command: synth_design -top design_1_wrapper -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 16692 
+INFO: Helper process launched with PID 11152 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 387.961 ; gain = 104.391
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 388.820 ; gain = 104.641
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:24]
 INFO: [Synth 8-3491] module 'design_1' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1366' bound to instance 'design_1_i' of component 'design_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:35]
 INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1380]
-INFO: [Synth 8-3491] module 'design_1_StreamCopIPCore_0_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_StreamCopIPCore_0_0_stub.vhdl:5' bound to instance 'StreamCopIPCore_0' of component 'design_1_StreamCopIPCore_0_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1735]
-INFO: [Synth 8-638] synthesizing module 'design_1_StreamCopIPCore_0_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_StreamCopIPCore_0_0_stub.vhdl:26]
-INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1753]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_axi_uartlite_0_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'design_1_axis_dwidth_converter_0_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_axis_dwidth_converter_0_0_stub.vhdl:5' bound to instance 'axis_dwidth_converter_0' of component 'design_1_axis_dwidth_converter_0_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1778]
-INFO: [Synth 8-638] synthesizing module 'design_1_axis_dwidth_converter_0_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_axis_dwidth_converter_0_0_stub.vhdl:23]
-INFO: [Synth 8-3491] module 'design_1_axis_dwidth_converter_1_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_axis_dwidth_converter_1_0_stub.vhdl:5' bound to instance 'axis_dwidth_converter_1' of component 'design_1_axis_dwidth_converter_1_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1793]
-INFO: [Synth 8-638] synthesizing module 'design_1_axis_dwidth_converter_1_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_axis_dwidth_converter_1_0_stub.vhdl:22]
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_1_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'design_1_clk_wiz_1_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1807]
-INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_1_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_clk_wiz_1_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'design_1_mdm_1_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'design_1_mdm_1_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1814]
-INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_mdm_1_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_1_microblaze_0_1' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_microblaze_0_1_stub.vhdl:5' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1827]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_microblaze_0_1_stub.vhdl:71]
-INFO: [Synth 8-3491] module 'design_1_microblaze_0_axi_intc_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_microblaze_0_axi_intc_0_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'design_1_microblaze_0_axi_intc_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1890]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_microblaze_0_axi_intc_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_StreamCopIPCore_0_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_StreamCopIPCore_0_0_stub.vhdl:5' bound to instance 'StreamCopIPCore_0' of component 'design_1_StreamCopIPCore_0_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1735]
+INFO: [Synth 8-638] synthesizing module 'design_1_StreamCopIPCore_0_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_StreamCopIPCore_0_0_stub.vhdl:26]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1753]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_axis_dwidth_converter_0_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_axis_dwidth_converter_0_0_stub.vhdl:5' bound to instance 'axis_dwidth_converter_0' of component 'design_1_axis_dwidth_converter_0_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1778]
+INFO: [Synth 8-638] synthesizing module 'design_1_axis_dwidth_converter_0_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_axis_dwidth_converter_0_0_stub.vhdl:23]
+INFO: [Synth 8-3491] module 'design_1_axis_dwidth_converter_1_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_axis_dwidth_converter_1_0_stub.vhdl:5' bound to instance 'axis_dwidth_converter_1' of component 'design_1_axis_dwidth_converter_1_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1793]
+INFO: [Synth 8-638] synthesizing module 'design_1_axis_dwidth_converter_1_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_axis_dwidth_converter_1_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_1_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'design_1_clk_wiz_1_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1807]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_1_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_clk_wiz_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_mdm_1_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'design_1_mdm_1_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1814]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_mdm_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_1' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_microblaze_0_1_stub.vhdl:5' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1827]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_microblaze_0_1_stub.vhdl:71]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_axi_intc_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_microblaze_0_axi_intc_0_stub.vhdl:5' bound to instance 'microblaze_0_axi_intc' of component 'design_1_microblaze_0_axi_intc_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1890]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_microblaze_0_axi_intc_0_stub.vhdl:36]
 INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_periph_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:951]
 INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8RVYHO' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:57]
 INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8RVYHO' (1#1) [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:57]
@@ -48,27 +48,27 @@ INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1UTB3Y5' [C:/Users/Mig
 INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (2#1) [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:158]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RZP34U' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:821]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RZP34U' (3#1) [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:821]
-INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1301]
-INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1301]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_xbar_0_stub.vhdl:51]
 INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (4#1) [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:951]
 INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:242]
-INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_1' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_dlmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:456]
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_dlmb_bram_if_cntlr_1_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'design_1_dlmb_v10_1' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_dlmb_v10_1_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:510]
-INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_dlmb_v10_1_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_1' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_ilmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:538]
-INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_ilmb_bram_if_cntlr_1_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'design_1_ilmb_v10_1' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_ilmb_v10_1_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:592]
-INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_ilmb_v10_1_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'design_1_lmb_bram_1' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_lmb_bram_1_stub.vhdl:5' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:620]
-INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_lmb_bram_1_stub.vhdl:27]
+INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_1' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_dlmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:456]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_dlmb_bram_if_cntlr_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_dlmb_v10_1' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_dlmb_v10_1_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:510]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_dlmb_v10_1_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_1' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_ilmb_bram_if_cntlr_1_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:538]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_ilmb_bram_if_cntlr_1_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'design_1_ilmb_v10_1' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_ilmb_v10_1_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:592]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_ilmb_v10_1_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'design_1_lmb_bram_1' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_lmb_bram_1_stub.vhdl:5' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:620]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_lmb_bram_1_stub.vhdl:27]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (5#1) [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:242]
-INFO: [Synth 8-3491] module 'design_1_microblaze_0_xlconcat_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_microblaze_0_xlconcat_0_stub.vhdl:5' bound to instance 'microblaze_0_xlconcat' of component 'design_1_microblaze_0_xlconcat_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:2006]
-INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_xlconcat_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_microblaze_0_xlconcat_0_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_1_100M_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'design_1_rst_clk_wiz_1_100M_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:2012]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_1_xlconstant_0_1' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_xlconstant_0_1_stub.vhdl:5' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:2025]
-INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/realtime/design_1_xlconstant_0_1_stub.vhdl:12]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_xlconcat_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_microblaze_0_xlconcat_0_stub.vhdl:5' bound to instance 'microblaze_0_xlconcat' of component 'design_1_microblaze_0_xlconcat_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:2006]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_xlconcat_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_microblaze_0_xlconcat_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_1_100M_0' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'design_1_rst_clk_wiz_1_100M_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:2012]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_1' declared at 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_xlconstant_0_1_stub.vhdl:5' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:2025]
+INFO: [Synth 8-638] synthesizing module 'design_1_xlconstant_0_1' [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/realtime/design_1_xlconstant_0_1_stub.vhdl:12]
 INFO: [Synth 8-256] done synthesizing module 'design_1' (6#1) [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/synth/design_1.vhd:1380]
 INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (7#1) [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:24]
 WARNING: [Synth 8-3331] design s00_couplers_imp_1RZP34U has unconnected port M_ACLK
@@ -84,7 +84,7 @@ WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port M_AR
 WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port S_ACLK
 WARNING: [Synth 8-3331] design m00_couplers_imp_8RVYHO has unconnected port S_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 441.938 ; gain = 158.367
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 442.430 ; gain = 158.250
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -94,62 +94,49 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 441.938 ; gain = 158.367
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 442.430 ; gain = 158.250
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp17/design_1_StreamCopIPCore_0_0_in_context.xdc] for cell 'design_1_i/StreamCopIPCore_0'
-Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp17/design_1_StreamCopIPCore_0_0_in_context.xdc] for cell 'design_1_i/StreamCopIPCore_0'
-Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp18/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
-Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp18/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
-Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp19/design_1_microblaze_0_xlconcat_0_in_context.xdc] for cell 'design_1_i/microblaze_0_xlconcat'
-Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp19/design_1_microblaze_0_xlconcat_0_in_context.xdc] for cell 'design_1_i/microblaze_0_xlconcat'
-Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp20/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
-Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp20/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
-Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp21/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
-Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp21/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
-Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp22/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
-Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp22/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
-Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp23/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
-Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp23/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
-Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp24/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
-Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp24/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
-Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp25/design_1_xlconstant_0_1_in_context.xdc] for cell 'design_1_i/xlconstant_0'
-Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp25/design_1_xlconstant_0_1_in_context.xdc] for cell 'design_1_i/xlconstant_0'
-Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp26/design_1_axis_dwidth_converter_1_0_in_context.xdc] for cell 'design_1_i/axis_dwidth_converter_1'
-Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp26/design_1_axis_dwidth_converter_1_0_in_context.xdc] for cell 'design_1_i/axis_dwidth_converter_1'
-Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp27/design_1_axis_dwidth_converter_0_0_in_context.xdc] for cell 'design_1_i/axis_dwidth_converter_0'
-Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp27/design_1_axis_dwidth_converter_0_0_in_context.xdc] for cell 'design_1_i/axis_dwidth_converter_0'
-Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp28/design_1_microblaze_0_1_in_context.xdc] for cell 'design_1_i/microblaze_0'
-Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp28/design_1_microblaze_0_1_in_context.xdc] for cell 'design_1_i/microblaze_0'
-Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp29/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
-Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp29/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
-Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp30/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
-Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp30/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
-Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp31/design_1_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp31/design_1_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp32/design_1_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp32/design_1_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp33/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
-Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp33/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp17/design_1_StreamCopIPCore_0_0_in_context.xdc] for cell 'design_1_i/StreamCopIPCore_0'
+Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp17/design_1_StreamCopIPCore_0_0_in_context.xdc] for cell 'design_1_i/StreamCopIPCore_0'
+Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp18/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp18/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp19/design_1_microblaze_0_xlconcat_0_in_context.xdc] for cell 'design_1_i/microblaze_0_xlconcat'
+Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp19/design_1_microblaze_0_xlconcat_0_in_context.xdc] for cell 'design_1_i/microblaze_0_xlconcat'
+Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp20/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp20/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp21/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp21/design_1_clk_wiz_1_0_in_context.xdc] for cell 'design_1_i/clk_wiz_1'
+Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp22/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp22/design_1_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M'
+Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp23/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp23/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp24/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp24/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp25/design_1_xlconstant_0_1_in_context.xdc] for cell 'design_1_i/xlconstant_0'
+Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp25/design_1_xlconstant_0_1_in_context.xdc] for cell 'design_1_i/xlconstant_0'
+Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp26/design_1_axis_dwidth_converter_1_0_in_context.xdc] for cell 'design_1_i/axis_dwidth_converter_1'
+Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp26/design_1_axis_dwidth_converter_1_0_in_context.xdc] for cell 'design_1_i/axis_dwidth_converter_1'
+Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp27/design_1_axis_dwidth_converter_0_0_in_context.xdc] for cell 'design_1_i/axis_dwidth_converter_0'
+Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp27/design_1_axis_dwidth_converter_0_0_in_context.xdc] for cell 'design_1_i/axis_dwidth_converter_0'
+Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp28/design_1_microblaze_0_1_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp28/design_1_microblaze_0_1_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp29/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp29/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp30/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp30/design_1_ilmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp31/design_1_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp31/design_1_dlmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp32/design_1_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp32/design_1_ilmb_bram_if_cntlr_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp33/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp33/design_1_lmb_bram_1_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
 Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'RGB1_Red'. [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc:115]
-WARNING: [Vivado 12-584] No ports matched 'RGB1_Red'. [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc:116]
-WARNING: [Vivado 12-584] No ports matched 'RGB1_Green'. [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc:118]
-WARNING: [Vivado 12-584] No ports matched 'RGB1_Green'. [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc:119]
-WARNING: [Vivado 12-584] No ports matched 'RGB1_Blue'. [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc:121]
-WARNING: [Vivado 12-584] No ports matched 'RGB1_Blue'. [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc:122]
-WARNING: [Vivado 12-584] No ports matched 'RGB2_Red'. [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc:124]
-WARNING: [Vivado 12-584] No ports matched 'RGB2_Red'. [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc:125]
-WARNING: [Vivado 12-584] No ports matched 'RGB2_Green'. [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc:127]
-WARNING: [Vivado 12-584] No ports matched 'RGB2_Green'. [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc:128]
-WARNING: [Vivado 12-584] No ports matched 'RGB2_Blue'. [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc:130]
-WARNING: [Vivado 12-584] No ports matched 'RGB2_Blue'. [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc:131]
 Finished Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc]
-WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.srcs/constrs_1/imports/maisque1Bloco/Nexys4_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Parsing XDC File [C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/dont_touch.xdc]
@@ -159,23 +146,23 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 772.652 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 771.129 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 772.652 ; gain = 489.082
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 771.129 ; gain = 486.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 772.652 ; gain = 489.082
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 771.129 ; gain = 486.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for sys_clock_0. (constraint file  C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp21/design_1_clk_wiz_1_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock_0. (constraint file  C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-8204-Miguel/dcp21/design_1_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock_0. (constraint file  C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp21/design_1_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock_0. (constraint file  C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/.Xil/Vivado-5484-Miguel/dcp21/design_1_clk_wiz_1_0_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/StreamCopIPCore_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/axi_uartlite_0. (constraint file  auto generated constraint, line ).
@@ -196,10 +183,10 @@ Applied set_property DONT_TOUCH = true for design_1_i/microblaze_0_xlconcat. (co
 Applied set_property DONT_TOUCH = true for design_1_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 772.652 ; gain = 489.082
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 771.129 ; gain = 486.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 772.652 ; gain = 489.082
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 771.129 ; gain = 486.949
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -240,7 +227,7 @@ WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnecte
 WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
 WARNING: [Synth 8-3331] design design_1_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 772.652 ; gain = 489.082
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 771.129 ; gain = 486.949
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -258,13 +245,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_l
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/BRAM_Clk_A' to pin 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr/bbstub_BRAM_Clk_A/O'
 INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 772.652 ; gain = 489.082
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 771.129 ; gain = 486.949
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 772.652 ; gain = 489.082
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 771.129 ; gain = 486.949
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -276,7 +263,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:40 . Memory (MB): peak = 772.652 ; gain = 489.082
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 774.367 ; gain = 490.188
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -300,7 +287,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 772.652 ; gain = 489.082
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 774.367 ; gain = 490.188
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -313,7 +300,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 772.652 ; gain = 489.082
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 774.367 ; gain = 490.188
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -325,25 +312,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 772.652 ; gain = 489.082
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 774.367 ; gain = 490.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 772.652 ; gain = 489.082
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 774.367 ; gain = 490.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 772.652 ; gain = 489.082
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 774.367 ; gain = 490.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 772.652 ; gain = 489.082
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 774.367 ; gain = 490.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -407,11 +394,11 @@ Report Instance Areas:
 |4     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_1K0VQXK |   496|
 +------+------------------------------+--------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 772.652 ; gain = 489.082
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 774.367 ; gain = 490.188
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:31 . Memory (MB): peak = 772.652 ; gain = 158.367
-Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 772.652 ; gain = 489.082
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:28 . Memory (MB): peak = 774.367 ; gain = 161.488
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 774.367 ; gain = 490.188
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -421,10 +408,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-70 Infos, 33 Warnings, 0 Critical Warnings and 0 Errors encountered.
+70 Infos, 20 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 780.852 ; gain = 505.707
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:44 . Memory (MB): peak = 784.500 ; gain = 509.305
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Miguel/Desktop/CR/CR_Project/maisque1Bloco/StreamPopCount/StreamPopCount.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 780.852 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Jul  9 14:21:58 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 784.500 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 11 04:36:39 2018...

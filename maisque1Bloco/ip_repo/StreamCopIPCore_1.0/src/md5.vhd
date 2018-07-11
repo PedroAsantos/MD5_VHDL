@@ -2,16 +2,19 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.all;
 use IEEE.NUMERIC_STD.all;
 library UNISIM;
-use UNISIM.VCOMPONENTS.ALL;;
+use UNISIM.VCOMPONENTS.ALL;
 
 entity md5 is
     Port (
-            clk: in std_logic;
-            M: in std_logic_vector(511 downto 0);
-            M2: in std_logic_vector(511 downto 0);
-            enable: in std_logic;
-            output: out std_logic_vector(127 downto 0)
-        );
+        clk:        in std_logic;
+        datain:     in std_logic_vector(511 downto 0);
+        enable:     in std_logic;
+        reset:      in std_logic;
+        counter:    in std_logic_vector(31 downto 0);
+        
+        result:     out std_logic_vector(127 downto 0);
+        done:       out std_logic
+    );
 end md5;
 
 architecture Behavioral of md5 is
@@ -58,7 +61,7 @@ constant K: const_k := (X"d76aa478", X"e8c7b756", X"242070db", X"c1bdceee",
 						X"655b59c3", X"8f0ccc92", X"ffeff47d", X"85845dd1",
 						X"6fa87e4f", X"fe2ce6e0", X"a3014314", X"4e0811a1",
 						X"f7537e82", X"bd3af235", X"2ad7d2bb", X"eb86d391");
-    --Iniciar as vari?veis:
+    --Iniciar as variáveis:
     --TO BE REDONE in the beggining of the first FOOOOOOOOOOOORRRRRRRRRR
     constant h0 : uint32_t := X"67452301";
     constant h1 : uint32_t := X"efcdab89";
@@ -69,18 +72,19 @@ constant K: const_k := (X"d76aa478", X"e8c7b756", X"242070db", X"c1bdceee",
     signal b, H1_s : uint32_t := h1;
     signal c, H2_s : uint32_t := h2;
     signal d, H3_s : uint32_t := h3;
-    signal f      : uint32_t := to_unsigned(0, A'length);
-    signal g      : integer := 0;
-    signal temp   : uint32_t;
+    signal f       : uint32_t := to_unsigned(0, A'length);
+    signal g       : integer := 0;
+    signal temp    : uint32_t;
+    signal M       : unsigned(2559 downto 0) := (others => '0');
+    signal s_enable: std_logic :='0';
+    signal s_counter: integer := 0;
+    signal tempFinished: std_logic:='0';
          
-    signal i: integer range 0 to 64 := 0;
-    type iStates is ( startState, ito15, ito31, ito47, ito63, lastStep);
-    signal currentState : iStates := startState;
-    signal nextState : iStates;
-    signal startFor2  : std_logic := '0';
-    
-    
-    
+    signal i: natural := 0;
+    type iStates is ( idle, start, computing, lastStep, redefiningBuffers, sendingData);
+    signal currentState : iStates := idle;
+    signal nextState : iStates := idle;
+    signal blockCounter: integer;
     
     function swap_endianness(x: unsigned(31 downto 0)) return unsigned is
         variable input: unsigned(31 downto 0):=x;
@@ -95,105 +99,140 @@ constant K: const_k := (X"d76aa478", X"e8c7b756", X"242070db", X"c1bdceee",
     begin
         return SHIFT_LEFT(x, to_integer(c)) or SHIFT_RIGHT(x, to_integer(32-c));  --ver isto melhor
     end function leftrotate;
-
+    
 begin
-    FSM: process(enable,currentState,i)
-    begin
-        if(enable='1') then
-            nextState <= currentState;
-            case currentState is
-                when startState =>
-                    startFor2 <='1';
-                    nextState <= ito15;
-                when ito15 =>
-                    nextState <= ito15;                
-                    if (i = 15) then
-                        nextState <= ito31;
-                    end if;
-                when ito31 =>           
-                    if (i = 32) then
-                      nextState <= ito47;
-                    end if;
-                when ito47 =>    
-                    if (i = 47) then
-                      nextState <= ito63;
-                    end if;
-                when ito63 =>
-                    if (i = 63) then
-                      nextState <= lastStep;
-                    end if;
-                when lastStep =>
-                   
-                when others =>
-                    Null;
-                end case;   
-        end if;      
-    end process;           
-    
-    
-    calc: process(clk,startFor2)
+    M <= unsigned(dataIn);
+    s_enable <= enable; 
+    s_counter <= to_integer(unsigned(counter));   
+
+main:   process(clk)
         begin
-            if (rising_edge(clk)) THEN
-                if(startFor2='1') then
-                    case currentState is
-                    when ito15 =>
-                        f <= (b and c) or ((not b) and d);
-                        g <= i;                    
-                        
-                        temp <= d;
-                        d <= c;
-                        c <= b;
-                        b <= leftrotate(a + f + K(i) + M(g to g+31), r(i)) + b; 
-                        a <= temp;
-                        
-                        i <= i + 1;
-                    when ito31 =>
-                        f <= (d and b) or ((not d) and c);
-                        g <= (5*i + 1) mod 16;
-                        
-                        temp <= d;
-                        d <= c;
-                        c <= b;
-                        b <= leftrotate(a + f + K(i) + M(g to g+31), r(i)) + b; 
-                        a <= temp;                
-                        
-                        i <= i + 1;
-                    when ito47 =>
-                        f <= b xor c xor d;
-                        g <= (3*i + 5) mod 16;
-                        
-                        temp <= d;
-                        d <= c;
-                        c <= b;
-                        b <= leftrotate(a + f + K(i) + M(g to g+31), r(i)) + b; 
-                        a <= temp;
-                        
-                        i <= i + 1;
-                    when ito63 =>
-                        f <= c xor (b or (not d));
-                        g <= (7*i) mod 16;
-                        
-                        temp <= d;
-                        d <= c;
-                        c <= b;
-                        b <= leftrotate(a + f + K(i) + M(g to g+31), r(i)) + b; 
-                        a <= temp;     
-                                             
-                        i <= i + 1;
-                    when lastStep =>
-                        --processing after "for"
-                        H0_s <= H0_s + a;
-                        H1_s <= H1_s + b;
-                        H2_s <= H2_s + c;
-                        H3_s <= H3_s + d;
-                        i <= i + 1;
-                        tempFinished <= '1';
-                    when others =>
-                        Null;
-                    end case;
+            if (rising_edge (clk)) then             
+                if (currentState = computing and i<64) then 
+                    i <= i+1;
+                else
+                    i <= 0;
+                end if;
+                if (reset = '1') then
+                   done <= '0';
+                   result  <= (others => '0');
+                   i <= 0;  
+                   currentState <= idle;
+                else
+                    currentState <= nextState;
+                end if;
+                if (tempFinished = '1') then
+                    result <= std_logic_vector(swap_endianness(H0_s)) & std_logic_vector(swap_endianness(H1_s)) & std_logic_vector(swap_endianness(H2_s)) & std_logic_vector(swap_endianness(H3_s));
+      
+                    done <= '1';
+                else
+                    done <= '0';
                 end if;
             end if;
         end process;
-
+  
+ FSM: process(s_enable, currentState, i)
+      begin
+          nextState <= currentState;
+          case currentState is
+              when idle =>
+                if (s_enable = '1') then
+                    nextState <= start;
+                end if;
+               when start =>
+                --if (s_enable = '0') then
+                    nextState <= computing;
+                --end if;
+              when computing =>          
+                  if (i = 63) then
+                      nextState <= lastStep;
+                  end if;
+              when lastStep =>
+                    if(blockCounter = s_counter) then
+                        nextState <= sendingData;                    
+                    else
+                        nextState <= redefiningBuffers;
+                    end if;
+              when redefiningBuffers =>
+                    nextState <= start;
+              when sendingData =>
+               -- nextState <= idle;
+              when others =>
+                  Null;
+              end case;      
+      end process;
+      
+      calc: process(clk,currentState,i)
+          begin
+            if (rising_edge(clk)) THEN
+              case currentState is
+                  when idle =>
+                        --ledsOut <= std_logic_vector(M(31 downto 16));
+                  when computing =>
+                    --  f <= (H1_s and H2_s) or ((not H1_s) and H3_s);
+                      --g <= 32*i_s;                    K
+                      if(i<=15) then 
+                           H1_s <= H1_s + leftrotate(H0_s + ((H1_s and H2_s) or ((not H1_s) and H3_s)) + K(i) + swap_endianness(M((blockCounter*512)+((32*i)+31) downto ((blockCounter*512)+(32*i)))), r(i)); 
+                           H0_s <= H3_s; -- a<=d
+                           H3_s <= H2_s; -- d<=c
+                           H2_s <= H1_s; -- c<=b
+                        
+                      elsif(i<=31) then
+                            
+                            H1_s <= H1_s + leftrotate(H0_s + ((H3_s and H1_s) or ((not H3_s) and H2_s)) + K(i) + swap_endianness(M(((blockCounter*512)+(32*((5*i + 1) mod 16))+31) downto ((blockCounter*512)+(32*((5*i + 1) mod 16))))), r(i)); 
+                            H0_s <= H3_s; -- a<=d
+                            H3_s <= H2_s; -- d<=c
+                            H2_s <= H1_s; -- c<=b             
+                               --  i <= i + 1;
+                      elsif(i<=47) then
+                      
+                            H1_s <= H1_s + leftrotate(H0_s + (H1_s xor H2_s xor H3_s) + K(i) + swap_endianness(M((blockCounter*512)+((32*((3*i + 5) mod 16))+31) downto ((blockCounter*512)+(32*((3*i + 5) mod 16))))), r(i)); 
+                            H0_s <= H3_s; -- a<=d
+                            H3_s <= H2_s; -- d<=c
+                            H2_s <= H1_s; -- c<=b    
+                      
+                      elsif(i<=63) then
+                            --if (i = 63) then
+                                   --ledsOut <= std_logic_vector(leftrotate(H0_s, r(i))(15 downto 0));
+                                   --s_test <= std_logic_vector(leftrotate(H0_s +  (H2_s xor (H1_s or (not H3_s))) + K(i) + swap_endianness(M(((32*((7*i) mod 16))+31) downto (32*((7*i) mod 16)))), r(i)));
+                                   --s_a <= std_logic_vector(H0_s);
+                                   --s_soma <= std_logic_vector(H1_S+((H3_s and H1_s) or ((not H3_s) and H2_s)));
+                                   --s_soma2 <= std_logic_vector(((H1_s and H2_s) or ((not H1_s) and H3_s))+K(i));
+                                   --s_somaT <= std_logic_vector(H0_s + (H1_s xor H2_s xor H3_s) + K(i) + swap_endianness(M(((32*((7*i) mod 16))+31) downto (32*((7*i) mod 16)))));
+                                   --s_function <= std_logic_vector((H1_s and H2_s) or ((not H1_s) and H3_s));
+                                   --s_ki <= std_logic_vector(K(i));
+                                   --s_M <= std_logic_vector(M(((32*((7*i) mod 16))+31) downto (32*((7*i) mod 16))));
+                                   --s_ki_msg <= std_logic_vector(K(i) + swap_endianness(M(((32*((7*i) mod 16))+31) downto (32*((7*i) mod 16)))));
+                              --end if;
+                      
+                            H1_s <= H1_s + leftrotate(H0_s +  (H2_s xor (H1_s or (not H3_s))) + K(i) + swap_endianness(M((blockCounter*512)+((32*((7*i) mod 16))+31) downto ((blockCounter*512)+(32*((7*i) mod 16))))), r(i)); 
+                            H0_s <= H3_s; -- a<=d
+                            H3_s <= H2_s; -- d<=c
+                            H2_s <= H1_s; -- c<=b
+                          if(i = 63) then
+                            blockCounter <= blockCounter + 1;                    
+                          end if;          
+                      end if; 
+                                                           
+              --    i<= i + 1;
+              when lastStep =>
+                  --processing after "for"  
+                    
+                  H0_s <= H0_s + a;
+                  H1_s <= H1_s + b;
+                  H2_s <= H2_s + c;
+                  H3_s <= H3_s + d;
+              when redefiningBuffers =>
+                    a <= H0_s;
+                    b <= H1_s;
+                    c <= H2_s;
+                    d <= H3_s;
+               when sendingData =>
+                    tempFinished  <= '1';
+              when others =>
+                  Null;
+              end case;
+         end if;
+      end process;
 
 end Behavioral;
