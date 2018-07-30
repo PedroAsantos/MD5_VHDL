@@ -1,0 +1,368 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 12760
+License: Customer
+
+Current time: 	Thu Jun 07 09:15:25 BST 2018
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 197 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	Miguel
+User home directory: C:/Users/Miguel
+User working directory: C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount
+User country: 	PT
+User language: 	pt
+User locale: 	pt_PT
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/Miguel/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/Miguel/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/Miguel/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/vivado.log
+Vivado journal file location: 	C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/vivado.jou
+Engine tmp dir: 	C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/.Xil/Vivado-12760-Miguel
+
+GUI allocated memory:	114 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 458 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 49 MB (+48864kb) [00:00:30]
+// [Engine Memory]: 417 MB (+285280kb) [00:00:30]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\StreamPopCount\StreamPopCount.xpr. Version: Vivado v2017.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.xpr 
+// [Engine Memory]: 458 MB (+21176kb) [00:00:33]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// HMemoryUtils.trashcanNow. Engine heap size: 493 MB. GUI used memory: 32 MB. Current time: 6/7/18 9:15:27 AM BST
+// [Engine Memory]: 493 MB (+13503kb) [00:00:38]
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 504 MB. GUI used memory: 32 MB. Current time: 6/7/18 9:15:47 AM BST
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 55 MB (+4010kb) [00:01:04]
+// [Engine Memory]: 543 MB (+26024kb) [00:01:04]
+// [GUI Memory]: 66 MB (+8136kb) [00:01:08]
+// [Engine Memory]: 573 MB (+3034kb) [00:01:09]
+// [Engine Memory]: 626 MB (+25956kb) [00:01:11]
+// [GUI Memory]: 79 MB (+10369kb) [00:01:12]
+// Tcl Message: open_project C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/ip_repo/StreamCopIPCore_1.0'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking too long to process. Increasing delay to 2000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 637 MB. GUI used memory: 54 MB. Current time: 6/7/18 9:16:05 AM BST
+// Tcl Message: open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:41 . Memory (MB): peak = 767.543 ; gain = 147.063 
+// Project name: StreamPopCount; location: C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 83 MB (+380kb) [00:01:23]
+// [GUI Memory]: 88 MB (+975kb) [00:01:29]
+// Elapsed time: 18 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd)]", 1); // B (D, cj)
+// PAPropertyPanels.initPanels (design_1.bd) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd), design_1_i : design_1 (design_1.bd)]", 2, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper(STRUCTURE) (design_1_wrapper.vhd), design_1_i : design_1 (design_1.bd)]", 2, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// bs (cj):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc Adding cell -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1 Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_1 Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0 Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0 Adding cell -- xilinx.com:ip:axis_dwidth_converter:1.1 - axis_dwidth_converter_1 Adding cell -- xilinx.com:ip:axis_dwidth_converter:1.1 - axis_dwidth_converter_0 Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0 Adding cell -- xilinx.com:user:StreamCopIPCore:1.0 - StreamCopIPCore_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 660 MB. GUI used memory: 56 MB. Current time: 6/7/18 9:16:32 AM BST
+// TclEventType: RSB_PROPERTY_CHANGE
+// [Engine Memory]: 660 MB (+2503kb) [00:01:41]
+// Tcl Message: Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10 Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10 Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 729 MB (+38029kb) [00:01:50]
+// [GUI Memory]: 98 MB (+5312kb) [00:01:51]
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: Successfully read diagram <design_1> from BD file <C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd> 
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 847.301 ; gain = 78.656 
+// Elapsed time: 15 seconds
+dismissDialog("Open Block Design"); // bs (cj)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_mb_reset 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /microblaze_0_Clk 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_clk_wiz_1_100M_interconnect_aresetn 
+// PAPropertyPanels.initPanels (M00_AXIS) elapsed time: 0.2s
+// PAPropertyPanels.initPanels (StreamCopIPCore_0) elapsed time: 0.2s
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 472, 340, 710, 494, false, false, false, true, false); // fJ (k, cj) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // Z (ai, Popup.HeavyWeightWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ac (ai, Popup.HeavyWeightWindow)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (cj): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bs (cj):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name StreamCopIPCore_v1_0_project -directory C:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/StreamPopCount/StreamPopCount.tmp/StreamCopIPCore_v1_0_project c:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/ip_repo/StreamCopIPCore_1.0/component.xml 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/miguel/desktop/ect/4_ano/2_semestre/cr/pratica/xoto8/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project' 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/ip_repo/StreamCopIPCore_1.0'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// [Engine Memory]: 772 MB (+6559kb) [00:02:13]
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 935.590 ; gain = 83.262 
+// 'i' command handler elapsed time: 10 seconds
+dismissDialog("Edit in IP Packager"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 792 MB. GUI used memory: 76 MB. Current time: 6/7/18 9:17:08 AM BST
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 103 MB (+570kb) [00:02:17]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 110 MB (+1231kb) [00:03:36]
+// Elapsed time: 83 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, StreamCopIPCore_v1_0(Structural) (StreamCopIPCore_v1_0.vhd)]", 1); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, StreamCopIPCore_v1_0(Structural) (StreamCopIPCore_v1_0.vhd), StreamCopIPCore_v1_0_S00_AXIS_inst : StreamCopIPCore_v1_0_S00_AXIS(Behavioral) (StreamCopIPCore_v1_0_S00_AXIS.vhd)]", 2, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, StreamCopIPCore_v1_0(Structural) (StreamCopIPCore_v1_0.vhd), StreamCopIPCore_v1_0_S00_AXIS_inst : StreamCopIPCore_v1_0_S00_AXIS(Behavioral) (StreamCopIPCore_v1_0_S00_AXIS.vhd)]", 2, false, false, false, false, false, true); // B (D, cj) - Double Click
+// [GUI Memory]: 116 MB (+497kb) [00:03:44]
+// Elapsed time: 69 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // B (E, cj)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+// [GUI Memory]: 122 MB (+831kb) [00:07:49]
+// Elapsed time: 226 seconds
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 169, 112); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 251, 217); // cd (w, cj)
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 232, 137); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 272, 177); // cd (w, cj)
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 282, 178); // cd (w, cj)
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 276, 182); // cd (w, cj)
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 277, 180); // cd (w, cj)
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 187, 179); // cd (w, cj)
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 186, 186); // cd (w, cj)
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 240, 201); // cd (w, cj)
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 398, 197); // cd (w, cj)
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 398, 212); // cd (w, cj)
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 183, 262); // cd (w, cj)
+// Elapsed time: 24 seconds
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 409, 238); // cd (w, cj)
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 422, 265); // cd (w, cj)
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 422, 265, false, false, false, false, true); // cd (w, cj) - Double Click
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 404, 274); // cd (w, cj)
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 397, 272); // cd (w, cj)
+// Elapsed time: 28 seconds
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 299, 265); // cd (w, cj)
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 299, 265, false, false, false, false, true); // cd (w, cj) - Double Click
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 44 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_SHOW_FLOW_NAVIGATOR, "Flow Navigator"); // z (L, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 18, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 1); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bs (cj):  Starting Design Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // JButton (A, G)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// TclEventType: RUN_MODIFY
+// [Engine Memory]: 814 MB (+3560kb) [00:11:26]
+// HMemoryUtils.trashcanNow. Engine heap size: 814 MB. GUI used memory: 79 MB. Current time: 6/7/18 9:26:18 AM BST
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Thu Jun  7 09:26:18 2018] Launched synth_1... Run output will be captured here: c:/users/miguel/desktop/ect/4_ano/2_semestre/cr/pratica/xoto8/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project/StreamCopIPCore_v1_0_project.runs/synth_1/runme.log [Thu Jun  7 09:26:18 2018] Launched impl_1... Run output will be captured here: c:/users/miguel/desktop/ect/4_ano/2_semestre/cr/pratica/xoto8/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project/StreamCopIPCore_v1_0_project.runs/impl_1/runme.log 
+// 'c' command handler elapsed time: 3 seconds
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: RUN_FAILED
+// ah (cj): Synthesis Failed: addNotify
+// Elapsed time: 22 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (cj)
+// [GUI Memory]: 131 MB (+2770kb) [00:11:50]
+// HMemoryUtils.trashcanNow. Engine heap size: 837 MB. GUI used memory: 79 MB. Current time: 6/7/18 9:26:42 AM BST
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-690] width mismatch in assignment; target has 128 bits, source has 24 bits [c:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/ip_repo/StreamCopIPCore_1.0/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:148]. ]", 1, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\ip_repo\StreamCopIPCore_1.0\hdl\StreamCopIPCore_v1_0_S00_AXIS.vhd;-;;-;16;-;line;-;148;-;;-;16;-;"); // ah (O, cj)
+selectCodeEditor("StreamCopIPCore_v1_0_S00_AXIS.vhd", 328, 180); // cd (w, cj)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 15 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-690] width mismatch in assignment; target has 128 bits, source has 24 bits [c:/Users/Miguel/Desktop/ECT/4_Ano/2_Semestre/CR/Pratica/xoto8/ip_repo/StreamCopIPCore_1.0/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:148]. ]", 1, false); // ah (O, cj)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;c:\Users\Miguel\Desktop\ECT\4_Ano\2_Semestre\CR\Pratica\xoto8\ip_repo\StreamCopIPCore_1.0\hdl\StreamCopIPCore_v1_0_S00_AXIS.vhd;-;;-;16;-;line;-;148;-;;-;16;-;"); // ah (O, cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 18, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 6); // u (O, cj)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bs (cj):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.RunImplementation_THERE_NO_NETLIST_AVAILABLE_OK_OK", "OK"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bs (cj):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Thu Jun  7 09:27:08 2018] Launched synth_1... Run output will be captured here: c:/users/miguel/desktop/ect/4_ano/2_semestre/cr/pratica/xoto8/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project/StreamCopIPCore_v1_0_project.runs/synth_1/runme.log [Thu Jun  7 09:27:08 2018] Launched impl_1... Run output will be captured here: c:/users/miguel/desktop/ect/4_ano/2_semestre/cr/pratica/xoto8/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project/StreamCopIPCore_v1_0_project.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bs (cj)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cj): Implementation Completed: addNotify
+// Elapsed time: 118 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Implementation Completed"); // ah (cj)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Package IP]", 5, false); // u (O, cj)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis]", 3); // u (O, cj)
+// bs (cj):  Open Project Manager : addNotify
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+dismissDialog("Open Project Manager"); // bs (cj)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // an (O, cj)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, cj)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 15 [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// bs (cj):  Package IP : addNotify
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 

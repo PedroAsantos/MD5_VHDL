@@ -1,0 +1,37 @@
+13:16:51 **** Incremental Build of configuration Debug for project MD5 ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../MD5_bsp/microblaze_0/include -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:37:31: warning: implicit declaration of function 'ceil' [-Wimplicit-function-declaration]
+     int numberOfBlocks = (int)ceil((initial_len_bits+65)/512.0);
+                               ^~~~
+../src/helloworld.c:37:31: warning: incompatible implicit declaration of built-in function 'ceil'
+../src/helloworld.c:37:31: note: include '<math.h>' or provide a declaration of 'ceil'
+../src/helloworld.c:42:21: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+     block = (char *)calloc(length, sizeof(char));
+                     ^~~~~~
+../src/helloworld.c:42:21: warning: incompatible implicit declaration of built-in function 'calloc'
+../src/helloworld.c:42:21: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+../src/helloworld.c:52:6: warning: implicit declaration of function 'exit' [-Wimplicit-function-declaration]
+      exit(1);
+      ^~~~
+../src/helloworld.c:52:6: warning: incompatible implicit declaration of built-in function 'exit'
+../src/helloworld.c:52:6: note: include '<stdlib.h>' or provide a declaration of 'exit'
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: MD5.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../MD5_bsp/microblaze_0/lib -mlittle-endian -mcpu=v10.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "MD5.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: MD5.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size MD5.elf  |tee "MD5.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  43344	   1312	   3168	  47824	   bad0	MD5.elf
+'Finished building: MD5.elf.size'
+' '
+
+13:16:52 Build Finished (took 1s.248ms)
+
