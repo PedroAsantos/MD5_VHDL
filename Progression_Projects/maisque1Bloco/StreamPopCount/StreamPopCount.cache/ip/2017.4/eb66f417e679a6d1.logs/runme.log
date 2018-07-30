@@ -1,0 +1,677 @@
+
+*** Running vivado
+    with args -log design_1_StreamCopIPCore_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_StreamCopIPCore_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_StreamCopIPCore_0_0.tcl -notrace
+Command: synth_design -top design_1_StreamCopIPCore_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11400 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 352.688 ; gain = 100.305
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_StreamCopIPCore_0_0' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/synth/design_1_StreamCopIPCore_0_0.vhd:75]
+	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 512 - type: integer 
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'StreamCopIPCore_v1_0' declared at 'c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0.vhd:5' bound to instance 'U0' of component 'StreamCopIPCore_v1_0' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/synth/design_1_StreamCopIPCore_0_0.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'StreamCopIPCore_v1_0' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0.vhd:43]
+	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
+	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 512 - type: integer 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 512 - type: integer 
+	Parameter C_S_AXIS_TDATA_WIDTH_OUT bound to: 128 - type: integer 
+INFO: [Synth 8-3491] module 'StreamCopIPCore_v1_0_S00_AXIS' declared at 'c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:7' bound to instance 'StreamCopIPCore_v1_0_S00_AXIS_inst' of component 'StreamCopIPCore_v1_0_S00_AXIS' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0.vhd:89]
+INFO: [Synth 8-638] synthesizing module 'StreamCopIPCore_v1_0_S00_AXIS' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:42]
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 512 - type: integer 
+	Parameter C_S_AXIS_TDATA_WIDTH_OUT bound to: 128 - type: integer 
+WARNING: [Synth 8-6014] Unused sequential element s_done_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:145]
+WARNING: [Synth 8-6014] Unused sequential element M2_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:176]
+INFO: [Synth 8-256] done synthesizing module 'StreamCopIPCore_v1_0_S00_AXIS' (1#1) [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:42]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'StreamCopIPCore_v1_0_M00_AXIS' declared at 'c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd:5' bound to instance 'StreamCopIPCore_v1_0_M00_AXIS_inst' of component 'StreamCopIPCore_v1_0_M00_AXIS' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'StreamCopIPCore_v1_0_M00_AXIS' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd:42]
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 128 - type: integer 
+	Parameter C_M_START_COUNT bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'StreamCopIPCore_v1_0_M00_AXIS' (2#1) [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_M00_AXIS.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'StreamCopIPCore_v1_0' (3#1) [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'design_1_StreamCopIPCore_0_0' (4#1) [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ip/design_1_StreamCopIPCore_0_0/synth/design_1_StreamCopIPCore_0_0.vhd:75]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_M00_AXIS has unconnected port M_AXIS_ACLK
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_M00_AXIS has unconnected port M_AXIS_ARESETN
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[63]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[62]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[61]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[60]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[59]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[58]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[57]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[56]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[55]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[54]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[53]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[52]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[51]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[50]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[49]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[48]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[47]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[46]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[45]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[44]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[43]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[42]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[41]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[40]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[39]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[38]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[37]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[36]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[35]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[34]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[33]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[32]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[31]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[30]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[29]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[28]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[27]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[26]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[25]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[24]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[23]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[22]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[21]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[20]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[19]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[18]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[17]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[16]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[15]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[14]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[13]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[12]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[11]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[10]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[9]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[8]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[7]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[6]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[5]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[4]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[3]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[2]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[1]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[0]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TLAST
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 405.191 ; gain = 152.809
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 405.191 ; gain = 152.809
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 742.313 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 742.313 ; gain = 489.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 742.313 ; gain = 489.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 742.313 ; gain = 489.930
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "s_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "s_enable" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "M" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "nextState" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element b_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:227]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:228]
+WARNING: [Synth 8-6014] Unused sequential element H0_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:159]
+WARNING: [Synth 8-6014] Unused sequential element H1_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:159]
+WARNING: [Synth 8-6014] Unused sequential element H2_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:160]
+WARNING: [Synth 8-6014] Unused sequential element H3_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:160]
+WARNING: [Synth 8-327] inferring latch for variable 'nextState_reg' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:139]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 742.313 ; gain = 489.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	              512 Bit    Registers := 1     
+	              128 Bit    Registers := 2     
+	               32 Bit    Registers := 6     
+	                7 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module StreamCopIPCore_v1_0_S00_AXIS 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	              512 Bit    Registers := 1     
+	              128 Bit    Registers := 2     
+	               32 Bit    Registers := 6     
+	                7 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'i_reg[6:0]' into 'i_reg[6:0]' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:228]
+INFO: [Synth 8-4471] merging register 'i_reg[6:0]' into 'i_reg[6:0]' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:228]
+INFO: [Synth 8-4471] merging register 'i_reg[6:0]' into 'i_reg[6:0]' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:228]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:228]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:228]
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:228]
+INFO: [Synth 8-5545] ROM "M" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "nextState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "s_enable" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "s_counter" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element i_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:228]
+WARNING: [Synth 8-6014] Unused sequential element b_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:227]
+WARNING: [Synth 8-6014] Unused sequential element H3_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:160]
+WARNING: [Synth 8-6014] Unused sequential element H2_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:160]
+WARNING: [Synth 8-6014] Unused sequential element H1_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:159]
+WARNING: [Synth 8-6014] Unused sequential element H0_s_reg was removed.  [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:159]
+INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[15] driven by constant 1
+INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[14] driven by constant 1
+INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[13] driven by constant 1
+INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[12] driven by constant 1
+INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[11] driven by constant 1
+INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[10] driven by constant 1
+INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[9] driven by constant 1
+INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[8] driven by constant 1
+INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[7] driven by constant 1
+INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[6] driven by constant 1
+INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[5] driven by constant 1
+INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[4] driven by constant 1
+INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tstrb[0] driven by constant 1
+INFO: [Synth 8-3917] design design_1_StreamCopIPCore_0_0 has port m00_axis_tlast driven by constant 0
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[63]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[62]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[61]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[60]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[59]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[58]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[57]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[56]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[55]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[54]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[53]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[52]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[51]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[50]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[49]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[48]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[47]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[46]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[45]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[44]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[43]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[42]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[41]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[40]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[39]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[38]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[37]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[36]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[35]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[34]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[33]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[32]
+WARNING: [Synth 8-3331] design StreamCopIPCore_v1_0_S00_AXIS has unconnected port S_AXIS_TSTRB[31]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[8]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[7]' (FDE) to 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/g_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U0/StreamCopIPCore_v1_0_S00_AXIS_inst /\g_reg[9] )
+WARNING: [Synth 8-3332] Sequential element (s_ready_reg) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_ready_reg__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_ready_reg__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:149]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:149]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:149]
+WARNING: [Synth 8-3332] Sequential element (nextState_reg[2]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (nextState_reg[1]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (nextState_reg[0]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_enable_reg) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_enable_reg__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_enable_reg__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:144]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:144]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:144]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[31]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[30]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[29]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[28]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[27]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[26]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[25]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[24]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[23]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[22]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[21]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[20]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[19]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[18]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[17]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[16]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[15]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[14]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[13]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[12]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[11]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[10]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[9]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[8]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[7]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[6]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[5]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[4]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[3]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[2]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[1]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[0]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[31]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[31]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[30]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[30]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[29]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[29]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[28]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[28]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[27]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[27]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[26]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[26]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[25]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[25]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[24]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[24]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[23]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[23]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[22]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[22]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[21]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[21]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[20]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[20]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[19]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[19]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[18]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[18]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[17]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[17]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[16]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[16]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[15]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[15]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[14]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[14]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[13]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[13]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[12]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[12]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[11]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[11]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[10]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[10]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[9]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[9]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[8]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[8]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[7]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[7]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[6]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[6]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[5]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[5]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[4]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[4]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[3]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[3]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[2]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[2]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[1]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[1]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_counter_reg[0]__0) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'U0/StreamCopIPCore_v1_0_S00_AXIS_inst/s_counter_reg[0]__0/Q' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [c:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/ipshared/68d1/hdl/StreamCopIPCore_v1_0_S00_AXIS.vhd:143]
+WARNING: [Synth 8-3332] Sequential element (s_validOut_reg) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (currentState_reg[2]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (currentState_reg[1]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (currentState_reg[0]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[0]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[1]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[2]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[3]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[4]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[5]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[6]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[7]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[8]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[9]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[10]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[11]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[12]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[13]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[14]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[15]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[16]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[17]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[18]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[19]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[20]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[21]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[22]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[23]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+WARNING: [Synth 8-3332] Sequential element (b_reg[24]) is unused and will be removed from module StreamCopIPCore_v1_0_S00_AXIS.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 742.313 ; gain = 489.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------------------+------------+---------------+----------------+
+|Module Name                   | RTL Object | Depth x Width | Implemented As | 
++------------------------------+------------+---------------+----------------+
+|StreamCopIPCore_v1_0_S00_AXIS | r[0]       | 64x5          | LUT            | 
+|StreamCopIPCore_v1_0_S00_AXIS | K[0]       | 64x32         | LUT            | 
+|StreamCopIPCore_v1_0_S00_AXIS | r[0]       | 64x5          | LUT            | 
+|StreamCopIPCore_v1_0_S00_AXIS | K[0]       | 64x32         | LUT            | 
++------------------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 742.313 ; gain = 489.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 742.313 ; gain = 489.930
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 743.910 ; gain = 491.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 743.910 ; gain = 491.527
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 743.910 ; gain = 491.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 743.910 ; gain = 491.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 743.910 ; gain = 491.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 743.910 ; gain = 491.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 743.910 ; gain = 491.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 743.910 ; gain = 491.527
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 102 critical warnings and 1283 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:00:59 . Memory (MB): peak = 743.910 ; gain = 154.406
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 743.910 ; gain = 491.527
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+53 Infos, 218 Warnings, 102 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 762.902 ; gain = 521.992
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Miguel/Desktop/CR/CR_Project/MD5Project/StreamPopCount/StreamPopCount.runs/design_1_StreamCopIPCore_0_0_synth_1/design_1_StreamCopIPCore_0_0.dcp' has been generated.

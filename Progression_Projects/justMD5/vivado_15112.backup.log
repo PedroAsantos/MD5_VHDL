@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Jul 10 23:10:33 2018
+# Process ID: 15112
+# Current directory: C:/Users/Miguel/Desktop/CR/CR_Project/justMD5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4744 C:\Users\Miguel\Desktop\CR\CR_Project\justMD5\justMD5.xpr
+# Log file: C:/Users/Miguel/Desktop/CR/CR_Project/justMD5/vivado.log
+# Journal file: C:/Users/Miguel/Desktop/CR/CR_Project/justMD5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Miguel/Desktop/CR/CR_Project/justMD5/justMD5.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Miguel/Desktop/CR/CR_Project/justMd5/justMD5' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 750.906 ; gain = 53.719
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 10 23:35:34 2018...

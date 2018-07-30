@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Miguel/Desktop/CR/CR_Project/justMD5/justMD5.srcs/sources_1/new/md5.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity md5
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Miguel/Desktop/CR/CR_Project/justMD5/justMD5.srcs/sim_1/new/sim.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity sim

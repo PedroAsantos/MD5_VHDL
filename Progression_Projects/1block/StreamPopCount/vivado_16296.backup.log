@@ -1,0 +1,80 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jul 11 00:23:26 2018
+# Process ID: 16296
+# Current directory: C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15540 C:\Users\Miguel\Desktop\CR\CR_Project\Redesigned\StreamPopCount\StreamPopCount.xpr
+# Log file: C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount/vivado.log
+# Journal file: C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount/StreamPopCount.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Miguel/Desktop/CR/CR_Project/santosRedesigned/StreamPopCount' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/ip_repo/StreamCopIPCore_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:21 . Memory (MB): peak = 833.969 ; gain = 115.809
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - microblaze_0_xlconcat
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_1
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:axis_dwidth_converter:1.1 - axis_dwidth_converter_1
+Adding cell -- xilinx.com:ip:axis_dwidth_converter:1.1 - axis_dwidth_converter_0
+Adding cell -- xilinx.com:ip:microblaze:10.0 - microblaze_0
+Adding cell -- xilinx.com:user:StreamCopIPCore:1.0 - StreamCopIPCore_0
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Successfully read diagram <design_1> from BD file <C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount/StreamPopCount.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 937.656 ; gain = 93.164
+ipx::edit_ip_in_project -upgrade true -name StreamCopIPCore_v1_0_project -directory C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount/StreamPopCount.tmp/StreamCopIPCore_v1_0_project c:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/ip_repo/StreamCopIPCore_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/miguel/desktop/cr/cr_project/redesigned/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+create_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 952.641 ; gain = 11.992
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/ip_repo/StreamCopIPCore_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 956.031 ; gain = 15.383
+update_compile_order -fileset sources_1
+close_project
+file copy -force C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount/StreamPopCount.runs/impl_1/design_1_wrapper.sysdef C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount/StreamPopCount.sdk -hwspec C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount/StreamPopCount.sdk -hwspec C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount/StreamPopCount.runs/impl_1/design_1_wrapper.sysdef C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount/StreamPopCount.sdk -hwspec C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount/StreamPopCount.sdk -hwspec C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount/StreamPopCount.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+ipx::edit_ip_in_project -upgrade true -name StreamCopIPCore_v1_0_project -directory C:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/StreamPopCount/StreamPopCount.tmp/StreamCopIPCore_v1_0_project c:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/ip_repo/StreamCopIPCore_1.0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/miguel/desktop/cr/cr_project/redesigned/streampopcount/streampopcount.tmp/streamcopipcore_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Miguel/Desktop/CR/CR_Project/Redesigned/ip_repo/StreamCopIPCore_1.0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 995.559 ; gain = 0.000
+update_compile_order -fileset sources_1
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 11 00:33:40 2018...

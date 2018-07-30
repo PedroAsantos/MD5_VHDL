@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../justMD5.srcs/sources_1/new/md5.vhd" \
+"../../../../justMD5.srcs/sim_1/new/sim.vhd" \
+
+# Do not sort compile order
+nosort
